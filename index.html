@@ -1,85 +1,504 @@
-<!DOCTYPE html>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anton M. Dudarev</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
 
-<!-- hosted on amazon s3 -->
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
+<style type="text/css">
+body{
+  font-family:'Raleway',sans-serif;
+  font-size:18px;
+}
 
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
+hr{
+  text-align:center;
+  margin:0 auto;
+  opacity:0.5;
+}
 
-	<title>Anton Dudarev - styling</title>
+ul{
+  text-transform:uppercase;
+}
+ul.inline-list.right{
+  text-transform:none;
+}
+ul.inline-list.right a{
+  color:#000;
+}
+ul.inline-list.right a:hover{
+  color:rgba(0,0,0,0.5);
+}
+h1{
+  font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
+  font-size:32px;
+  color:#fff;
+  line-height:28px;
+  margin-top:16px;
+  margin-bottom:0px;
+  text-align:center;
+}
+h2{
+  font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
+  color:#fff;
+  font-size:36px;
+  line-height:34px;
+}
+h3{
+  font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
+  font-size:24px;
+  color:#fff;
+  line-height:10px;
+  text-align:center;
+  font-weight:500;
+  padding-bottom:10px;
+}
+h4{
+  font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
+  color:#000;
+  font-size:28px;
+  padding-top:5px;
+}
+.columns.large-centered{
+  padding-left:5px;
+  padding-right:5px;
+} 
+@media only screen and (max-width: 40em) {
+  .columns.large-centered{
+    font-size:13px;
+    }
+  }
+@media only screen and (min-width: 40.063em) {
+  .columns.large-centered{
+    font-size:14px;
+    }
+  }
+.about-box{
+  color:#fff;
+}
+.black-box{
+  background-color:rgba(0,0,0,0.55);
+  padding:35px;
+  font-weight:900;
+}
+.black-box p{
+  font-weight:900;
+}
+.secondary.small.button{
+  background-color:transparent;
+  color:#fff;
+  border:2px #fff solid;
+  border-radius:5px;
+  padding:15px 50px 15px 50px;
+  margin:0;
+}
+.secondary.small.button:hover{
+  background-color:rgba(255,255,255,0.5);
+}
+.row .main-wrapper{
+  color:#fff;
+}
+.about-content{
+  background-color:#fff;
+  box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+}
+.button-group li .button{
+  border:0!important;
+}
+.button{
+  -webkit-appearance:none;
+  background-color:transparent;
+  border-width:0;
+  text-align:center;
+  box-shadow:0 0 0;
+}
+.button:hover{
+  color:rgba(255,255,255,0.7);
+  background-color:transparent;
+}
+footer p,footer a{
+  font-size:14px;
+}
+.hero{
+  padding-bottom:50px;
+  background-image:url("img/1.png");
+  background-size:cover;
+  box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.2);
+}
+.hero-content{
+  padding-top:40px;
+  padding-bottom:40px;
+  background-color:#EAEAEA;
+}
+.panel{
+  margin:40px 0 40px 0;
+  box-shadow:2px 2px 10px rgba(0,0,0,0.2);
+  border:none;
+  background-color:#EAEAEA;
+}
+.large-4 img{
+  box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+}
+.radius.right.button{
+  color:#000;
+  border:2px #000 solid;
+  border-radius:5px;
+  padding:15px 50px 15px 50px;
+  margin:0;
+  font-size:0.8125em;
+}
+@media only screen and (min-width: 64.063em) {
+  .radius.right.button{
+    color:#000;border:2px #000 solid;
+    border-radius:5px;
+    padding:15px 50px 15px 50px;
+    margin-top:25px;
+    font-size:0.8125em;
+    }
+  }
+@media only screen and (min-width: 40.063em) {
+  .radius.right.button{
+    color:#000;
+    border:2px #000 solid;
+    border-radius:5px;
+    padding:15px 50px 15px 50px;
+    margin-top:25px;
+    font-size:0.8125em;
+    }
+  }
+.radius.right.button:hover{
+  background-color:rgba(0,0,0,0.1);
+}
+</style>
 
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/app.css">
 
-	<script src="javascripts/foundation/modernizr.foundation.js"></script>
-	<script src="javascripts/foundation/jquery.js"></script>
-	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
-
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-</head>
-
-<script type="text/javascript">
-  $(window).load(function() {
-    $('#slider').orbit();
-  });
-</script>
-
-<body>
-
-  <!-- Three-up Content Blocks -->
-  
-  <div class="row logo-row">
-    <center>
-      <div>
-        <img src="images/logo-main.png" alt="logo" />
-      </div>
-    </center><hr/>
-  </div>
-
-  <div class="row">      
-    <center>
-
-      <p><a href="gui.html">Graphical user interface</a> 
-      <p><a href="print.html">Print design</a> 
-      <p><a href="design.html">Design</a></p><hr/>
-      
-    </center>   
-  </div>
-
-
-  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->    
+  </head>
+  <body>
     
-  <!-- Footer -->
-  
-  <footer class="row">
-    <div class="twelve columns">
-      
+  <section class="hero">
       <div class="row">
-        <div class="twelve columns">
+        <div class="large-12 columns">
+          <div class="main-wrapper">
+            <p><h1>Anton Dudarev</h1></p>
+            <h3>Styling</h3>
+            <hr>
+            <div class="row">
+              <div class="large-6 columns large-centered">
+                <ul class="button-group even-4">
+                  <li><a href="#" class="button">GUI</a></li>
+                  <li><a href="#" class="button">Html</a></li>
+                  <li><a href="#" class="button">Build</a></li>
+                  <li><a href="#" class="button">Draw</a></li>                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns about-box">
+          <div class="black-box">
+            <h2>Styling</h2></p>
+            <p> Graphic design services.
+                Creating a sketch layouts, page-proofs (HTML/CSS), 
+                the embodiment of your desires in vector (CorelDraw) and bitmap editor (Adobe Photoshop). 
+                Freehand drawing and design skills and modeling (AutoCAD)
+            
+            <p> Working designer since 2006, I have accumulated
+                decent knowledge and experience in this field,
+                which allows me to do for you quality
+                product
 
-          <a class="link-list left" href="mailto:anton@dudarev.com">anton@dudarev.com</a>
+            <p> Our cooperation will be effective only
+                for you, but also help me to self-realization and
+                creative growth
+            </p> 
+            <p>Interested?</p>
+            <a href="#" class="secondary small button">More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <ul class="link-list right">
-            <li><a href="http://www.facebook.com/dudarev.anton">facebook</a></li>
-            <li><a href="http://twitter.com/betula_pendula">twitter</a></li>
-            <li><a href="http://vk.com/betula_pendula">vk</a></li>
+    <p><center><h4>GUI</h4></center></p> 
+
+<div class="row"> 
+    <div class="large-3 columns">
+      <div class="panel">
+        <p><img src="img/gui/2.jpg"/></p>
+      </div>
+    </div>
+
+    <div class="large-3 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/3.jpg"/>
+        </p>
+      </div>
+    </div>
+
+    <div class="large-3 columns">
+      <div class="panel">
+        <p><img src="img/gui/4.jpg"/></p>
+      </div>
+    </div>
+
+    <div class="large-3 columns">
+      <div class="panel">
+        <p><img src="img/gui/5.jpg"/></p>
+      </div>
+    </div>
+</div> 
+
+<div class="row"> 
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/7.jpg"/>
+        </p>
+      </div>
+    </div>
+
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/8.jpg"/>
+        </p>
+      </div>
+    </div>    
+</div> 
+
+<div class="row"> 
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/9.jpg"/>
+        </p>
+      </div>
+    </div>
+
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          Our cooperation will be effective only
+          for you, but also help me to self-realization and
+          creative growth
+        </p>
+      </div>
+    </div>
+
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/10.jpg"/>
+        </p>
+      </div>
+    </div>    
+</div> 
+
+<div class="row"> 
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/11.jpg"/>
+        </p>
+      </div>
+    </div>
+
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/1.png"/>
+        </p>
+      </div>
+    </div>
+    
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/13.png"/>
+        </p>
+      </div>
+    </div>    
+</div> 
+
+<div class="row"> 
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/14.png"/>
+        </p>
+      </div>
+    </div>
+    
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/15.png"/>
+        </p>
+      </div>
+    </div>      
+</div> 
+
+<div class="row"> 
+    <div class="large-12 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/16.png"/>
+        </p>
+      </div>
+    </div>    
+</div> 
+
+<div class="row"> 
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/20.jpg"/>
+        </p>
+      </div>
+    </div>    
+
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/21.jpg"/>
+        </p>
+      </div>
+    </div>    
+</div> 
+
+<div class="row"> 
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/17.jpg"/>
+        </p>
+      </div>
+    </div>    
+
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/2.png"/>
+        </p>
+      </div>
+    </div>    
+</div> 
+
+<div class="row"> 
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/18.jpg"/>
+        </p>
+      </div>
+    </div>    
+
+    <div class="large-6 columns">
+      <div class="panel">
+        <p>
+          <img src="img/gui/19.jpg"/>
+        </p>
+      </div>
+    </div>    
+</div> 
+
+
+
+  
+    <section class="hero-content"> 
+    <div class="row">             
+
+      
+
+      <p><center><h4>Draw</h4></center></p>  
+
+      <div class="row"> 
+        <div class="large-6 columns">
+          <div class="panel">
+            <p>
+              <img src="img/draw/1.jpg"/>
+            </p>
+          </div>
+        </div>    
+
+        <div class="large-6 columns">
+          <div class="panel">
+            <p>
+              <img src="img/draw/2.jpg"/>
+            </p>
+          </div>
+        </div>    
+      </div>     
+      
+      <div class="large-12 columns">        
+        <ul class="small-block-grid-8">
+          <li><a href="#"><img src="img/1_180x180.jpg"/></a></li>
+          <li><a href="#"><img src="img/2_180x180.jpg"/></a></li>
+          <li><a href="#"><img src="img/3_180x180.jpg"/></a></li>
+          <li><a href="#"><img src="img/4_180x180.jpg"/></a></li>
+          <li><a href="#"><img src="img/5_180x180.jpg"/></a></li>
+          <li><a href="#"><img src="img/6_180x180.jpg"/></a></li>
+          <li><a href="#"><img src="img/7_180x180.jpg"/></a></li>
+          <li><a href="#"><img src="img/8_180x180.jpg"/></a></li>
+        </ul>
+      </div>
+
+      <!--
+      <p><center><h4>Picture</h4></center></p>   
+
+      <div class="large-12 columns">        
+        <ul class="small-block-grid-2">
+          <li><a href="#"><img src="img/1_720x720.jpg"/></a></li>
+          <li><a href="#"><img src="img/2_720x720.jpg"/></a></li>
+          <li><a href="#"><img src="img/3_720x720.jpg"/></a></li>
+          <li><a href="#"><img src="img/4_720x720.jpg"/></a></li>          
+        </ul>
+      </div>
+    -->
+          
+    </div>
+    </section>
+    
+    
+     
+    <div class="row">
+      <div class="large-12 columns">
+      
+        <div class="panel">
+              
+          <div class="row">
+            <div class="large-9 columns">
+              <h4>Get in touch!</h4>
+              <p>We're open 9am - 5pm, Monday through Saturdays.</p>
+            </div>
+            <div class="large-3 columns">
+              <a href="#" class="radius button right">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <footer>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
-    </div> 
-  </footer>
+    </footer>
 
-  <!-- Application Javascript, safe to override -->
-  <script src="javascripts/foundation/app.js"></script>
-</body>
+    
+  </body>
 </html>
