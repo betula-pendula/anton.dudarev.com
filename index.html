@@ -1,196 +1,266 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+
+
+
+    <title>Anton M. Dudarev</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <meta name="description" content="Responsive Image Gallery with jQuery" />
+    <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+    
+
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anton M. Dudarev</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <style type="text/css">
+    
+    
+    body{
+      font-family:'Raleway',sans-serif;
+      font-size:18px;
+    } 
 
-<style type="text/css">
-body{
-  font-family:'Raleway',sans-serif;
-  font-size:18px;
-}
+    hr{
+      text-align:center;
+      margin:0 auto;
+      opacity:0.5;
+    }
 
-hr{
-  text-align:center;
-  margin:0 auto;
-  opacity:0.5;
-}
+    ul{
+      text-transform:uppercase;
+    }    
+    ul.inline-list.right{
+      text-transform:none;
+    }
+    ul.inline-list.right a{
+      color:#000;
+    }
+    ul.inline-list.right a:hover{
+      color:rgba(0,0,0,0.5);
+    }
 
-ul{
-  text-transform:uppercase;
-}
-ul.inline-list.right{
-  text-transform:none;
-}
-ul.inline-list.right a{
-  color:#000;
-}
-ul.inline-list.right a:hover{
-  color:rgba(0,0,0,0.5);
-}
-h1{
-  font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
-  font-size:32px;
-  color:#fff;
-  line-height:28px;
-  margin-top:16px;
-  margin-bottom:0px;
-  text-align:center;
-}
-h2{
-  font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
-  color:#fff;
-  font-size:36px;
-  line-height:34px;
-}
-h3{
-  font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
-  font-size:24px;
-  color:#fff;
-  line-height:10px;
-  text-align:center;
-  font-weight:500;
-  padding-bottom:10px;
-}
-h4{
-  font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
-  color:#000;
-  font-size:28px;
-  padding-top:5px;
-}
-.columns.large-centered{
-  padding-left:5px;
-  padding-right:5px;
-} 
-@media only screen and (max-width: 40em) {
-  .columns.large-centered{
-    font-size:13px;
+    h1{
+      font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
+      font-size:32px;
+      color:#fff;
+      line-height:28px;
+      margin-top:16px;
+      margin-bottom:0px;
+      text-align:center;
     }
-  }
-@media only screen and (min-width: 40.063em) {
-  .columns.large-centered{
-    font-size:14px;
-    }
-  }
-.about-box{
-  color:#fff;
-}
-.black-box{
-  background-color:rgba(0,0,0,0.55);
-  padding:35px;
-  font-weight:900;
-}
-.black-box p{
-  font-weight:900;
-}
-.secondary.small.button{
-  background-color:transparent;
-  color:#fff;
-  border:2px #fff solid;
-  border-radius:5px;
-  padding:15px 50px 15px 50px;
-  margin:0;
-}
-.secondary.small.button:hover{
-  background-color:rgba(255,255,255,0.5);
-}
-.row .main-wrapper{
-  color:#fff;
-}
-.about-content{
-  background-color:#fff;
-  box-shadow:2px 2px 10px rgba(0,0,0,0.1);
-}
-.button-group li .button{
-  border:0!important;
-}
-.button{
-  -webkit-appearance:none;
-  background-color:transparent;
-  border-width:0;
-  text-align:center;
-  box-shadow:0 0 0;
-}
-.button:hover{
-  color:rgba(255,255,255,0.7);
-  background-color:transparent;
-}
-footer p,footer a{
-  font-size:14px;
-}
-.hero{
-  padding-bottom:50px;
-  background-image:url("img/1.png");
-  background-size:cover;
-  box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.2);
-}
-.hero-content{
-  padding-top:40px;
-  padding-bottom:40px;
-  background-color:#EAEAEA;
-}
-.panel{
-  margin:40px 0 40px 0;
-  box-shadow:2px 2px 10px rgba(0,0,0,0.2);
-  border:none;
-  background-color:#EAEAEA;
-}
-.large-4 img{
-  box-shadow:2px 2px 10px rgba(0,0,0,0.1);
-}
-.radius.right.button{
-  color:#000;
-  border:2px #000 solid;
-  border-radius:5px;
-  padding:15px 50px 15px 50px;
-  margin:0;
-  font-size:0.8125em;
-}
-@media only screen and (min-width: 64.063em) {
-  .radius.right.button{
-    color:#000;border:2px #000 solid;
-    border-radius:5px;
-    padding:15px 50px 15px 50px;
-    margin-top:25px;
-    font-size:0.8125em;
-    }
-  }
-@media only screen and (min-width: 40.063em) {
-  .radius.right.button{
-    color:#000;
-    border:2px #000 solid;
-    border-radius:5px;
-    padding:15px 50px 15px 50px;
-    margin-top:25px;
-    font-size:0.8125em;
-    }
-  }
-.radius.right.button:hover{
-  background-color:rgba(0,0,0,0.1);
-}
-</style>
 
+    h2{
+      font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
+      color:#fff;
+      font-size:36px;
+      line-height:34px;
+    }
+
+    h3{
+      font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
+      font-size:24px;
+      color:#fff;
+      line-height:10px;
+      text-align:center;
+      font-weight:500;
+      padding-bottom:10px;
+    }
+
+    h4{
+      font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
+      color:#000;
+      font-size:28px;
+      padding-top:5px;
+    }
+
+    .columns.large-centered{
+      padding-left:5px;
+      padding-right:5px;
+    }
+
+    @media only screen and (max-width: 40em) {
+      .columns.large-centered{
+        font-size:13px;
+      }
+    }
+
+    @media only screen and (min-width: 40.063em) {
+      .columns.large-centered{
+        font-size:14px;
+      }
+    }
+
+    .about-box{
+      color:#fff;
+    }
+
+    .black-box{
+      background-color:rgba(0,0,0,0.55);
+      padding:35px;
+      font-weight:900;
+    }
+
+    .black-box p{
+      font-weight:900;
+    }
+
+    .secondary.small.button{
+      background-color:transparent;
+      color:#fff;
+      border:2px #fff solid;
+      border-radius:5px;
+      padding:15px 50px 15px 50px;
+      margin:0;
+    }
+
+    .secondary.small.button:hover{
+      background-color:rgba(255,255,255,0.5);
+    }
+
+    .row .main-wrapper{
+      color:#fff;
+    }
+
+    .about-content{
+      background-color:#fff;
+      box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .button-group li .button{
+      border:0!important;
+    }
+
+    .button{
+      -webkit-appearance:none;
+      background-color:transparent;
+      border-width:0;
+      text-align:center;
+      box-shadow:0 0 0;
+    }
+
+    .button:hover{
+      color:rgba(255,255,255,0.7);
+      background-color:transparent;
+    }
+
+    footer p,footer a{
+      font-size:14px;
+    }
+
+    .hero{
+      padding-bottom:50px;
+      background-image:url("img/1.jpg");
+      background-size:cover;
+      box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.2);
+    }
+
+    .hero-content{
+      padding-top:40px;
+      padding-bottom:40px;
+      background-color:black;
+    }
+
+    .panel{
+      margin:15px 0 15px 0;
+      box-shadow:2px 2px 10px rgba(0,0,0,0.2);
+      border:none;
+      padding:5px 5px 5px 5px;
+      background-color:white;
+    }
+
+    .large-4 img{
+      box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .radius.right.button{
+      color:#000;
+      border:2px #000 solid;
+      border-radius:5px;
+      padding:15px 50px 15px 50px;
+      margin:0;
+      font-size:0.8125em;
+    }
+
+    @media only screen and (min-width: 64.063em) {
+      .radius.right.button{
+        color:#000;border:2px #000 solid;
+        border-radius:5px;
+        padding:15px 50px 15px 50px;
+        margin-top:25px;
+        font-size:0.8125em;
+      }
+    }
+
+    @media only screen and (min-width: 40.063em) {
+      .radius.right.button{
+        color:#000;
+        border:2px #000 solid;
+        border-radius:5px;
+        padding:15px 50px 15px 50px;
+        margin-top:25px;
+        font-size:0.8125em;
+      }
+    }
+
+    .radius.right.button:hover{
+      background-color:rgba(0,0,0,0.1);
+    }
+    </style>
+
+    <noscript>
+      <style>
+        .es-carousel ul{
+          display:block;
+        }
+      </style>
+    </noscript>
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">  
+      <div class="rg-image-wrapper">
+        {{if itemsCount > 1}}
+          <div class="rg-image-nav">
+            <a href="#" class="rg-image-nav-prev">Previous Image</a>
+            <a href="#" class="rg-image-nav-next">Next Image</a>
+          </div>
+        {{/if}}
+        <div class="rg-image"></div>
+        <div class="rg-loading"></div>
+        <div class="rg-caption-wrapper">
+          <div class="rg-caption" style="display:none;">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </script>
 
   </head>
-  <body>
-    
+
+  <body>    
   <section class="hero">
       <div class="row">
         <div class="large-12 columns">
           <div class="main-wrapper">
-            <p><h1>Anton Dudarev</h1></p>
+            <p><center><h2>Anton Dudarev</h2></center></p>
             <h3>Styling</h3>
             <hr>
             <div class="row">
               <div class="large-6 columns large-centered">
                 <ul class="button-group even-4">
-                  <li><a href="#" class="button">GUI</a></li>
-                  <li><a href="#" class="button">Html</a></li>
-                  <li><a href="#" class="button">Build</a></li>
-                  <li><a href="#" class="button">Draw</a></li>                  
+                  <li><a href="#gui" class="button">GUI</a></li>
+                  <li><a href="#" class="button">WEB</a></li>
+                  <li><a href="#" class="button">BUILD</a></li>
+                  <li><a href="#" class="button">DRAW</a></li>                  
                 </ul>
               </div>
             </div>
@@ -202,9 +272,9 @@ footer p,footer a{
           <div class="black-box">
             <h2>Styling</h2></p>
             <p> Graphic design services.
-                Creating a sketch layouts, page-proofs (HTML/CSS), 
-                the embodiment of your desires in vector (CorelDraw) and bitmap editor (Adobe Photoshop). 
-                Freehand drawing and design skills and modeling (AutoCAD)
+                Creating a sketch layouts, page-proofs, 
+                the embodiment of your desires in vector and bitmap editor. 
+                Freehand drawing and design skills and modeling
             
             <p> Working designer since 2006, I have accumulated
                 decent knowledge and experience in this field,
@@ -222,189 +292,102 @@ footer p,footer a{
       </div>
     </section>
 
-    <p><center><h4>GUI</h4></center></p> 
 
-<div class="row"> 
-    <div class="large-3 columns">
-      <div class="panel">
-        <p><img src="img/gui/2.jpg"/></p>
-      </div>
-    </div>
 
-    <div class="large-3 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/3.jpg"/>
-        </p>
-      </div>
-    </div>
 
-    <div class="large-3 columns">
-      <div class="panel">
-        <p><img src="img/gui/4.jpg"/></p>
-      </div>
-    </div>
 
-    <div class="large-3 columns">
-      <div class="panel">
-        <p><img src="img/gui/5.jpg"/></p>
-      </div>
-    </div>
-</div> 
 
-<div class="row"> 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/7.jpg"/>
-        </p>
-      </div>
-    </div>
 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/8.jpg"/>
-        </p>
-      </div>
-    </div>    
-</div> 
 
-<div class="row"> 
-    <div class="large-4 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/9.jpg"/>
-        </p>
-      </div>
-    </div>
 
-    <div class="large-4 columns">
-      <div class="panel">
-        <p>
-          Our cooperation will be effective only
-          for you, but also help me to self-realization and
-          creative growth
-        </p>
-      </div>
-    </div>
 
-    <div class="large-4 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/10.jpg"/>
-        </p>
-      </div>
-    </div>    
-</div> 
 
-<div class="row"> 
-    <div class="large-4 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/11.jpg"/>
-        </p>
-      </div>
-    </div>
 
-    <div class="large-4 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/1.png"/>
-        </p>
-      </div>
-    </div>
-    
-    <div class="large-4 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/13.png"/>
-        </p>
-      </div>
-    </div>    
-</div> 
 
-<div class="row"> 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/14.png"/>
-        </p>
-      </div>
-    </div>
-    
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/15.png"/>
-        </p>
-      </div>
-    </div>      
-</div> 
 
-<div class="row"> 
-    <div class="large-12 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/16.png"/>
-        </p>
-      </div>
-    </div>    
-</div> 
+    <section class="hero-content">    
 
-<div class="row"> 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/20.jpg"/>
-        </p>
-      </div>
-    </div>    
+    <p><center><h3>GUI</h3></center></p> 
+    <p><center><h3>Adode Photoshop/CorelDraw</h3></center></p> 
 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/21.jpg"/>
-        </p>
-      </div>
-    </div>    
-</div> 
 
-<div class="row"> 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/17.jpg"/>
-        </p>
-      </div>
-    </div>    
 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/2.png"/>
-        </p>
-      </div>
-    </div>    
-</div> 
 
-<div class="row"> 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/18.jpg"/>
-        </p>
-      </div>
-    </div>    
+    <div class="container" id="gui">      
+      <div class="content">
+        <div id="rg-gallery" class="rg-gallery">
+          <div class="rg-thumbs">
+            <!-- Elastislide Carousel Thumbnail Viewer -->
+            <div class="es-carousel-wrapper">
+              <div class="es-nav">
+                <span class="es-nav-prev">Previous</span>
+                <span class="es-nav-next">Next</span>
+              </div>
+              <div class="es-carousel">
+                <ul>
+                  <li><a href="#"><img src="img/gui/thumbs/1.png" data-large="img/gui/1.png" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/2.png" data-large="img/gui/2.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/3.png" data-large="img/gui/3.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/4.png" data-large="img/gui/4.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/5.png" data-large="img/gui/5.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/6.png" data-large="img/gui/6.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/7.png" data-large="img/gui/7.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/8.png" data-large="img/gui/8.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/9.png" data-large="img/gui/9.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/10.png" data-large="img/gui/10.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/11.png" data-large="img/gui/11.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/12.png" data-large="img/gui/12.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/13.png" data-large="img/gui/13.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/14.png" data-large="img/gui/14.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/15.png" data-large="img/gui/15.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="img/gui/thumbs/16.png" data-large="img/gui/16.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>                  
+                </ul>
+              </div>
+            </div>
+            <!-- End Elastislide Carousel Thumbnail Viewer -->
+          </div><!-- rg-thumbs -->
+        </div><!-- rg-gallery -->        
+      </div><!-- content -->
+    </div><!-- container -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
 
-    <div class="large-6 columns">
-      <div class="panel">
-        <p>
-          <img src="img/gui/19.jpg"/>
-        </p>
-      </div>
-    </div>    
-</div> 
+      <div class="row"> 
+        <div class="large-6 columns">
+          <div class="panel">
+            <p>
+              <img src="img/gui/glavstroy.jpg"/>
+            </p>            
+          </div>
+        </div>    
+
+        <div class="large-6 columns">
+          <div class="panel">
+            <p>
+              <img src="img/gui/maket.jpg"/>
+            </p>
+          </div>
+
+          <div class="panel">
+            <p>
+              <img src="img/draw/1.jpg"/>
+            </p>
+          </div>
+
+          <div class="panel">
+            <p>
+              <img src="img/gui/f1.png"/>
+            </p>
+          </div>
+
+        </div>    
+      </div> 
+
+    </section>
+
 
 
 
@@ -414,38 +397,7 @@ footer p,footer a{
 
       
 
-      <p><center><h4>Draw</h4></center></p>  
-
-      <div class="row"> 
-        <div class="large-6 columns">
-          <div class="panel">
-            <p>
-              <img src="img/draw/1.jpg"/>
-            </p>
-          </div>
-        </div>    
-
-        <div class="large-6 columns">
-          <div class="panel">
-            <p>
-              <img src="img/draw/2.jpg"/>
-            </p>
-          </div>
-        </div>    
-      </div>     
-      
-      <div class="large-12 columns">        
-        <ul class="small-block-grid-8">
-          <li><a href="#"><img src="img/1_180x180.jpg"/></a></li>
-          <li><a href="#"><img src="img/2_180x180.jpg"/></a></li>
-          <li><a href="#"><img src="img/3_180x180.jpg"/></a></li>
-          <li><a href="#"><img src="img/4_180x180.jpg"/></a></li>
-          <li><a href="#"><img src="img/5_180x180.jpg"/></a></li>
-          <li><a href="#"><img src="img/6_180x180.jpg"/></a></li>
-          <li><a href="#"><img src="img/7_180x180.jpg"/></a></li>
-          <li><a href="#"><img src="img/8_180x180.jpg"/></a></li>
-        </ul>
-      </div>
+    
 
       <!--
       <p><center><h4>Picture</h4></center></p>   
