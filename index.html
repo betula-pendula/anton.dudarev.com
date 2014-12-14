@@ -1,456 +1,668 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-
-
-
-    <title>Anton M. Dudarev</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-    <meta name="description" content="Responsive Image Gallery with jQuery" />
-    <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="../favicon.ico"> 
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
-    
-
-    
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <!-- PAGE TITLE -->
+    <title>Biopshere | Вкусный кислородный коктейль</title>
+    <!-- MAKE IT RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- COLORS -->
     <style type="text/css">
-    
-    
-    body{
-      font-family:'Raleway',sans-serif;
-      font-size:18px;
-    } 
-
-    hr{
-      text-align:center;
-      margin:0 auto;
-      opacity:0.5;
-    }
-
-    ul{
-      text-transform:uppercase;
-    }    
-    ul.inline-list.right{
-      text-transform:none;
-    }
-    ul.inline-list.right a{
-      color:#000;
-    }
-    ul.inline-list.right a:hover{
-      color:rgba(0,0,0,0.5);
-    }
-
-    h1{
-      font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
-      font-size:32px;
-      color:#fff;
-      line-height:28px;
-      margin-top:16px;
-      margin-bottom:0px;
-      text-align:center;
-    }
-
-    h2{
-      font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
-      color:#fff;
-      font-size:36px;
-      line-height:34px;
-    }
-
-    h3{
-      font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
-      font-size:24px;
-      color:#fff;
-      line-height:10px;
-      text-align:center;
-      font-weight:500;
-      padding-bottom:10px;
-    }
-
-    h4{
-      font-family:'American Typewriter','Courier New',Courier,Monaco,mono;
-      color:#000;
-      font-size:28px;
-      padding-top:5px;
-    }
-
-    .columns.large-centered{
-      padding-left:5px;
-      padding-right:5px;
-    }
-
-    @media only screen and (max-width: 40em) {
-      .columns.large-centered{
-        font-size:13px;
-      }
-    }
-
-    @media only screen and (min-width: 40.063em) {
-      .columns.large-centered{
-        font-size:14px;
-      }
-    }
-
-    .about-box{
-      color:#fff;
-    }
-
-    .black-box{
-      background-color:rgba(0,0,0,0.55);
-      padding:35px;
-      font-weight:900;
-    }
-
-    .black-box p{
-      font-weight:900;
-    }
-
-    .secondary.small.button{
-      background-color:transparent;
-      color:#fff;
-      border:2px #fff solid;
-      border-radius:5px;
-      padding:15px 50px 15px 50px;
-      margin:0;
-    }
-
-    .secondary.small.button:hover{
-      background-color:rgba(255,255,255,0.5);
-    }
-
-    .row .main-wrapper{
-      color:#fff;
-    }
-
-    .about-content{
-      background-color:#fff;
-      box-shadow:2px 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .button-group li .button{
-      border:0!important;
-    }
-
-    .button{
-      -webkit-appearance:none;
-      background-color:transparent;
-      border-width:0;
-      text-align:center;
-      box-shadow:0 0 0;
-    }
-
-    .button:hover{
-      color:rgba(255,255,255,0.7);
-      background-color:transparent;
-    }
-
-    footer p,footer a{
-      font-size:14px;
-    }
-
-    .hero{
-      padding-bottom:50px;
-      background-image:url("img/1.jpg");
-      background-size:cover;
-      box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.2);
-    }
-
-    .hero-content{
-      padding-top:40px;
-      padding-bottom:40px;
-      background-color:black;
-    }
-
-    .panel{
-      margin:15px 0 15px 0;
-      box-shadow:2px 2px 10px rgba(0,0,0,0.2);
-      border:none;
-      padding:5px 5px 5px 5px;
-      background-color:white;
-    }
-
-    .large-4 img{
-      box-shadow:2px 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .radius.right.button{
-      color:#000;
-      border:2px #000 solid;
-      border-radius:5px;
-      padding:15px 50px 15px 50px;
-      margin:0;
-      font-size:0.8125em;
-    }
-
-    @media only screen and (min-width: 64.063em) {
-      .radius.right.button{
-        color:#000;border:2px #000 solid;
-        border-radius:5px;
-        padding:15px 50px 15px 50px;
-        margin-top:25px;
-        font-size:0.8125em;
-      }
-    }
-
-    @media only screen and (min-width: 40.063em) {
-      .radius.right.button{
-        color:#000;
-        border:2px #000 solid;
-        border-radius:5px;
-        padding:15px 50px 15px 50px;
-        margin-top:25px;
-        font-size:0.8125em;
-      }
-    }
-
-    .radius.right.button:hover{
-      background-color:rgba(0,0,0,0.1);
-    }
-    </style>
-
-    <noscript>
-      <style>
-        .es-carousel ul{
-          display:block;
-        }
-      </style>
-    </noscript>
-    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">  
-      <div class="rg-image-wrapper">
-        {{if itemsCount > 1}}
-          <div class="rg-image-nav">
-            <a href="#" class="rg-image-nav-prev">Previous Image</a>
-            <a href="#" class="rg-image-nav-next">Next Image</a>
-          </div>
-        {{/if}}
-        <div class="rg-image"></div>
-        <div class="rg-loading"></div>
-        <div class="rg-caption-wrapper">
-          <div class="rg-caption" style="display:none;">
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </script>
-
+    	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+		* * COLOR SHEME 1 #0DB4E9 (blue) #82b440 (green)
+		* * COLOR SHEME 2 #6BD6D6 #D66B6B
+		* * COLOR SHEME 3 #B782ED #B8ED82
+		* * COLOR SHEME 4 #917B54 #F7A516
+		* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+		.colored, 
+		a:hover,
+		.event a, 
+		.post a,
+		.section-content-colored .section-content .event-content a.btn:hover,
+		.section-content-colored .section-content .post-content a.btn:hover,
+		.section-full-colored,
+		.section a.btn:hover{
+			color: #82b440;
+		}
+		.section-content-colored .section-content .event-content a.btn:hover,
+		.section-content-colored .section-content .post-content a.btn:hover,
+		.section a.btn:hover,
+		.section-image a.btn.btn-donation,
+		#menu a.btn-success{
+			border-color: #82b440;
+		}
+		.section-full-colored,
+		.section-content-colored .section-content,
+		.section a.btn,
+		.section-full-colored .section-content,
+		.section-content-colored .section-content .event-content a.btn,
+		.section-content-colored .section-content .post-content a.btn,
+		.section-image a.btn.btn-donation,
+		#single-page .section-header,
+		#menu a.btn-success{
+			background-color: #82b440;
+		}
+		.section-content-colored.with-arrow:after,
+		.section-full-colored.with-arrow:after{
+			border-top-color: #82b440;
+		}
+		a,
+		.section-content-colored.color2 .section-content .event-content a.btn:hover,
+		.section-content-colored.color2 .section-content .post-content a.btn:hover{
+			color: #0DB4E9;
+		}
+		.is-sticky #navigation, 
+		.mean-container .mean-nav ul,
+		.pace .pace-progress{
+			background-color: #0DB4E9;
+		}
+		.pace .pace-progress-inner {
+		  box-shadow: 0 0 10px #0DB4E9, 0 0 5px #0DB4E9;
+		}
+		.pace .pace-activity {
+		  border-top-color: #0DB4E9;
+		  border-left-color: #0DB4E9;
+		}
+		.section-content-colored.color2 .section-content .event-content a.btn,
+		.section-content-colored.color2 .section-content .post-content a.btn,
+		.section-content-colored.color2 .section-content{
+			background-color: #0DB4E9;
+		}
+		.section-content-colored.color2 .event-content a.btn:hover,
+		.section-content-colored.color2 .post-content a.btn:hover{
+			border-color: #0DB4E9;
+		}
+		.section-content-colored.color2.with-arrow:after,
+		.section-full-colored.color2.with-arrow:after{
+			border-top-color: #0DB4E9;
+		}
+   </style>
+    <!-- MAIN STYLE -->
+    <link href="style.css" rel="stylesheet" media="screen">
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
   </head>
+  <!-- START BODY -->
+  <body>
+	<div id="page">
+		<!-- START MAIN CONTAINER -->
+		<div id="mean-container">
+		
+			<!-- START NAVIGATION -->
+			<nav id="navigation">
+				<div class="container">
+					<!-- LOGO GOES HERE -->
+					<a href="#" id="logo"><img src="images/logo.png" alt="Logo Image"></a>
+					<!-- MENU -->
+					<nav>
+						<ul id="menu">
+							<li><a href="#project">Торговые точки</a></li>
+							<li><a href="#team">Готовый бизнес</a></li>
+							<li><a href="#services">В школах и садиках</a></li>
+							<li><a href="#gallery">Дома и в офисе</a></li>							
+							<li><a href="#blog">Отзывы</a></li>
+							<li><a href="#contact">Контакты</a></li>
+							<!--<li><a href="#donation" class="btn btn-success">Donation</a></li>-->
+						</ul>
+					</nav>
+				</div>
+			</nav>
+			<!-- END NAVIGATION -->
+			
+			<!-- START PROJECT SECTION -->
+			<section id="project" class="section" >
+				<span class="sequence-prev" ></span>
+				<span class="sequence-next" ></span>
+	            <ul class="sequence-canvas">
+	            	<li class="animate-in" style="background-image: url('images/slider/1.jpg');">
+		            	<div class="slide-content">
+			            	<h1>Spoom</h1>
+			            	<h2>Вкусный кислородный коктейль - выгодный бизнес и укрепление здоровья</h2>
+		            	</div>
+	            	</li>
+	            	<li style="background-color: #82b440;">
+		            	<div class="slide-content">
+			            	<h1>Бизнес</h1>	            	
 
-  <body>    
-  <section class="hero">
-      <div class="row">
-        <div class="large-12 columns">
-          <div class="main-wrapper">
-            <p><center><h2>Anton Dudarev</h2></center></p>
-            <h3>Styling</h3>
-            <hr>
-            <div class="row">
-              <div class="large-6 columns large-centered">
-                <ul class="button-group even-4">
-                  <li><a href="#gui" class="button">GUI</a></li>
-                  <li><a href="#" class="button">WEB</a></li>
-                  <li><a href="#" class="button">BUILD</a></li>
-                  <li><a href="#" class="button">DRAW</a></li>                  
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 columns about-box">
-          <div class="black-box">
-            <h2>Styling</h2></p>
-            <p> Graphic design services.
-                Creating a sketch layouts, page-proofs, 
-                the embodiment of your desires in vector and bitmap editor. 
-                Freehand drawing and design skills and modeling
-            
-            <p> Working designer since 2006, I have accumulated
-                decent knowledge and experience in this field,
-                which allows me to do for you quality
-                product
+							<div class="row">	
+							<!-- CONTACT TEXT -->
+							<div class="col-md-6">
+								<label class="control-label">
+								Хотите начать бизнес по производству и продаже коктейлей через 1 день? Или просто укрепить здоровье?
+								</br></br><h2>Получите бесплатную консультацию
+								</label>
+							</div>
+							<div class="col-md-6">
+								<!-- CONTACT FORM -->
+				                <form class="form-horizontal" method="post" action="index.php" id="form">
+				                  <div class="form-group">
+				                    <label for="contact_name" class="col-lg-2 control-label">Имя</label>
+				                    <div class="col-lg-10">
+				                      <input type="text" class="form-control" name="contact_name">
+				                    </div>
+				                  </div>
+				                  <div class="form-group">
+				                    <label for="contact_email" class="col-lg-2 control-label">Тел.</label>
+				                    <div class="col-lg-10">
+				                      <input type="email" class="form-control" name="contact_email">
+				                    </div>
+				                  </div>
+				                  
+				                  <a href="#donation" class="btn btn-default center">Интересует старт бизнеса за 1 день</a></br>
+				                  					                 
+				                </form>				                
+							</div>
+						</div>	
+		            </div>
+	            	</li>
+	            	<li style="background-color: #0DB4E9;">
+		            	<div class="slide-content">
+			            	<h1>Здоровье</h1>
+			            	<div class="center">
+			            		<img src="images/slider/funder.jpg" class="pull-left" alt="image in slider slide">
+				            	<h2>Кислородный коктейль незаменим для жителей мегаполисов!</h2></br></br>
+				            	<p>Восполняет нехватку кислорода. Заменяет 2 часа прогулки по лесу. Некогда заняться здоровьем, выезжать за город, дышать свежим воздухом? 
+				            	Кислородный коктейль – быстрый помощник.
+				            	</p>
+								<a href="#" class="btn btn-twitter">Хочу укрепить здоровье</a>
+			            	</div>
+		            	</div>
+	            	</li>
+	            </ul>
+            	<ul class="sequence-pagination">
+					<li>Spoom</li>
+					<li>Бизнес</li>
+					<li>Здоровье</li>
+				</ul>
+			</section>
+			<!-- END PROJECT SECTION -->
+		
+			<!-- START TEAM SECTION -->
+			<section id="team" class="center section with-arrow">
+				<!-- SECTION TITLE -->
+				<div class="section-header">
+					<h1>Готовый бизнес «с нуля» за 1 день</h1>
+					<hr>
+				</div>
+				<!-- SECTION CONTENT -->
+				<div class="section-content section-no-top-padding">
+					<div class="container">
+						<h3>Хотите идти в ногу со временем? В столице кислородные коктейли уже завоевали популярность и стали обязательным атрибутом многих заведений, но эта ниша бизнеса еще не заполнена. А в некоторых областях РФ вообще практически нет конкурентов.			
+						</h3>
+						<a href="#contact" class="btn btn-default">Свяжитесь с нами</a>
+					</div>
+				</div>
+			</section>
+			<!-- END TEAM SECTION -->
+			
+			<!-- START SERVICES SECTION -->
+			<section id="services" class="section section-full-colored">
+				<!-- SECTION TITLE -->
+				<div class="section-header">
+					<h1>Сделайте за несколько секунд самый вкусный из полезных напитков.</h1>
+					<hr>
+				</div>
+				<!-- SECTION CONTENT -->
+				<div class="section-content">
+					<div class="container">
+						<div class="services-slider flexslider">
+		                    <ul class="slides">
+								<!-- START SERVICE -->
+		                        <li>
+		                            <div class="slide">
+										<span class="icon icon-large icon-lightning"></span>
+										<h3>Тонизирующий эффект</h3>
+										<p>Устранение хронической усталости, стрессов, депрессии. Повышение работоспособности.</p>
+									</div>
+								</li>
+								<!-- END SERVICE -->
+		                        <li>
+		                            <div class="slide">
+										<span class="icon icon-large icon-leaf"></span>
+										<h3>Витамины</h3>
+										<p>(основа – соки, морсы и spoom-смесь с витамином С). Витамины в турбо-скоростном режиме попадают в организм и быстро усваиваются.</p>
+									</div>
+								</li>
+		                        <li>
+		                            <div class="slide">
+										<span class="icon icon-large  icon-aid"></span>
+										<h3>Польза для здоровья.</h3>
+										<p>Устранение кислородного голодания, в том числе гипоксии плода у беременных. Улучшение пищеварения. Нормализация сна, Улучшение работы сердца.</p>
+									</div>
+								</li>
+								<li>
+		                            <div class="slide">
+										<span class="icon icon-large  icon-smiley"></span>
+										<h3>Такой родной</h3>
+										<p>Кислородные коктейли еще вкуснее, чем любимые с детства молочные коктейли с пузырьками.</p>
+									</div>
+								</li>		                       
+							</ul>
+						</div>
+						<!-- SECTION BUTTON -->
+						<div class="center">
+							<a href="#events" class="btn btn-default">Как это работает?</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END SERVICES SECTION -->
+			
+			<!-- START GALLERY SECTION -->
+			<section id="gallery" class="section">
+				<!-- SECTION TITLE -->
+				<div class="section-header with-arrow">
+					<h1>Почему выгодно покупать у нас?!</h1>
+					<hr>
+				</div>
+				<!-- SECTION CONTENT -->
+				<div class="content-section">
+					<div id="gallery-slider">
+		                <ul class="slides">
+							<!-- SLIDE OF 2 GALLERY ITEMS -->
+		                    <li>
+		                    	<!-- FIRST ITEM GALLERY -->
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/1.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Мы – производители. Получите выгодные цены на спум-смеси и оборудование из первых рук</span>
+							    		<img src="images/gallery/1.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<!-- SECOND ITEM GALLERY -->
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/2.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Более 10 лет опыта и 30 тысяч клиентов на территории РФ</span>
+							    		<img src="images/gallery/2.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>
+							<!-- END SLIDE -->
+		                    <li>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/3.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Предоставляем гарантию.</span>
+							    		<img src="images/gallery/3.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/4.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Помогаем открыть бизнес «под ключ»: от ингредиентов до рекламы.</span>
+							    		<img src="images/gallery/4.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>
+		                    <li>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/5.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Оборудование пожаробезопасно</span>
+							    		<img src="images/gallery/5.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/6.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Длительный срок службы. Ресурса оборудования хватит более чем на 10 лет</span>
+							    		<img src="images/gallery/6.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>
+		                    <li>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/7.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Клиенты довольны. 62% клиентов повторно заказывают у нас оборудование, т.к. открывают новые точки продаж
+						    			</span>
+							    		<img src="images/gallery/7.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/8.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Бесплатная доставка по всей России.</span>
+							    		<img src="images/gallery/8.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>
+		                    <li>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/9.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Быстро и бесплатно научим пользоваться оборудованием.
+						    			</span>
+							    		<img src="images/gallery/9.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/10.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Увеличивайте прибыль без затрат на рекламу. Зарабатывайте на уже имеющихся в баре/клубе/салоне клиентах.
+						    			</span>
+							    		<img src="images/gallery/10.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>				                    
+		                </ul>
+					</div>
+				</div>
+			</section>
+			<!-- END GALLERY SECTION -->
+			
+			<!-- START EVENTS SECTION -->
+			<section id="events" class="section section-content-colored with-arrow color2">
+				<!-- SECTION TITLE -->
+				<div class="section-header with-arrow">
+					<h1>Простая формула коктейля <span class="colored">Spoom</span> с волшебной пенкой.</h1>
+					<hr>
+				</div>
+				<!-- SECTION CONTENT -->
+				<div class="section-content">
+					<div class="container">
+						<div class="flexslider events-slider">
+			                <ul class="slides">
+			                	<!-- START EVENT -->
+			                    <li>
+			                        <div class="slide">
+										<div class="event">
+											<!-- EVENT FEATURED IMAGE -->
+											<div class="event-header">
+												<a href="single-event.html">
+													<img src="images/event/1.jpg" alt="Event cover">
+												</a>
+											</div>
+											<!-- START CONTENT -->
+											<div class="event-content">
+												<!-- EVENT TITLE -->
+												<h3>Кислородный концентратор</h3>
+												<!-- EVENT DATAS -->												
+												<!-- EVENT DESCRIPTION -->
+												<p>Не нужно никаких баллонов! (вырабатывает кислород из окружающего воздуха)</p>
+												<div class="center">
+													<a href="single-event.html" class="btn btn-default">Узнать больше</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- END EVENT -->
+			                    <li>
+			                        <div class="slide">
+										<div class="event">
+											<div class="event-header">
+												<a href="single-event.html">
+													<img src="images/event/2.jpg" alt="Event cover">
+												</a>
+											</div>
+											<div class="event-content">
+												<h3>Кислородный миксер</h3>												
+												<p>взбивает ингредиенты сразу в стаканчике, из которого будете пить</p>
+												<div class="center">
+													<a href="single-event.html" class="btn btn-default">Узнать больше</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+			                    <li>
+			                        <div class="slide">
+										<div class="event">
+											<div class="event-header">
+												<a href="single-event.html">
+													<img src="images/event/3.jpg" alt="Event cover">
+												</a>
+											</div>
+											<div class="event-content">
+												<h3>Ингредиенты:</h3>												
+												<p><span class="colored">сок</span> (нектар, морс или травяной настой) и <span class="colored">spoom-смесь с витамином С</span></p>
+												<div class="center">
+													<a href="single-event.html" class="btn btn-default">Узнать больше</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+			                    <li>
+			                        <div class="slide">
+										<div class="event">
+											<div class="event-header">
+												<a href="single-event.html">
+													<img src="images/event/4.jpg" alt="Event cover">
+												</a>
+											</div>
+											<div class="event-content">
+												<h3>Результат</h3>												
+												<p>Пол-литровая порция коктейля-мусса с густой пенкой</p>
+												<div class="center">
+													<a href="single-event.html" class="btn btn-default">Узнать больше</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END EVENTS SECTION -->
+			
+			<!-- START BLOG SECTION -->
+			<section id="blog" class="section with-arrow section-content-colored">
+				<!-- SECTION TITLE -->
+				<div class="section-header with-arrow">
+					<h1>Клиенты о нас</h1>
+					<hr>
+				</div>
+				<!-- SECTION CONTENT -->
+				<div class="section-content">
+					<div class="container">
+						<div class="flexslider posts-slider">
+		                    <ul class="slides">
+		                    	<!-- START BLOG POST -->
+		                        <li>
+		                            <div class="slide">
+										<div class="post post-normal">
+											<!-- FEATURED IMAGE -->
+											<div class="post-header">
+												<a href="single-blog.html">
+													<img src="images/blog/1.jpg" alt="Blog cover">
+												</a>
+											</div>
+											<div class="post-content">
+												<!-- TITLE -->
+												<h3>Елена Пронина</h3>
+												<!-- DATE -->
+												<div class="post-data">
+													<p>фитнес-клуб, г. Санкт-Петербург.</p>
+												</div>
+												<!-- CONTENT -->
+												<p>
+													Установили комплект коктейльного оборудования «для торговых точек» в фитнес-клубе. Боялись, что начав покупать коктейли, клиенты станут заказывать меньше другие напитки. На данный момент результатом довольны. Затраты окупились в тот же месяц...
+												</p>
+												<div class="center">
+													<a href="single-blog.html" class="btn btn-default">Прочитать</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+		                    	<!-- END BLOG POST -->
+		                        <li>
+		                            <div class="slide">
+										<div class="post post-normal">
+											<div class="post-header">
+												<a href="single-blog.html">
+													<img src="images/blog/2.jpg" alt="Blog cover">
+												</a>
+											</div>
+											<div class="post-content">
+												<h3>Сергей Беляев</h3>
+												<div class="post-data">
+													<p>г. Москва</p>
+												</div>
+												<p>
+													Купил «бизнес под ключ». Арендовал практически на входе один метр площади в развлекательном центре. Оно того стоило. Народ повалил, особенно по выходным и когда идут сеансы фильмов. Конкурентов много, но пока народ ждет фильм или пока друзья ждут друг друга – коктейли берут...
 
-            <p> Our cooperation will be effective only
-                for you, but also help me to self-realization and
-                creative growth
-            </p> 
-            <p>Interested?</p>
-            <a href="#" class="secondary small button">More →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="hero-content">    
-
-    <p><center><h3>GUI</h3></center></p> 
-    <p><center><h3>Adode Photoshop/CorelDraw</h3></center></p> 
-
-
-
-
-    <div class="container" id="gui">      
-      <div class="content">
-        <div id="rg-gallery" class="rg-gallery">
-          <div class="rg-thumbs">
-            <!-- Elastislide Carousel Thumbnail Viewer -->
-            <div class="es-carousel-wrapper">
-              <div class="es-nav">
-                <span class="es-nav-prev">Previous</span>
-                <span class="es-nav-next">Next</span>
-              </div>
-              <div class="es-carousel">
-                <ul>
-                  <li><a href="#"><img src="img/gui/thumbs/1.png" data-large="img/gui/1.png" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/2.png" data-large="img/gui/2.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/3.png" data-large="img/gui/3.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/4.png" data-large="img/gui/4.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/5.png" data-large="img/gui/5.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/6.png" data-large="img/gui/6.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/7.png" data-large="img/gui/7.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/8.png" data-large="img/gui/8.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/9.png" data-large="img/gui/9.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/10.png" data-large="img/gui/10.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/11.png" data-large="img/gui/11.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/12.png" data-large="img/gui/12.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/13.png" data-large="img/gui/13.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/14.png" data-large="img/gui/14.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/15.png" data-large="img/gui/15.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-                  <li><a href="#"><img src="img/gui/thumbs/16.png" data-large="img/gui/16.png" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>                  
-                </ul>
-              </div>
-            </div>
-            <!-- End Elastislide Carousel Thumbnail Viewer -->
-          </div><!-- rg-thumbs -->
-        </div><!-- rg-gallery -->        
-      </div><!-- content -->
-    </div><!-- container -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
-    <script type="text/javascript" src="js/gallery.js"></script>
-
-      <div class="row"> 
-        <div class="large-6 columns">
-          <div class="panel">
-            <p>
-              <img src="img/gui/glavstroy.jpg"/>
-            </p>            
-          </div>
-        </div>    
-
-        <div class="large-6 columns">
-          <div class="panel">
-            <p>
-              <img src="img/gui/maket.jpg"/>
-            </p>
-          </div>
-
-          <div class="panel">
-            <p>
-              <img src="img/draw/1.jpg"/>
-            </p>
-          </div>
-
-          <div class="panel">
-            <p>
-              <img src="img/gui/f1.png"/>
-            </p>
-          </div>
-
-        </div>    
-      </div> 
-
-    </section>
-
-
-
-
-  
-    <section class="hero-content"> 
-    <div class="row">             
-
-      
-
-    
-
-      <!--
-      <p><center><h4>Picture</h4></center></p>   
-
-      <div class="large-12 columns">        
-        <ul class="small-block-grid-2">
-          <li><a href="#"><img src="img/1_720x720.jpg"/></a></li>
-          <li><a href="#"><img src="img/2_720x720.jpg"/></a></li>
-          <li><a href="#"><img src="img/3_720x720.jpg"/></a></li>
-          <li><a href="#"><img src="img/4_720x720.jpg"/></a></li>          
-        </ul>
-      </div>
-    -->
-          
-    </div>
-    </section>
-    
-    
-     
-    <div class="row">
-      <div class="large-12 columns">
-      
-        <div class="panel">
-              
-          <div class="row">
-            <div class="large-9 columns">
-              <h4>Get in touch!</h4>
-              <p>We're open 9am - 5pm, Monday through Saturdays.</p>
-            </div>
-            <div class="large-3 columns">
-              <a href="#" class="radius button right">Contact Us</a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <footer>
-      <div class="row">
-        <div class="large-6 columns">
-          <p>© Anton Dudarev</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
-    
+												</p>
+												<div class="center">
+													<a href="single-blog.html" class="btn btn-default">Прочитать</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+		                        <li>
+		                            <div class="slide">
+										<div class="post post-normal">
+											<div class="post-header">
+												<a href="#">
+													<img src="images/blog/3.jpg" alt="Blog cover">
+												</a>
+											</div>
+											<div class="post-content">
+												<h3>Андрей Мельников</h3>
+												<div class="post-data">
+													<p>Московская область</p>
+												</div>
+												<p>Я организовал приготовление кислородных коктейлей в семи детских садах и в паре школ. Думал, что директора не захотят идти на контакт, но многие из них согласились. Кто-то подарок для школы попросил. Кто-то небольшие отчисления «на хознужды». Сперва родители спрашивали об ингредиентах... 
+												</p>
+												<div class="center">
+													<a href="single-blog.html" class="btn btn-default">Прочитать</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+		                        <li>
+		                            <div class="slide">
+										<div class="post post-normal">
+											<div class="post-header">
+												<a href="single-blog.html">
+													<img src="images/blog/4.jpg" alt="Blog cover">
+												</a>
+											</div>
+											<div class="post-content">
+												<h3>Елена</h3>
+												<div class="post-data">
+													<p>г. Тула</p>
+												</div>
+												<p>
+													Первый раз попробовала кислородный коктейль Spoom, когда была беременная. Так понравилось, что купила «домашний вариант» оборудования. Беременность протекала тяжело. Токсикоз. Гипоксия плода. Когда пила коктейль, мне становилось легче. Старалась есть его сразу ложками...
+												</p>
+												<div class="center">
+													<a href="single-blog.html" class="btn btn-default">Прочитать</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								
+			                    <li>
+			                        <div class="slide">
+										<div class="load-more">
+											<div class="content">
+												<a href="#" title="load more">
+													<span class="icon icon-large icon-plus"></span>
+													<h3>Добавит отзыв</h3>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END BLOG SECTION -->			
+			
+			<!-- START CONTACT SECTION -->
+			<section id="contact" class="section with-arrow">
+				<!-- SECTION TITLE -->
+				<div class="section-header with-arrow">
+					<h1>Будем рады сотрудничеству</h1>
+					<hr>
+				</div>
+				<!-- SECTION CONTENT -->
+				<div class="section-content">
+					<div class="container">
+						<div class="row">	
+							<!-- CONTACT TEXT -->
+							<div class="col-md-6">
+								<p>Быстро и бесплатно научим пользоваться оборудованием. Договоримся о встрече или обучим дистанционно.
+								</p>
+								<!-- SOCIAL BUTTTONS -->
+								<ul class="social-list">
+									<li><a href="#" class="btn btn-facebook"><span class="icon icon-facebook"></span> Facebook</a></li>
+									<li><a href="#" class="btn btn-twitter"><span class="icon icon-twitter"></span> Twitter</a></li>
+									<li><a href="#" class="btn btn-google"><span class="icon icon-google-plus"></span> Google +</a></li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<!-- CONTACT FORM -->
+				                <form class="form-horizontal" method="post" action="index.php" id="form">
+				                  <div class="form-group">
+				                    <label for="contact_name" class="col-lg-2 control-label">Имя</label>
+				                    <div class="col-lg-10">
+				                      <input type="text" class="form-control" name="contact_name">
+				                    </div>
+				                  </div>
+				                  <div class="form-group">
+				                    <label for="contact_email" class="col-lg-2 control-label">Email</label>
+				                    <div class="col-lg-10">
+				                      <input type="email" class="form-control" name="contact_email">
+				                    </div>
+				                  </div>
+				                  <div class="form-group">
+				                    <label for="contact_textarea" class="col-lg-2 control-label">Сообщение</label>
+				                    <div class="col-lg-10">
+				                      <textarea class="form-control" rows="3" name="contact_textarea"></textarea>
+				                    </div>
+				                  </div>
+				                  <div class="form-group">
+				                    <div class="col-lg-offset-2 col-lg-10">
+				                      <input type="hidden" name="submitted" id="submitted" value="true" />
+				                      <button type="submit" class="btn btn-default btn-send" name="submitted"><i data-icon="&#xe00d;"></i>Отправить</button>
+				                    </div>
+				                  </div>
+				                </form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END CONTACT SECTION -->
+			
+			<!-- START FOOTER SECTION -->
+			<section id="footer" class="section section-full-colored">
+				<div class="section-content center">
+					<p><a href="#">anton.dudarev.com</a></p>
+				</div>
+			</section>
+			<!-- END FOOTER SECTION -->
+		
+		</div>
+		<!-- END MAIN CONTAINER -->
+		
+		<!-- PAGE LOADING-->
+		<div id="loader"></div>
+  	</div>
+    <!-- SCRIPTS -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/alert.js"></script>
+	<script src="js/jquery.sequence-min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
+  <!-- END BODY -->
 </html>
