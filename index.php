@@ -1,9 +1,59 @@
+<?php
+//set your email here:
+$yourEmail = 'youremail@something.com';
+/*
+ * CONTACT FORM
+ */
+//If the form is submitted
+if(isset($_POST['submitted'])) { 
+    //Check to make sure that the name field is not empty
+    if($_POST['contact_name'] === '') { 
+            $hasError = true;
+    } else {
+            $name = $_POST['contact_name'];
+    }
+
+    //Check to make sure sure that a valid email address is submitted
+    if($_POST['contact_email'] === '')  { 
+            $hasError = true;
+    } else if (!preg_match("/^[a-z0-9]+([_\\.-][a-z0-9]+)*@([a-z0-9]+([\.-][a-z0-9]+)*)+\\.[a-z]{2,}$/i", $_POST['contact_email'])) {
+            $hasError = true;
+    } else {
+            $email = $_POST['contact_email'];
+    }
+
+    //Check to make sure comments were entered	
+    if($_POST['contact_textarea'] === '') {
+            $hasError = true;
+    } else {
+            if(function_exists('stripslashes')) {
+                    $comments = stripslashes($_POST['contact_textarea']);
+            } else {
+                    $comments = $_POST['contact_textarea'];
+            }
+    }
+
+    //If there is no error, send the email
+    if(!isset($hasError)) {
+
+            $emailTo = $yourEmail;
+            $subject = "Message From Your Website";
+            $body = "Name: $name \n\nEmail: $email \n\nComments: $comments";
+            $headers = 'From : my site <'.$emailTo.'>' . "\r\n" . 'answer to : ' . $email;
+
+            mail($emailTo, $subject, $body, $headers);
+
+            $emailSent = true; 
+    }
+    
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <!-- PAGE TITLE -->
-    <title>Anton Dudarev | Styling</title>
+    <title>Juntos - Charity & Association Template</title>
     <!-- MAKE IT RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
@@ -93,6 +143,22 @@
   <!-- START BODY -->
   <body>
 	<div id="page">
+		<!-- PHP ALERTS FROM THE FORMS -->
+	  <?php if(isset($emailSent) && $emailSent == true) { ?>
+	        <div class="alert-success alert" >
+	            <a class="close icon" data-dismiss="alert" href="#"><span class="icon icon-close"></span></a>
+	            <strong><?php echo'Thanks, '. $name  .'.';?></strong>
+	                <p><?php echo'Your message was sent successfully. You will receive a response shortly.'; ?></p>
+	        </div><!-- .alert -->
+	    <?php } ?>
+	    <?php if(isset($hasError) && $hasError == true) { ?>
+	        <div class="alert-danger alert">
+	            <a class="close icon" data-dismiss="alert" href="#"><span class="icon icon-close"></span></a>
+	            <strong><?php echo'Sorry,'; ?></strong>
+	                <p><?php echo'Your message can\'t be send...check if your email is correct otherwise a field is missing...'; ?></p>
+	        </div><!-- .alert -->
+	    <?php } ?>
+	    <!-- END ALERT -->
 		<!-- START MAIN CONTAINER -->
 		<div id="main-container">
 		
@@ -103,13 +169,15 @@
 					<a href="#" id="logo"><img src="images/logo.png" alt="Logo Image"></a>
 					<!-- MENU -->
 					<nav>
-						<ul id="menu">													
+						<ul id="menu">
+							<li><a href="#project">Project</a></li>
+							<li><a href="#team">Team</a></li>
 							<li><a href="#services">Services</a></li>
 							<li><a href="#gallery">Gallery</a></li>
-							<li><a href="#events">Project</a></li>
-							<!--<li><a href="#blog">Blog</a></li>-->
+							<li><a href="#events">Events</a></li>
+							<li><a href="#blog">Blog</a></li>
 							<li><a href="#contact">Contact</a></li>
-							<!--<li><a href="#donation" class="btn btn-success">Donation</a></li>-->
+							<li><a href="#donation" class="btn btn-success">Donation</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -123,51 +191,42 @@
 	            <ul class="sequence-canvas">
 	            	<li class="animate-in" style="background-image: url('images/slider/1.jpg');">
 		            	<div class="slide-content">
-			            	<h1>Styling</h1>
-			            	<h3>
-			            		Graphic design services. Creating a sketch layouts, page-proofs, the embodiment of your desires in vector and bitmap editor. Freehand drawing and design skills and modeling
-			            	</h3>
+			            	<h1>Welcome !</h1>
+			            	<h3>We're #ASSOCIATION-NAME, a young Charity Association ! We build School in #COUNTRY to globalize knowledge and education... 
+							(you can add here any kind of content such as description, button, images...)</h3>
 		            	</div>
 	            	</li>
 	            	<li style="background-color: #82b440;">
 		            	<div class="slide-content">
-			            	<h1>About me</h1>
-			            	<h3>
-			            		Working designer since 2006, I have accumulated decent knowledge and experience in this field, which allows me to do for you quality product
-			            	</h3>
-			            	
-							<div class="pull-left">
-								<a href="#donation" class="btn btn-default indent">GUI</a>
+			            	<h1>Our Project</h1>
+			            	<h3>Describe here your project in a few sentences, to explain to your visitors what you're doing and what you need their help, 
+			            	or maybe something else </h3>
+			            	<div class="progress progress-striped">
+							  <div class="progress-bar progress-bar-success" style="width: 80%">
+							    <span class="sr-only">Fundraising to realize our Amazing project</span>
+							  </div>
 							</div>
-
-							<div class="pull-left">
-								<a href="#donation" class="btn btn-default indent">WEB</a>
-							</div>
-
-							<div class="pull-left">
-								<a href="#donation" class="btn btn-default indent">BUILD</a>
-							</div>
-
-							<div class="pull-left">
-								<a href="#donation" class="btn btn-default indent">DRAW</a>
+							<div class="pull-right">
+								<a href="#donation" class="btn btn-default">Help us with a Donation</a>
 							</div>
 		            	</div>
 	            	</li>
 	            	<li style="background-color: #0DB4E9;">
 		            	<div class="slide-content">
-			            	<h1>Why am I</h1>
+			            	<h1>Who Is Behind</h1>
 			            	<div class="center">
 			            		<img src="images/slider/funder.jpg" class="pull-left" alt="image in slider slide">
-				            	<h3>Trusting me</h3>
-				            	<p>Our cooperation will be effective only for you, but also help me to self-realization and creative growth</p>			
+				            	<h3>Funder Name</h3>
+				            	<p>Few words about the creation, the ideas, biography of the funder...</p>
+								<a href="#" class="btn btn-twitter"><span class="icon icon-twitter"></span> Twitter</a>
 			            	</div>
 		            	</div>
 	            	</li>
 	            </ul>
             	<ul class="sequence-pagination">
 					<li>Welcome</li>
-					<li>About me</li>
-					<li>Why am I</li>
+					<li>Our Project</li>
+					<li>Who is behind</li>
 				</ul>
 			</section>
 			<!-- END PROJECT SECTION -->
@@ -176,26 +235,27 @@
 			<section id="team" class="center section with-arrow">
 				<!-- SECTION TITLE -->
 				<div class="section-header">
-					<h1>Who I am</h1>
+					<h1>Who We Are</h1>
 					<hr>
 				</div>
 				<!-- SECTION CONTENT -->
 				<div class="section-content section-no-top-padding">
 					<div class="container">
-						<h3>If you need a graphic design and you need the result, I will be glad to meet you. I GUI designer and the environment.
+						<h3>We are <span class="colored">64</span> volunteers, All members of <span class="colored">Association Name</span>. Our association find funds,
+						in the purpose of fighting <span class="colored">Your Causes here</span>. We already performed <span class="colored">17</span> projects in 5 continents 
+						during the last <span class="colored">5 years</span>.
 						</h3>
-						<a href="#contact" class="btn btn-default">Get In Touch</a>						
+						<a href="#contact" class="btn btn-default">Get In Touch</a>
 					</div>
-					<div id="services"></div>
-				</div>				
+				</div>
 			</section>
 			<!-- END TEAM SECTION -->
 			
 			<!-- START SERVICES SECTION -->
-			<section class="section section-full-colored">
+			<section id="services" class="section section-full-colored">
 				<!-- SECTION TITLE -->
 				<div class="section-header">
-					<h1>Here's what I know how to</h1>
+					<h1>What We Do</h1>
 					<hr>
 				</div>
 				<!-- SECTION CONTENT -->
@@ -206,38 +266,38 @@
 								<!-- START SERVICE -->
 		                        <li>
 		                            <div class="slide">
-										<span class="icon icon-large icon-code"></span>
-										<h3>Web</h3>
-										<p>Draw a beautiful and user-friendly design websites</p>
+										<span class="icon icon-large icon-glass"></span>
+										<h3>Reception</h3>
+										<p>Here it's just an example of the activities that you can do with your charity to get funds. Or something else...</p>
 									</div>
 								</li>
 								<!-- END SERVICE -->
 		                        <li>
 		                            <div class="slide">
-										<span class="icon icon-large icon-html5"></span>
-										<h3>HTML/CSS</h3>
-										<p>Validity and cross-browser typeset sites in HTML and CSS, do all sorts of interesting things on the JavaScript / jQuery</p>
+										<span class="icon icon-large icon-users2"></span>
+										<h3>Babysitting</h3>
+										<p>Here it's just an example of the activities that you can do with your charity to get funds. Or something else...</p>
 									</div>
 								</li>
 		                        <li>
 		                            <div class="slide">
-										<span class="icon icon-large  icon-menu2"></span>
-										<h3>App/GUI</h3>
-										<p>I develop Graphical user interface for mobile applications and games</p>
+										<span class="icon icon-large  icon-leaf"></span>
+										<h3>Gardening</h3>
+										<p>Here it's just an example of the activities that you can do with your charity to get funds. Or something else...</p>
 									</div>
 								</li>
 		                        <li>
 		                            <div class="slide">
-										<span class="icon icon-large icon-print"></span>
-										<h3>Print design</h3>
-										<p>Develop a logo and corporate identity</p>
+										<span class="icon icon-large icon-gift"></span>
+										<h3>Gift Wrapping</h3>
+										<p>Here it's just an example of the activities that you can do with your charity to get funds. Or something else...</p>
 									</div>
 								</li>
 		                        <li>
 		                            <div class="slide">
-										<span class="icon icon-large icon-pencil2"></span>
-										<h3>Draw</h3>
-										<p>Create illustrations and sketch future projects. I draw by hand painting</p>
+										<span class="icon icon-large icon-coin"></span>
+										<h3>Sale</h3>
+										<p>Here it's just an example of the activities that you can do with your charity to get funds. Or something else...</p>
 									</div>
 								</li>
 							</ul>
@@ -247,13 +307,12 @@
 							<a href="#events" class="btn btn-default">Our Diary</a>
 						</div>
 					</div>
-					<div id="gallery"></div>
 				</div>
 			</section>
 			<!-- END SERVICES SECTION -->
 			
 			<!-- START GALLERY SECTION -->
-			<section class="section">
+			<section id="gallery" class="section">
 				<!-- SECTION TITLE -->
 				<div class="section-header with-arrow">
 					<h1>Gallery</h1>
@@ -267,39 +326,95 @@
 		                    <li>
 		                    	<!-- FIRST ITEM GALLERY -->
 		                    	<div class="gallery-item">
-						    		<a href="images/gallery/3.jpg" data-fancybox-group="group1" class="fancybox">
+						    		<a href="images/gallery/1.jpg" data-fancybox-group="group1" class="fancybox">
 						    			<span>Image Title</span>
-							    		<img src="images/gallery/3.jpg" width="300" height="200" alt="Image gallery">
+							    		<img src="images/gallery/1.jpg" width="300" height="200" alt="Image gallery">
 						    		</a>
 					    		</div>
 		                    	<!-- SECOND ITEM GALLERY -->
 		                    	<div class="gallery-item">
-						    		<a href="images/gallery/8.jpg" data-fancybox-group="group1" class="fancybox">
+						    		<a href="images/gallery/2.jpg" data-fancybox-group="group1" class="fancybox">
 						    			<span>Image Title</span>
-							    		<img src="images/gallery/8.jpg" width="300" height="200" alt="Image gallery">
+							    		<img src="images/gallery/2.jpg" width="300" height="200" alt="Image gallery">
 						    		</a>
 					    		</div>
 		                    </li>
 							<!-- END SLIDE -->
 		                    <li>
 		                    	<div class="gallery-item">
-						    		<a href="images/gallery/14.jpg" data-fancybox-group="group1" class="fancybox">
+						    		<a href="images/gallery/3.jpg" data-fancybox-group="group1" class="fancybox">
 						    			<span>Image Title</span>
-							    		<img src="images/gallery/14.jpg" width="300" height="200" alt="Image gallery">
+							    		<img src="images/gallery/3.jpg" width="300" height="200" alt="Image gallery">
 						    		</a>
 					    		</div>
 		                    	<div class="gallery-item">
-						    		<a href="images/gallery/10.jpg" data-fancybox-group="group1" class="fancybox">
+						    		<a href="images/gallery/4.jpg" data-fancybox-group="group1" class="fancybox">
 						    			<span>Image Title</span>
-							    		<img src="images/gallery/10.jpg" width="300" height="200" alt="Image gallery">
+							    		<img src="images/gallery/4.jpg" width="300" height="200" alt="Image gallery">
 						    		</a>
 					    		</div>
 		                    </li>
 		                    <li>
 		                    	<div class="gallery-item">
-						    		<a href="images/gallery/9.jpg" data-fancybox-group="group1" class="fancybox">
+						    		<a href="images/gallery/5.jpg" data-fancybox-group="group1" class="fancybox">
 						    			<span>Image Title</span>
-							    		<img src="images/gallery/9.jpg" width="300" height="200" alt="Image gallery">
+							    		<img src="images/gallery/5.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/6.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Image Title</span>
+							    		<img src="images/gallery/6.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>
+		                    <li>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/2.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Image Title</span>
+							    		<img src="images/gallery/2.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/4.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Image Title</span>
+							    		<img src="images/gallery/4.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>
+		                    <li>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/1.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Image Title</span>
+							    		<img src="images/gallery/1.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/6.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Image Title</span>
+							    		<img src="images/gallery/6.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>
+		                    <li>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/2.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Image Title</span>
+							    		<img src="images/gallery/2.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/4.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Image Title</span>
+							    		<img src="images/gallery/4.jpg" width="300" height="200" alt="Image gallery">
+						    		</a>
+					    		</div>
+		                    </li>
+		                    <li>
+		                    	<div class="gallery-item">
+						    		<a href="images/gallery/5.jpg" data-fancybox-group="group1" class="fancybox">
+						    			<span>Image Title</span>
+							    		<img src="images/gallery/5.jpg" width="300" height="200" alt="Image gallery">
 						    		</a>
 					    		</div>
 		                    	<div class="gallery-item">
@@ -309,82 +424,23 @@
 						    		</a>
 					    		</div>
 		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/15.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/15.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/7.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/7.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/13.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/13.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/12.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/12.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>						    		
-					    		</div>
-		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/6.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/6.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/5.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/5.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/11.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/11.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/16.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/16.jpg" width="300" height="200" alt="Image gallery">							    		
-						    		</a>						    		
-					    		</div>
-		                    </li>
-		                </ul>		                				                
-					</div>		
+		                </ul>
+					</div>
 				</div>
 			</section>
 			<!-- END GALLERY SECTION -->
-
-		
 			
 			<!-- START EVENTS SECTION -->
-			<section class="section section-content-colored with-arrow color2">				
-				<!-- SECTION TITLE -->				
-				<div class="section-header with-arrow">					
-					<h1>Projects</h1>
+			<section id="events" class="section section-content-colored with-arrow color2">
+				<!-- SECTION TITLE -->
+				<div class="section-header with-arrow">
+					<h1>Events In Coming</h1>
 					<hr>
 				</div>
 				<!-- SECTION CONTENT -->
 				<div class="section-content">
-					<a id="events"></a>
 					<div class="container">
-						<div class="flexslider events-slider">							
+						<div class="flexslider events-slider">
 			                <ul class="slides">
 			                	<!-- START EVENT -->
 			                    <li>
@@ -392,23 +448,23 @@
 										<div class="event">
 											<!-- EVENT FEATURED IMAGE -->
 											<div class="event-header">
-												<a href="http://www.gromad.co/change-password-links/">
+												<a href="single-event.html">
 													<img src="images/event/1.jpg" alt="Event cover">
 												</a>
 											</div>
 											<!-- START CONTENT -->
 											<div class="event-content">
 												<!-- EVENT TITLE -->
-												<h3>Change Password Links</h3>
+												<h3>Event Title</h3>
 												<!-- EVENT DATAS -->
 												<div class="event-data">
-													<p>Web Site</p>
-													<p><span class="icon icon-calendar"></span> December, 2014</p>												
+													<p><span class="icon icon-calendar"></span> December 25, 2013</p>
+													<P><span class="icon icon-location"></span> 1600 Pennsylvania Ave NW, Washington, DC</p>
 												</div>
 												<!-- EVENT DESCRIPTION -->
-												<p>Sends you the link to change your password account of a social group or a loved one service on the Internet. This allows easier and change your password regularly, thus ensuring the safety and privacy of data.</p>
+												<p>A text to describe your event which could be a service, a fundraising, a reception or something else.</p>
 												<div class="center">
-													<a href="http://www.gromad.co/change-password-links/" class="btn btn-default">Look</a>
+													<a href="single-event.html" class="btn btn-default">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -419,19 +475,19 @@
 			                        <div class="slide">
 										<div class="event">
 											<div class="event-header">
-												<a href="http://www.gromad.co/Talking-Companion-iOS/">
+												<a href="single-event.html">
 													<img src="images/event/2.jpg" alt="Event cover">
 												</a>
 											</div>
 											<div class="event-content">
-												<h3>Talking Companion iOS</h3>
+												<h3>Event Title</h3>
 												<div class="event-data">
-													<p>Landing Page</p>
-													<p><span class="icon icon-calendar"></span> October, 2014</p>												
+													<p><span class="icon icon-calendar"></span> January 5, 2014</p>
+													<P><span class="icon icon-location"></span> Champ de Mars, 5 Avenue Anatole France</p>
 												</div>
-												<p>Have you noticed during a long ride that it would be nice to hear what are those places along the route? Talking Companion is a minimalistic app that does just that. It announces places nearby as you drive or walk.</p>
+												<p>A text to describe your event which could be a service, a fundraising, a reception or something else.</p>
 												<div class="center">
-													<a href="http://www.gromad.co/Talking-Companion-iOS/" class="btn btn-default">Look</a>
+													<a href="single-event.html" class="btn btn-default">Read More</a>
 												</div>
 											</div>
 										</div>
@@ -441,26 +497,24 @@
 			                        <div class="slide">
 										<div class="event">
 											<div class="event-header">
-												<a href="http://www.gromad.co">
+												<a href="single-event.html">
 													<img src="images/event/3.jpg" alt="Event cover">
 												</a>
 											</div>
 											<div class="event-content">
-												<h3>Gromad.co group of developers</h3>
+												<h3>Event Title</h3>
 												<div class="event-data">
-													<p>Web Site</p>
-													<p><span class="icon icon-calendar"></span> October, 2014</p>												
+													<p><span class="icon icon-calendar"></span> January 13, 2014</p>
+													<P><span class="icon icon-location"></span> London SW1A 1AA</p>
 												</div>
-												<p>Gromad.co is a group of developers and designers who aspire to make information useful. Feel free to join us and work on any open source project. Get experience. Have something to show. Get paid for the internship.</p>
+												<p>A text to describe your event which could be a service, a fundraising, a reception or something else.</p>
 												<div class="center">
-													<a href="http://www.gromad.co" class="btn btn-default">Look</a>
+													<a href="single-event.html" class="btn btn-default">Read More</a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</li>
-
-								<!--
 			                    <li>
 			                        <div class="slide">
 										<div class="event">
@@ -483,7 +537,6 @@
 										</div>
 									</div>
 								</li>
-								-->
 								<!-- LOAD MORE OPTION
 			                    <li>
 			                        <div class="slide">
@@ -506,36 +559,35 @@
 			<!-- END EVENTS SECTION -->
 			
 			<!-- START BLOG SECTION -->
-			<!--
 			<section id="blog" class="section with-arrow section-content-colored">
-				
+				<!-- SECTION TITLE -->
 				<div class="section-header with-arrow">
 					<h1>Latest Posts</h1>
 					<hr>
 				</div>
-				
+				<!-- SECTION CONTENT -->
 				<div class="section-content">
 					<div class="container">
 						<div class="flexslider posts-slider">
 		                    <ul class="slides">
-		                    	
+		                    	<!-- START BLOG POST -->
 		                        <li>
 		                            <div class="slide">
 										<div class="post post-normal">
-											
+											<!-- FEATURED IMAGE -->
 											<div class="post-header">
 												<a href="single-blog.html">
 													<img src="images/blog/1.jpg" alt="Blog cover">
 												</a>
 											</div>
 											<div class="post-content">
-												
+												<!-- TITLE -->
 												<h3>Post Title</h3>
-												
+												<!-- DATE -->
 												<div class="post-data">
 													<p><span class="icon icon-clock"></span> December 25, 2013</p>
 												</div>
-												
+												<!-- CONTENT -->
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec placerat sem. 
 												Vestibulum vel tristique purus. In hac habitasse platea dictumst. Suspendisse eget pellentesque dui...</p>
 												<div class="center">
@@ -545,7 +597,7 @@
 										</div>
 									</div>
 								</li>
-		                    	
+		                    	<!-- END BLOG POST -->
 		                        <li>
 		                            <div class="slide">
 										<div class="post post-normal">
@@ -612,25 +664,35 @@
 										</div>
 									</div>
 								</li>
-								
+								<!-- LOAD MORE OPTION
+			                    <li>
+			                        <div class="slide">
+										<div class="load-more">
+											<div class="content">
+												<a href="#" title="load more">
+													<span class="icon icon-large icon-plus"></span>
+													<h3>Load More Posts</h3>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								-->
 							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
-		-->
 			<!-- END BLOG SECTION -->
 			
 			<!-- START DONATION SECTION -->
-		<!--
 			<section id="donation" class="section section-image" style="background-image: url('images/donation_cover.jpg');">
 				<div class="section-content center">
 					<h2>Ready to support us ?</h2>
-				
+					<!-- DONATION BUTTON -->
 					<a href="#" class="btn btn-donation btn-success">Make a Donation</a>
 				</div>
 			</section>
-		-->
 			<!-- END DONATION SECTION -->
 			
 			<!-- START CONTACT SECTION -->
