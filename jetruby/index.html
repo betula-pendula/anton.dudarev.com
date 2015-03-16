@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>1R JetRuby</title>	
+    <link rel="shortcut icon" href="img/favicon.png"> 
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style-responsive.css" />		
+	  <!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->		
+</head>
+
+<body>
+<div class="container">
+<!-- section start-page -->
+  <section class="start-page parallax-background" id="home">  
+    <div class="opacity"></div> <!-- Opacity color -->
+      <div class="content">
+        <div class="text">        
+          <div class="logo"><img src="img/logo.png"></div>        
+          <h1>1R Commerce</h1><hr/>
+          <p>First Ruby ased e­commerce system integrated to 1C</br>
+          For Your Business</p>          
+          <a href="#about-us"><div class="read-more">Download</div></a>          
+        </div>
+        <div class="arrow-down"></div>
+      </div>  
+  </section>
+  <!-- section menu mobile -->  
+  <section class="menu-media">  
+    <div class="menu-content">    
+      <div class="logo">1R Commerce</div>      
+      <div class="icon"><a href="#"><img src="img/icons/menu-media.png"/></a></div>    
+    </div>   
+  </section>  
+    <ul class="menu-click">
+        <a href="#home"><li href="#home">HOME</li></a>
+        <a href="#about-us"><li href="#about-us">ABOUT</li></a>        
+        <a href="#contact"><li href="#contact">CONTACT</li></a>        
+    </ul> 
+  <!-- section menu -->
+  <section class="menu">
+    <div class="menu-content">    
+    <div class="logo">1R Commerce</div>    
+      <ul id="menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about-us">ABOUT</a></li>        
+        <li><a href="#contact">CONTACT</a></li>        
+      </ul>
+    </div>  
+  </section>
+  <!-- section about us -->
+  <section class="about-us">
+  <div class="content">
+    <h1 id="about-us">TECHNOLOGICAL ASPECTS</h1>
+    <hr/>
+    <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+      <div class="column-one">
+        <div class="circle-one"></div>
+          <h2> 1C</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+      </div>
+      <div class="column-two">
+        <div class="circle-two"></div>
+          <h2> RUBY</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+      </div>
+      <div class="column-three">
+        <div class="circle-three"></div>
+        <h2> SPREE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+    </div>  
+  </div>
+  </section>
+  <div class="clear"></div>  
+    <!-- partners-->
+    <section class="partners parallax-background-partners" id="partners">
+    <div class="opacity"></div>
+      <div class="content">     
+            <div class="logo">
+                <a href="#"><img src="img/logos/1.png"></a>
+                <a href="#"><img src="img/logos/2.png"></a>                
+                <a href="#"><img src="img/logos/3.png"></a>
+            </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+        <hr/>   
+        <div class="content">
+          <div class="form">
+            <form method="post" action="mail.php" name="kontakt">
+            <div class="column">
+            YOUR NAME<br/><br/>
+            <input name="name" id="name" value="" />
+            </div>
+            <div class="column-2">
+            YOUR E-MAIL<br/><br/>
+            <input name="email" id="email" value="" />
+            </div>
+            <div class="column-3">  
+            MESSAGE<br/><br/>        
+            <textarea id="message" name="message" ></textarea>
+            </div> 
+              <div class="button">
+                <span><input class="submit" id="submit" name="submit" type="submit" value="SEND"></span>
+              </div>
+            </form>
+          </div>
+          <div class="contact-text">
+          </br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</br>
+          </br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</br>
+          </br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</br>
+          </div>
+        </div>
+    </section>
+    <section class="footer">     
+        <div class="menu-footer">
+          <a href="#home">Home</a>          
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="copyright">anton.dudarev.com</div>      
+    </section>    
+</div>
+	<!-- Scripts -->
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.10.4.min.js" type="text/javascript"></script> <!-- jQuery -->
+	<script src="js/jquery.nicescroll.js"></script> <!-- jQuery NiceScroll -->
+	<script src="js/jquery.sticky.js"></script> <!-- jQuery Stick Menu -->
+	<script src="js/masonry.pkgd.min.js"></script> <!-- All script -->
+	<script src="js/imagesloaded.pkgd.min.js"></script> <!-- All script -->	
+   <script>
+     $(function(){   
+       var $container = $('.grid');     
+       $container.imagesLoaded( function(){
+         $container.masonry({
+           itemSelector : 'li'
+         });
+       });     
+     });
+   </script>
+	<script src="js/jquery.parallax.js"></script> <!-- jQuery Parallax -->	
+	<script src="js/script.js"></script> <!-- All script -->	
+</body>
+</html>
