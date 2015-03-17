@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html, body {
+    height: 100%;
+}
+body {
+  font-family:lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+h1 {
+    font-size: 36px;
+    line-height: 48px;
+}
+a {
+    text-decoration: none;
+    color: rgb(181, 4, 3);
+}
+a:hover {
+    text-decoration: underline;
+}
+.boldred {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
+.bigger {
+  font-size: 14px;
+}
+form{
+  margin: 20px 0;
+}
+label{
+  display: block;
+  padding: 2px 0;
+}
+.highlight{
+  background-color:#FFFF00;
+  padding:0px 0px;
+}
+.highlight span{
+  font-weight:bold;
+  color:#FF0000;
+}
+.my_style{  
+}
+.my_style h3{
+  font-size: 18px;    
+  color: #000;
+  font-family: lucida grande,tahoma,verdana,arial,sans-serif; 
+}
+.my_style ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;  
+  font-family: lucida grande,tahoma,verdana,arial,sans-serif; 
+}
+.my_style_info {
+  font-family: lucida grande,tahoma,verdana,arial,sans-serif;  
+  color: #183d9b;
+}
+.my_style_info {
+  font-family: lucida grande,tahoma,verdana,arial,sans-serif;  
+  color: #183d9b;
+}
+.my_style_info_black {
+  font-family: lucida grande,tahoma,verdana,arial,sans-serif;  
+  color: #000;
+  text-align: center;
+}
+.my_style_txt {  
+}
+.my_style_txt h1{
+  font-family: lucida grande,tahoma,verdana,arial,sans-serif;       
+  color: #000;  
+  font-weight:bold;
+  font-size: 12px;
+}
+.my_style_txt h3{
+  font-family: lucida grande,tahoma,verdana,arial,sans-serif;       
+  color: #000;  
+  font-size: 12px;  
+}
+.my_style_txt p{
+  font-family: lucida grande,tahoma,verdana,arial,sans-serif;       
+  color: #000;    
+  font-style: italic;
+  font-size: 12px;
+}
+.my_style_txt p:hover {text-decoration:underline;}

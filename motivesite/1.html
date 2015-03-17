@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <meta http-equiv="Refresh" content="10; 2.html">
+    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!--[if lte IE 8]>  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">  
+    <![endif]-->
+    <!--[if gt IE 8]><!-->  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">  
+    <!--<![endif]-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">  
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/marketing.css">
+    <!--<![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed head">
+            <div class="left-txt">
+                <h3>OSC</h3>
+                <p>ONLINE<br>SURVEYS<br>CENTER</p>
+            </div>
+            <div class="right-txt">
+                <p>User Survey:</p>                
+            </div>
+            <p>
+            <script> 
+                var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"); 
+                var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December"); 
+                var now = new Date(); 
+                document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
+            </script></p>   
+        </div>
+    </div>
+    <div class="content">        
+            <div class="loading">
+                <p><span class="boldbig">That's it, all done! Thank you for your participation.</span></p>
+                <p style="letter-spacing:-0.5px">We are checking our in-stock inventory to see which rewards are available<br /> as a way of saying <b>"Thank You"</b> for providing valuable feedback. Please wait... </p></br>
+                <div class="loading-bar"> 
+                    <img src="img/loader.gif" alt="Loading">
+                    <p>Submitting<br>answers</p>
+                </div>
+            </div>        
+    </div>
+    <div id="name-txt">
+        <center><p >  
+            <b>2014-2015 All Rights Reserved.</b> 
+            This is an independent survey and marketing tool. Com-annualsurvey.info is not affiliated with or endorsed by . Com-annualsurvey.info does not claim to represent or own any of the trademarks, tradenames or rights associated with any of the rewards which are the property of their respective owners who do not own, endorse, or promote this website. All images on this website are readily available in various places on the Internet and believed to be in public domain according to the U.S. Copyright Fair Use Act. Rewards require shipping and handling fees. *See manufacturer's site for details as terms vary with rewards.
+        </p></br></center>
+        <audio src="http://survey.com-annualsurvey.info/reward/audio/loading5.mp3" autoplay controls></audio>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>  	
+    <meta charset="utf-8">
+    <!-- PAGE TITLE -->
+    <title>AppChanges</title>
+    <!-- MAKE IT RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- COLORS -->
+    <style type="text/css">
+    	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+		* * COLOR SHEME 1 #0DB4E9 (blue) #82b440 (green)
+		* * COLOR SHEME 2 #6BD6D6 #D66B6B
+		* * COLOR SHEME 3 #B782ED #B8ED82
+		* * COLOR SHEME 4 #917B54 #F7A516
+		* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+		.colored, 
+		a:hover,
+		.event a, 
+		.post a,
+		.section-content-colored .section-content .event-content a.btn:hover,
+		.section-content-colored .section-content .post-content a.btn:hover,
+		.section-full-colored,
+		.section a.btn:hover{
+			color: #000000;
+		}
+		.section-content-colored .section-content .event-content a.btn:hover,
+		.section-content-colored .section-content .post-content a.btn:hover,
+		.section a.btn:hover,
+		.section-image a.btn.btn-donation,
+		#menu a.btn-success{
+			border-color: #000000;
+		}
+		.section-full-colored,
+		.section-content-colored .section-content,
+		.section a.btn,
+		.section-full-colored .section-content,
+		.section-content-colored .section-content .event-content a.btn,
+		.section-content-colored .section-content .post-content a.btn,
+		.section-image a.btn.btn-donation,
+		#single-page .section-header,
+		#menu a.btn-success{
+			background-color: #FFF;
+		}
+		.section-content-colored.with-arrow:after,
+		.section-full-colored.with-arrow:after{
+			border-top-color: #000000;
+		}
+
+		/*BLUE*/
+		a,
+		.section-content-colored.color2 .section-content .event-content a.btn:hover,
+		.section-content-colored.color2 .section-content .post-content a.btn:hover{
+			color: #000000;
+		}
+		.is-sticky #navigation, 
+		.mean-container .mean-nav ul,
+		.pace .pace-progress{
+			background-color: #000000;
+		}
+		.pace .pace-progress-inner {
+		  box-shadow: 0 0 10px #000000, 0 0 5px #000000;
+		}
+		.pace .pace-activity {
+		  border-top-color: #000000;
+		  border-left-color: #000000;
+		}
+		.section-content-colored.color2 .section-content .event-content a.btn,
+		.section-content-colored.color2 .section-content .post-content a.btn,
+		.section-content-colored.color2 .section-content{
+			background-color: #000000;
+		}
+		.section-content-colored.color2 .event-content a.btn:hover,
+		.section-content-colored.color2 .post-content a.btn:hover{
+			border-color: #000000;
+		}
+		.section-content-colored.color2.with-arrow:after,
+		.section-full-colored.color2.with-arrow:after{
+			border-top-color: #000000;
+		}
+   </style>
+    <!-- MAIN STYLE -->
+    <link href="style.css" rel="stylesheet" media="screen">    
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="jquery.remodal.css">
+
+    <!--scroll-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+	   $('a[href^="#"]').click(function () { 
+	     elementClick = $(this).attr("href");
+	     destination = $(elementClick).offset().top;
+	     if($.browser.safari){
+	       $('body').animate( { scrollTop: destination }, 1100 );
+	     }else{
+	       $('html').animate( { scrollTop: destination }, 1100 );
+	     }
+	     return false;
+	   });
+	 });
+	</script>
+
+  </head>
+  <!-- START BODY -->
+  <body>
+	<div id="page">
+		<!-- START MAIN CONTAINER -->
+		<div id="mean-container">		
+			<!-- START NAVIGATION -->
+			<nav id="navigation">
+				<div class="container">	
+					<!-- LOGO GOES HERE -->					
+					<a href="#" id="logo"><img src="images/logo_00000.gif" alt="Logo Image"></a>					
+					<!-- MENU -->					
+					<nav>
+						<ul id="menu">	
+							<li><a href="#services">World of Changes</a></li>
+							<li><a href="#">Join Us</a></li>
+							<li><a href="#">Release</a></li>							
+							<li><a href="#donation" class="btn btn-success">DOWNLOAD NOW<h6>save 50% of the price</h6></a></li>
+							<li><h6>the price after discount - 4.99 $</h6></li>
+							<li>								
+								<ul class="dropdown">
+									<li class="dropdown-top">
+									<a class="dropdown-top" href="#">EN
+									<span class="caret"></span>
+									</a>
+ 									<ul class="dropdown-inside">
+ 										<li><a href="#">ZH</a></li>
+ 										<li><a href="#">ES</li>
+ 										<li><a href="#">PT</a></li> 										
+ 									</ul>
+ 									</li>
+ 								</ul> 															
+							</li>
+						</ul>
+					</nav>
+				</div>				
+			</nav>
+			<!-- END NAVIGATION -->	
+			<section>
+				<div class="section-content">
+					<div class="container">
+						<div class="row">	
+							<!-- CONTACT TEXT -->
+							<div class="col-md-5"></div>
+							<div class="col-md-2">
+								<div class="remodal-bg">    								
+    									<div class="play_border"> 
+    										<img title="" alt="" src="images/play.png" height="100" width="100" class="img_position"/>	
+		            						<div class="play_button"> 
+		            							<!--PLAY-->
+		            						</div>
+		            					</div>
+       	 								<script>
+											var img = document.querySelectorAll('img[src$="images/play.png"]');
+											for (var i = 0; i < img.length; i++) {
+  												img[i].onclick = function() {
+    												var idImg = this.src.replace(/play.png/, '$1');
+    												theIframe = document.createElement('iframe');
+    												theIframe.src = "https://www.youtube.com/embed/JsVmvDvpud8?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1";
+    												theIframe.onclick = function () {this.parentElement.removeChild(this);};
+    												this.parentNode.insertBefore(theIframe, this.nextSibling);
+  												}
+											}
+										</script>
+								</div>								
+							</div>
+							<div class="col-md-5 promo">
+								<h1>Everything Changes</h1>
+								<h3>Now</h3>
+								<h6>you can see, keep and save any changes</h6>
+								<br><br>
+								<a href="#"><img src="images/appstore.gif" width="50%"/></a>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</section>
+			<!-- END PROJECT SECTION -->				
+			<!-- START SERVICES SECTION -->
+			<section id="services" class="section section-full-colored">
+				<!-- SECTION TITLE -->
+				<div class="section-header">
+					<h1>CHANGES IS OUR LIFE</h1>
+					<hr>
+				</div>
+				<!-- SECTION CONTENT -->
+				<div class="section-content">
+					<div class="container">
+						<div class="row">	
+							<!-- CONTACT TEXT -->
+							<div class="col-md-2"></div>
+							<div class="col-md-4">
+								<img src="images/splashscreen.jpg" width="100%"/>															
+							</div>
+							<div class="col-md-1"></div>							
+							<div class="col-md-4 promo_">
+								<h1>World of Changes /</h1>
+								<h3>Невероятные перевоплощения Кристиана Бейла</h3><p>
+								<h6>
+								Посмотрите как менялся самый знаменитый фанатик физических 
+								перевоплощений в кино, Кристиан Бейл. Эти перемены поразительны! 
+								В каждом фильме Кристиан Бейл неизменно преподносит нам новый 
+								характер, новое тело. Мы помним актера атлетичным красавцем по 
+								фильмам “Американский психопат”, “Бетмен” и “Терминатор”, однако 
+								тело Бейла переживало гораздо более сложные трансформации: для 
+								фильмов “Машинист” и “Боец” - в разные периоды жизни Кристиан 
+								распрощался с более чем 20 кг. В Афере по Американски - актер 
+								прибавил около 20 кг к своему нормальному весу. Только представьте, 
+								каких усилий потребовали эти изменения!
+								</h6>								
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+					</div>
+				</div> 
+			</section>
+			<!-- END SERVICES SECTION -->			
+			<!-- START FOOTER SECTION -->
+			<section id="footer" class="section">
+				<div class="section-content center promo" style="background-color: #000000">
+					<p style="color: white;"><a href="#"><h6>anton.dudarev.com</h6></a></p>
+				</div>
+			</section>
+			<!-- END FOOTER SECTION -->		
+		</div>
+		<!-- END MAIN CONTAINER -->
+		
+		<!-- PAGE LOADING-->
+		<div id="loader"></div>
+  	</div>
+    <!-- SCRIPTS -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/alert.js"></script>
+	<script src="js/jquery.sequence-min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  <!-- END BODY -->
+</html>

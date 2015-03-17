@@ -1,0 +1,263 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family:lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+h1 {
+    font-size: 36px;
+    line-height: 48px;
+}
+.home-menu {    
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu.pure-menu-open {
+    background: #183d9b;
+}
+.pure-menu.pure-menu-open.pure-menu-fixed {    
+    border-bottom: none;    
+    z-index: 4;
+}
+@media (min-width: 48em) {
+    body {
+        font-size: 16px;
+    }
+    .content {
+        padding: 0em 0em;
+        position:relative;        
+        height: 400px;
+    }
+    .home-menu {
+        text-align: left;
+    }
+}
+@media (min-width: 78em) {    
+}
+.left-txt {
+  background: none repeat scroll 0 0 rgb(220, 220, 220);
+  float: left;
+  height: 95px;
+  padding: 2px 18px;
+  width: 110px;
+}
+.left-txt h3 {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 900;
+  margin: -3px;
+  text-shadow: 2px 2px 1px rgb(153, 153, 153);
+  line-height: 43px;
+}
+.left-txt > p {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 16px;
+  margin: 0 0 5px;
+}
+.head {
+  background-color: #183d9b;
+  overflow: hidden;
+  position: relative;
+  height: 95px;
+}
+.head > p {
+  bottom: 0;
+  color: #fff;
+  font-size: 11px;
+  margin: 0 0 10px;
+  position: absolute;
+  right: 15px;
+}
+.right-txt p {
+  color: #fff;
+  margin: 0 0 -8px;
+  font-size: 13px;
+}
+.right-txt {
+  float: left;
+  padding: 10px 20px;
+}
+.right-txt h1 {
+  font-size: 47px;
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing:-4px;
+  font-family:verdana;
+}
+.boldbig {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;  
+}
+.question {
+  font-size: 14px;
+  font-weight: bold;
+}
+.que-2 {
+  padding: 30px 50px;
+  display:block;
+}
+.que-3 {
+  padding: 30px 50px;
+  display:block;
+}
+.que-4 {
+  padding: 30px 50px;
+  display:block;
+}
+.bluebig {
+  color: #183d9b;
+  font-size: 14px;
+  font-weight: bold;
+}
+.radio-btn {
+  margin-top: 10px;
+}
+.radio-btn label {
+  font-size: 14px;
+  color: #000;
+}
+.next-btn {
+  background: none repeat scroll 0 0 #183d9b;
+  border-radius: 3px;
+  border-style: solid;
+  behavior:url(pie.htc);
+  border-width: 1px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  cursor:pointer;
+  padding: 8px 12px;
+  margin-top: 17px;
+}
+.loading > p {
+  font-size: 14px;
+  text-align: center;
+}
+.loading {
+    margin: 3em 0em;
+  color: rgb(0, 0, 0);
+  line-height: 18px;
+  padding: 0 100px;
+  display:block;
+  text-align: center;
+  width: 100%;
+}
+.loading-bar {  
+  position: relative;  
+  text-align: center;
+  font-size: 12px;
+  font-weight: 900;
+}
+.loading-bar img {
+  width: 150px;  
+  vertical-align: center;  
+}
+.loading-bar p {
+  top:-110px;  
+  position: relative;
+}
+.text {
+    text-align:  center;
+}
+form {
+    margin: 20px 0;
+}
+label {
+    display: block;
+    padding: 2px 0;
+}
+#popup {    
+    height: 100%;
+    margin: 1.6em 0em;   
+}
+#popup1{
+    z-index: 80;
+    width:100%;  
+    height: 100%;
+    background:white;
+    position:absolute;  
+    background-color: white;
+}
+#popup2{
+    z-index: 70;
+    width:100%;  
+    height: 100%;    
+    background:white;
+    position:absolute; 
+    background-color: white;   
+}
+#popup3{
+    z-index: 60;
+    width:100%; 
+    height: 100%; 
+    background:white;
+    position:absolute;  
+    background-color: white;  
+}
+#popup4{
+    z-index: 50;
+    width:100%; 
+    height: 100%; 
+    background:white;
+    position:absolute; 
+    background-color: white;   
+}
+#popup5{
+    z-index: 40;
+    width:100%; 
+    height: 100%; 
+    background:white;
+    position:absolute;  
+    background-color: white;  
+}
+#popup6{
+    z-index: 30;
+    width:100%;  
+    height: 100%;
+    background:white;
+    position:absolute; 
+    background-color: white;   
+}
+#popup7{
+    z-index: 20;
+    width:100%;  
+    height: 100%;
+    background:white;
+    position:absolute;   
+    background-color: white; 
+}
+#popup8{
+    z-index: 10;
+    width:100%; 
+    height: 100%; 
+    background:white;
+    position:absolute;   
+    background-color: white; 
+}
+.bg{
+    background-color: white;
+}
+.down {
+    margin: 3em 0em;
+}
+#name-txt{
+    color: rgb(200, 200, 200);
+    font-size: 10px;
+    padding: 0em 5em 0em;
+    text-align: center;
+    width: 100%;
+    background-color: white; 
+}

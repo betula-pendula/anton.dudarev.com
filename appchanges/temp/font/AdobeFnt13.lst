@@ -1,0 +1,464 @@
+%!Adobe-FontList 1.13
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\MyriadPro-Regular\myriadpro-regular.css
+FileModTime:1424203420
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\MyriadPro-Regular\myriadpro-regular.eot
+FileModTime:1424203419
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\MyriadPro-Regular\myriadpro-regular.svg
+FileModTime:1424203421
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MyriadProRegular
+FamilyName:MyriadProRegular
+StyleName:Regular
+FullName:MyriadPro-Regular
+MenuName:MyriadProRegular
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\MyriadPro-Regular\myriadpro-regular.ttf
+DataFormat:sfntData
+FileLength:97292
+FileModTime:1424203422
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\MyriadPro-Regular\myriadpro-regular.woff
+FileModTime:1424203423
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\MyriadPro-Regular\myriadpro-regular.woff2
+FileModTime:1424203423
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\lato\lato-thin.eot
+FileModTime:1424203413
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Thin
+FamilyName:Lato
+StyleName:Thin
+FullName:Lato Thin Regular
+MenuName:Lato Thin
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Thin
+FullNameNative:
+WritingScript:Cyrillic
+OutlineFileName:C:\Users\pc\Desktop\Font\lato\lato-thin.ttf
+DataFormat:sfntData
+FileLength:140828
+FileModTime:1424203414
+WeightClass:200
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\lato\lato-thin.woff
+FileModTime:1424203415
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\impact\impact.css
+FileModTime:1424203342
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\impact\impact.eot
+FileModTime:1424203343
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\impact\impact.svg
+FileModTime:1424203344
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ImpactRegular
+FamilyName:ImpactRegular
+StyleName:Regular
+FullName:Impact
+MenuName:ImpactRegular
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\impact\impact.ttf
+DataFormat:sfntData
+FileLength:113316
+FileModTime:1424203345
+WeightClass:400
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\impact\impact.woff
+FileModTime:1424203349
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\FranckerW1G\franckerw1g-condensedxlight.css
+FileModTime:1424203300
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\FranckerW1G\franckerw1g-condensedxlight.eot
+FileModTime:1424203306
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\FranckerW1G\franckerw1g-condensedxlight.svg
+FileModTime:1424203307
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FranckerW1GCondensedExtraLight
+FamilyName:Francker W1G
+StyleName:Condensed Extra Light
+FullName:FranckerW1G-CondensedXLight
+MenuName:FranckerW1GCondensedExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\FranckerW1G\franckerw1g-condensedxlight.ttf
+DataFormat:sfntData
+FileLength:128476
+FileModTime:1424203308
+WeightClass:250
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\FranckerW1G\franckerw1g-condensedxlight.woff
+FileModTime:1424203309
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\FranckerW1G\franckerw1g-condensedxlight.woff2
+FileModTime:1424203309
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\.DS_Store
+FileModTime:1422817474
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FranckerW1G-CondensedLight
+FamilyName:Francker W1G
+StyleName:Condensed Light
+FullName:Francker W1G Condensed Light
+MenuName:Francker W1G Condensed Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\FranckerW1G-CondensedLight-1.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:100284
+FileModTime:1418233922
+WeightClass:300
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FranckerW1G-CondensedLight
+FamilyName:Francker W1G
+StyleName:Condensed Light
+FullName:Francker W1G Condensed Light
+MenuName:Francker W1G Condensed Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\FranckerW1G-CondensedLight.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:100284
+FileModTime:1417100804
+WeightClass:300
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FranckerW1G-CondensedReg
+FamilyName:Francker W1G
+StyleName:Condensed Regular
+FullName:Francker W1G Condensed Regular
+MenuName:Francker W1G Condensed Regular
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\FranckerW1G-CondensedReg-1.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:100656
+FileModTime:1418233922
+WeightClass:400
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FranckerW1G-CondensedReg
+FamilyName:Francker W1G
+StyleName:Condensed Regular
+FullName:Francker W1G Condensed Regular
+MenuName:Francker W1G Condensed Regular
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\FranckerW1G-CondensedReg.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:100656
+FileModTime:1417100804
+WeightClass:400
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FranckerW1G-CondensedSmbold
+FamilyName:Francker W1G
+StyleName:Condensed Semibold
+FullName:Francker W1G Condensed Semibold
+MenuName:Francker W1G Condensed Regular
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\FranckerW1G-CondensedSmbold-1.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:100148
+FileModTime:1418233922
+WeightClass:600
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FranckerW1G-CondensedSmbold
+FamilyName:Francker W1G
+StyleName:Condensed Semibold
+FullName:Francker W1G Condensed Semibold
+MenuName:Francker W1G Condensed Regular
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\FranckerW1G-CondensedSmbold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:100148
+FileModTime:1417100804
+WeightClass:600
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FranckerW1GCondensedExtraLight
+FamilyName:Francker W1G
+StyleName:Condensed Extra Light
+FullName:FranckerW1G-CondensedXLight
+MenuName:FranckerW1GCondensedExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\franckerw1g-condensedxlight 2.ttf
+DataFormat:sfntData
+FileLength:128476
+FileModTime:1417061398
+WeightClass:250
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FranckerW1GCondensedExtraLight
+FamilyName:Francker W1G
+StyleName:Condensed Extra Light
+FullName:FranckerW1G-CondensedXLight
+MenuName:FranckerW1GCondensedExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\franckerw1g-condensedxlight 3.ttf
+DataFormat:sfntData
+FileLength:128476
+FileModTime:1417021798
+WeightClass:250
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FranckerW1GCondensedExtraLight
+FamilyName:Francker W1G
+StyleName:Condensed Extra Light
+FullName:FranckerW1G-CondensedXLight
+MenuName:FranckerW1GCondensedExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\franckerw1g-condensedxlight 4.ttf
+DataFormat:sfntData
+FileLength:128476
+FileModTime:1417021798
+WeightClass:250
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FranckerW1GCondensedExtraLight
+FamilyName:Francker W1G
+StyleName:Condensed Extra Light
+FullName:FranckerW1G-CondensedXLight
+MenuName:FranckerW1GCondensedExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\franckerw1g-condensedxlight 5.ttf
+DataFormat:sfntData
+FileLength:128476
+FileModTime:1417388526
+WeightClass:250
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FranckerW1G-CondensedXLight
+FamilyName:Francker W1G
+StyleName:Condensed Extra Light
+FullName:Francker W1G Condensed X Light
+MenuName:Francker W1G Condensed X Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\FranckerW1G-CondensedXLight-1.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:98048
+FileModTime:1418233922
+WeightClass:250
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FranckerW1G-CondensedXLight
+FamilyName:Francker W1G
+StyleName:Condensed Extra Light
+FullName:Francker W1G Condensed X Light
+MenuName:Francker W1G Condensed X Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\FranckerW1G-CondensedXLight.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:98048
+FileModTime:1417100804
+WeightClass:250
+WidthClass:3
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FranckerW1GCondensedExtraLight
+FamilyName:Francker W1G
+StyleName:Condensed Extra Light
+FullName:FranckerW1G-CondensedXLight
+MenuName:FranckerW1GCondensedExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\pc\Desktop\Font\Francker\franckerw1g-condensedxlight.ttf
+DataFormat:sfntData
+FileLength:128476
+FileModTime:1418819096
+WeightClass:250
+WidthClass:3
+AngleClass:0
+%EndFont
+

@@ -1,0 +1,126 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.l-box {
+    padding: 1em;
+}
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.is-center {
+    text-align: center;
+}
+.pure-button {
+    background-color: #183d9b;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    margin: 0 0 1em;
+}
+.home-menu {    
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu.pure-menu-open {
+    background: #183d9b;
+}
+.pure-menu.pure-menu-open.pure-menu-fixed {    
+    border-bottom: none;    
+    z-index: 4;
+}
+@media (min-width: 48em) {
+    body {
+        font-size: 16px;
+    }
+    .content {
+        padding: 0em 0em;
+        position:relative;
+    }
+    .home-menu {
+        text-align: left;
+    }
+    .l-box-lrg {
+        border: none;
+    }
+}
+@media (min-width: 78em) {
+}
+.left-txt {
+  background: none repeat scroll 0 0 rgb(220, 220, 220);
+  float: left;
+  height: 95px;
+  padding: 2px 18px;
+  width: 110px;
+}
+.left-txt h3 {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 900;
+  margin: -3px;
+  text-shadow: 2px 2px 1px rgb(153, 153, 153);
+  line-height: 43px;
+}
+.left-txt > p {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 16px;
+  margin: 0 0 5px;
+}
+.head {
+  background-color: #183d9b;
+  overflow: hidden;
+  position: relative;
+  height: 95px;
+}
+.head > p {
+  bottom: 0;
+  color: #fff;
+  font-size: 11px;
+  margin: 0 0 10px;
+  position: absolute;
+  right: 15px;
+}
+.right-txt p {
+  color: #fff;
+  margin: 0 0 -8px;
+  font-size: 13px;
+}
+.right-txt {
+  float: left;
+  padding: 10px 20px;
+}
+.right-txt h1 {
+  font-size: 47px;
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing:-4px;
+  font-family:verdana;
+}
+.bigger {
+  font-size: 14px;
+}
+form {
+    margin: 20px 0;
+}
+label {
+    display: block;
+    padding: 2px 0;
+}
+#name-txt{
+  position: relative;
+    color: rgb(200, 200, 200);
+    font-size: 10px;
+    padding: 0em 5em 0em;
+    text-align: center;
+   
+    background-color: white; 
+}

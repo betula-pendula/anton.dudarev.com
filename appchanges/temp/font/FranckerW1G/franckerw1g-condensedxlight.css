@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'FranckerW1GCondensedExtraLight';
+    src: url('franckerw1g-condensedxlight.eot');
+    src: url('franckerw1g-condensedxlight.eot') format('embedded-opentype'),
+         url('franckerw1g-condensedxlight.woff2') format('woff2'),
+         url('franckerw1g-condensedxlight.woff') format('woff'),
+         url('franckerw1g-condensedxlight.ttf') format('truetype'),
+         url('franckerw1g-condensedxlight.svg#FranckerW1GCondensedExtraLight') format('svg');
+}

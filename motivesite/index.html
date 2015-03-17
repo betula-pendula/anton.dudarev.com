@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!--[if lte IE 8]>  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">  
+    <![endif]-->
+    <!--[if gt IE 8]><!-->  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">  
+    <!--<![endif]-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">  
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/marketing.css">
+    <!--<![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed head">
+            <div class="left-txt">
+                <h3>OSC</h3>
+                <p>ONLINE<br>SURVEYS<br>CENTER</p>
+            </div>
+            <div class="right-txt">
+                <p>User Survey:</p>
+                
+            </div>
+            <p>
+            <script> 
+                var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"); 
+                var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December"); 
+                var now = new Date(); 
+                document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
+            </script></p>   
+        </div>
+    </div>
+    <div class="content">
+        <div id="popup">
+            <div id="popup1">
+                <div class="que-2 bg"> 
+                    <span class="boldbig">Dear  user,</span>
+                    <p>Do you want to receive an exciting <b>REWARD</b> for completing this short survey?</p>
+                    <p>It takes just 30 seconds, and we have up to <b>THREE</b> rewards waiting for you...</p>
+                    <br />
+                    <span class="bluebig">Question 1 of 8: </span>
+                    <span class="question">Have you had  service for over six months?</span>
+                    <div class="radio-btn" style="margin-top:-10px;">
+                        <form action="action.php" method="post">
+                            <label><input type="radio" name="browser" value="firefox"> Yes</label>
+                            <label><input type="radio" name="browser" value="chrome"> No</label>
+                            <label><input type="radio" name="browser" value="chrome"> Not Sure</label>
+                        </form>
+                    </div>                        
+                    <button id="1" type="button" class="next-btn js-next" style="margin-top:-5px;" onclick="document.getElementById('popup1').style.display='none'">Next...</button>                   
+                </div>
+            </div>                                
+            <div id="popup2">
+                <div class="que-2 bg"> 
+                    <span class="bluebig">Question 2 of 8: </span><span class="question"> It is very important that users enjoy the  service. How would you rate the service? </span>
+                    <div class="radio-btn">
+                        <label><input type="radio" name="browser"> Excellent</label>
+                        <label><input type="radio" name="browser"> Good</label>
+                        <label><input type="radio" name="browser"> Needs Improvement</label>
+                        <label><input type="radio" name="browser"> Not Sure</label>
+                        <button id="2" type="button" class="next-btn js-next" onclick="document.getElementById('popup2').style.display='none'">Next...</button>
+                    </div>
+                </div>
+            </div><!--question-page-2-->
+            <div id="popup3">
+                <div class="que-3 bg">
+                    <span class="bluebig">Question 3 of 8: </span><span class="question">  strives to give the customer the best possible customer experience. How would you rate the overall customer experience with ? </span>
+                        <div class="radio-btn">
+                            <label><input type="radio" name="browser"> Excellent</label>
+                            <label><input type="radio" name="browser"> Good</label>
+                            <label><input type="radio" name="browser"> Needs Improvement</label>
+                            <label><input type="radio" name="browser"> Not Sure</label>
+                            <button id="3" type="button" class="next-btn js-next" onclick="document.getElementById('popup3').style.display='none'">Next...</button>
+                        </div>
+                </div>
+            </div><!--question-page-3-->
+            <div id="popup4">
+                <div class="que-3 bg">
+                    <span class="bluebig">Question 4 of 8: </span><span class="question"> Without considering free gifts, would you say that  provides good value? </span>
+                    <div class="radio-btn">
+                        <label><input type="radio" name="browser"> Yes</label>
+                        <label><input type="radio" name="browser"> No</label>
+                        <label><input type="radio" name="browser"> Sometimes</label>
+                        <button id="4" type="button" class="next-btn js-next" onclick="document.getElementById('popup4').style.display='none'">Next...</button>
+                    </div>
+                </div>
+            </div><!--question-page-4-->  
+            <div id="popup5">
+                <div class="que-3 bg">
+                    <span class="bluebig">Question 5 of 8: </span><span class="question"> Do you prefer to receive online statements or paper bills?</span>
+                    <div class="radio-btn">
+                        <label><input type="radio" name="browser"> Online Statements</label>
+                        <label><input type="radio" name="browser"> Paper Bills</label>
+                        <label><input type="radio" name="browser"> Not Sure</label>
+                        <button id="5" type="button" class="next-btn js-next" onclick="document.getElementById('popup5').style.display='none'">Next...</button>
+                    </div>
+                </div>
+            </div><!--question-page-5--> 
+            <div id="popup6">
+                <div class="que-3 bg">
+                    <span class="bluebig">Question 6 of 8: </span><span class="question"> Have you already completed our feedback survey and received a reward from us in the past six months?</span>
+                    <div class="radio-btn">
+                        <label><input type="radio" name="browser"> Yes</label>
+                        <label><input type="radio" name="browser"> No</label>
+                        <label><input type="radio" name="browser"> Not Sure</label>
+                        <button id="6" type="button" class="next-btn js-next" onclick="document.getElementById('popup6').style.display='none'">Next...</button>
+                    </div>
+                </div>
+            </div><!--question-page-6-->
+            <div id="popup7">
+                <div class="que-3 bg"> <span class="bluebig">Question 7 of 8: </span><span class="question"> Have you ever had to call  technical support due to a problem? </span>
+                    <div class="radio-btn">
+                        <label><input type="radio" name="browser"> Yes, more than once</label>
+                        <label><input type="radio" name="browser"> Yes, once</label>
+                        <label><input type="radio" name="browser"> No</label>
+                        <label><input type="radio" name="browser"> Not sure</label>
+                        <button id="7" type="button" class="next-btn js-next" onclick="document.getElementById('popup7').style.display='none'">Next...</button>
+                    </div>
+                </div>
+            </div><!--question-page-7-->  
+            <div id="popup8">
+                <div class="que-4 bg"> <span class="bluebig">Question 8 of 8: </span><span class="question"> What is your gender? </span>
+                    <div class="radio-btn">
+                        <label><input type="radio" name="browser"> Male</label>
+                        <label><input type="radio" name="browser"> Female</label> 
+                        <a href="1.html">                               
+                            <button id="8" type="button" class="next-btn js-next">Finish...</button>
+                        </a>
+                    </div>
+                </div>
+            </div><!--question-page-8-->             
+        </div> 
+    </div>
+    <div id="name-txt" class="down">
+        <center><p >  
+            <b>2014-2015 All Rights Reserved.</b> 
+            This is an independent survey and marketing tool. Com-annualsurvey.info is not affiliated with or endorsed by . Com-annualsurvey.info does not claim to represent or own any of the trademarks, tradenames or rights associated with any of the rewards which are the property of their respective owners who do not own, endorse, or promote this website. All images on this website are readily available in various places on the Internet and believed to be in public domain according to the U.S. Copyright Fair Use Act. Rewards require shipping and handling fees. *See manufacturer's site for details as terms vary with rewards.
+        </p></br></center>
+    </div> 
+</body>
+</html>
