@@ -1,0 +1,464 @@
+hr {
+  border: none; 
+  background-color: #696969; 
+  color: #696969; 
+  height: 1px;  
+}
+
+.head-box {
+  margin-top: 25px;
+  height: 108px;
+  background-color: #777777;
+}
+
+.head-box p { 
+  padding: 25px;
+  text-align:right;  
+  color:white;
+}
+
+.center-box-left {    
+  position:relative;  
+  display: table-cell;
+}
+
+.center-box-right {    
+  position:relative;  
+  display: table-cell;
+}
+.center-box-left-up {
+  background-color: #777777;  
+  padding: 25px;
+}
+
+.center-box-left p {      
+  color:white;
+}
+
+.center-box-left-down {   
+  position: absolute;
+  bottom: 10px;
+  background:#777777;
+  height:100px;  
+  width: 200px;
+}
+
+.center-box-left-down-mobile {    
+  background:#777777;
+  height:100px;    
+  border-top: 15px solid white;
+}
+
+.center-box {
+  padding: 25px;  
+  background-color: #dcdcdc;
+}
+
+.center-box-mobile {
+  padding: 25px;  
+  background-color: #dcdcdc;
+  border-top: 30px solid white;
+}
+
+.center-box p {
+  font-weight: 600;  
+  color: #777777;
+}
+
+.center-box-small {  
+  margin-top: 2em;
+  height: 152px;
+  background-color: #dcdcdc;
+}
+
+.margin-15 {
+  width: 15px;
+}
+
+.center-box-bottom {
+  margin-top: 2em;  
+  background-color: #dcdcdc;  
+}
+
+.center-box-bottom p {
+  color: #777777;
+  padding: 25px;
+}
+
+.box-down1 {
+  background-color: #777777;
+}
+
+.box-down1 ul{
+  padding: 15px 25px;
+  list-style: none;
+  color:white;
+}
+
+.box-down2 {
+  background-color: #777777;
+}
+
+.box-down2 ul{
+  padding: 15px 25px;
+  list-style: square outside;
+  color:white;
+}
+
+.box-down1-mobile {
+  background-color: #777777;
+  border-top: 15px solid white;
+}
+
+.box-down1-mobile1 {
+  height: 100px;
+  background-color: #777777;
+  border-top: 5px solid white;
+}
+
+.box-down2-mobile {
+  background-color: #777777;
+  border-top: 15px solid white;
+}
+
+.box-down1-mobile ul{
+  padding: 15px 25px;
+  list-style: none;
+  color:white;
+}
+
+.box-down2-mobile ul{
+  padding: 15px 25px;
+  list-style: square outside;
+  color:white;
+}
+
+/* line 3, ../zen.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../zen.scss */
+.one, .two, .three, .four, .five, .six, .seven, .eight {
+  height: 200px;
+  font: 14px Helvetica, sans-serif;
+  text-align: left;  
+  border: 15px solid white; 
+  padding: 10px; 
+}
+
+/* line 19, ../zen.scss */
+.three, .four {
+  height: 100px;
+  font: 14px/100px Helvetica, sans-serif;
+}
+
+/* line 25, ../zen.scss */
+.container {
+  width: 90%;
+  margin: 0px auto 0px auto;  
+}
+/* line 46, ../grids.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../grids.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 34, ../zen.scss */
+.one {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 38, ../zen.scss */
+.two {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 42, ../zen.scss */
+.nested {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 0;
+  background: #ccc;
+}
+
+/* line 48, ../zen.scss */
+.three {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 52, ../zen.scss */
+.four {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 57, ../zen.scss */
+.container2 {
+  width: 90%;
+  margin: 0 auto;
+  background: #999;
+}
+/* line 46, ../grids.scss */
+.container2:before, .container2:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../grids.scss */
+.container2:after {
+  clear: both;
+}
+
+/* line 67, ../zen.scss */
+.five {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 71, ../zen.scss */
+.six {
+  float: left;
+  width: 25%;
+  margin-left: 25%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 75, ../zen.scss */
+.seven {
+  float: left;
+  width: 25%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 79, ../zen.scss */
+.eight {
+  float: left;
+  width: 25%;
+  margin-left: 75%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* Media Query ----------- */
+@media screen and (max-width: 700px) {
+  /* line 91, ../zen.scss */
+  .one {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* line 95, ../zen.scss */
+  .two {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* line 100, ../zen.scss */
+  .nested {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
+    background: #ccc;
+  }
+
+  /* line 107, ../zen.scss */
+  .three {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* line 112, ../zen.scss */
+  .four {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* line 122, ../zen.scss */
+  .five, .seven {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  /* line 127, ../zen.scss */
+  .six, .eight {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+
+
+#container {
+    border-left: 200px solid white; 
+    position:relative;
+    padding: 0px 0px -30px 0px;
+}  
+#col1 {
+    width: 200px; 
+    float: left; 
+    margin-left: -200px; 
+    color: #fff;
+}
+#col1 p {
+    padding: 0px; 
+    margin: 0; 
+}
+#col2 {
+    padding: 0px 0px 0px 30px;
+}
+div.clear {
+    clear: both; 
+}
