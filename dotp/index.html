@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>ТрансИнформ | Новости</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -22,9 +24,10 @@
          
           <ul class="right">
             <li><a href="#">Главная</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Медиа</a></li>
-            <li><a href="#">О нас</a></li>            
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Мнения</a></li>
+            <li><a href="#">Контакты</a></li>            
           </ul>
         </section>
       </nav>
@@ -38,31 +41,58 @@
 
         <br>   
 
-        <ul class="example-orbit-content" data-orbit>
+        <ul class="example-orbit-content" data-orbit 
+                                          data-options="animation:fade;
+                                                        timer_speed: 4000;
+                                                        pause_on_hover: false;
+                                                        bullets: false;
+                                                        timer: true;">
+
+          <li>
+    <img src="photo/1.jpg" alt="slide 1" />
+    <div class="orbit-caption text-orbit">
+      <h3>Caption One.</h3>
+    </div>
+  </li>
+  <li class="active">
+    <img src="photo/2.jpg" alt="slide 2" />
+    <div class="orbit-caption text-orbit">
+      <h3>Caption Two.</h3>
+    </div>
+  </li>
+  <li>
+    <img src="photo/3.jpg" alt="slide 3" />
+    <div class="orbit-caption text-orbit">
+      <h3>Caption Three.</h3>
+    </div>
+  </li>
+          
+          <!--
           <li data-orbit-slide="headline-1">            
             <div class="text-center panel photobg1">              
               <h2>Новость 1</h2>
-              <!--<h3>Subheadline</h3>-->
+              
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi, nobis illo. Repellendus atque dolorem, officia recusandae autem, laudantium consectetur, neque!</p>
             </div>
           </li>
           <li data-orbit-slide="headline-2">
             <div class="text-center panel photobg2">
               <h2>Новость 2</h2>
-              <!--<h3>Subheadline</h3>-->
+              
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi, nobis illo. Repellendus atque dolorem, officia recusandae autem, laudantium consectetur, neque!</p>
             </div>
           </li>
           <li data-orbit-slide="headline-3">
             <div class="text-center panel photobg3">
               <h2>Новость 3</h2>
-              <!--<h3>Subheadline</h3>-->
+              
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi, nobis illo. Repellendus atque dolorem, officia recusandae autem, laudantium consectetur, neque!</p>
             </div>
           </li>
+        -->
         </ul>
 
-        <br>
+        
 
         <div class="row">
           <div class="large-12 columns">
@@ -70,20 +100,21 @@
           </div>
         </div>
 
+        <br>
 
         <div class="row">
           <div class="large-2 columns">
             <img src="img/news1.jpg">
           </div>
           <div class="large-4 text-left columns">
-            <h4>News 1</h4>
+            <h4><a href="post.html">News 1</a></h4>
             <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation.</p>
           </div>
           <div class="large-2 columns">
             <img src="img/news2.jpg">
           </div>
           <div class="large-4 text-left columns">
-            <h4>News 2</h4>
+            <h4><a href="post.html">News 2</a></h4>
             <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation.</p>
           </div>
         </div>
@@ -93,14 +124,14 @@
             <img src="img/news3.jpg">
           </div>
           <div class="large-4 text-left columns">
-            <h4>News 3</h4>
+            <h4><a href="post.html">News 3</a></h4>
             <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation.</p>
           </div>
           <div class="large-2 columns">
             <img src="img/news4.jpg">
           </div>
           <div class="large-4 text-left columns">
-            <h4>News 4</h4>
+            <h4><a href="post.html">News 4</a></h4>
             <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation.</p>
           </div>
         </div>
@@ -112,6 +143,8 @@
             <h2>Актуально</h2>
           </div>
         </div>
+
+        <br>
 
         <div class="row">
           <div class="large-2 columns">
@@ -219,35 +252,89 @@
 
         <br>
 
+      <!--
         <div class="large-3 medium-3 columns">
           <!--abel>Input Label</label>-->
+      <!--
           <input type="text" placeholder="Search" />
           <hr>
         </div>
+      -->
 
         
 
-        <div class="medium-3 large-3 text-center columns">  
-                 
-          <img src="http://placehold.it/300x300&text=[Video]">
-        </div>        
+        <div class="medium-3 large-3 text-center columns">                   
+          <iframe width="220" height="220" src="https://www.youtube.com/embed/FV4eJlnSnMY" frameborder="0" allowfullscreen></iframe>
+        </div> 
+
+        <div class="medium-3 large-3 text-center columns"> 
+          <br>                 
+          <a>ОСОБОЕ МНЕНИЕ</a>
+        </div>       
 
         <div class="medium-3 large-3 text-center columns">  
           <br>        
-          <img src="http://placehold.it/300x300&text=[News law]">
-        </div>        
-
-        <div class="medium-3 large-3 text-center columns">   
-          <br>       
-          <img src="http://placehold.it/300x300&text=[Things]">
-          <hr>
-        </div>
+          <div id="what_do_none">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <div class="title title-center">
+                    <a>НОВОСТИ ЗАКОНОДАТЕЛЬСТВА</a>
+                    <!--<h5>НОВОСТИ<br> ЗАКОНО&shy;ДАТЕЛЬСТВА</h5>-->
+                  </div>
+                </td>
+              </tr>   
+              <tr>
+                <td>                  
+                    <img style="margin-right:5px;" src="img/ico_pract.png" />
+                    <span class="date_pract">
+                      15.09.2015
+                      Киев
+                    </span>
+                    <a class="a_pract" style="color:#000000;" href='http://practic.ligazakon.ua/practic/program/1064.htm'>Последние новшества в налоге на прибыль и трансфертном ценообразовании
+                    </a>
+                </td>
+              </tr> 
+              <tr>
+                <td>                  
+                    <img style="margin-right:5px;" src="img/ico_pract.png" />
+                    <span class="date_pract">
+                      28.08.2015
+                      Киев
+                    </span>
+                    <a class="a_pract" style="color:#000000;" href='http://practic.ligazakon.ua/practic/program/1058.htm'>Правовой режим недвижимого имущества и сделок с ним: текущая практика и грядущие изменения
+                    </a>
+                </td>
+              </tr>
+              <tr>
+                <td>                  
+                    <img style="margin-right:5px;" src="img/ico_pract.png" />
+                    <span class="date_pract">
+                      15.09.2015
+                      Киев
+                    </span>
+                    <a class="a_pract" style="color:#000000;" href='http://practic.ligazakon.ua/practic/program/1064.htm'>Последние новшества в налоге на прибыль и трансфертном ценообразовании
+                    </a>
+                </td>
+              </tr> 
+              <tr>
+                <td>                  
+                    <img style="margin-right:5px;" src="img/ico_pract.png" />
+                    <span class="date_pract">
+                      28.08.2015
+                      Киев
+                    </span>
+                    <a class="a_pract" style="color:#000000;" href='http://practic.ligazakon.ua/practic/program/1058.htm'>Правовой режим недвижимого имущества и сделок с ним: текущая практика и грядущие изменения
+                    </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>  
 
         <div class="medium-3 large-3 text-center columns"> 
-          <br>  
-                      
-            <a href="#" class="large-12 button">Автовокзал</a>          
-          
+          <br>                        
+            <a href="#" class="large-12 button">Автовокзал</a>  
         </div>
 
         </div>
@@ -279,13 +366,14 @@
 
       
         <div class="row">
-          <div class="medium-6 large-6 columns">© Донецкий областной транспортный портал</div>
+          <div class="medium-6 large-6 columns">© ТрансИнформ | Транспортные новости нашего региона</div>
           <div class="medium-6 large-6 columns">
             <ul class="inline-list right">
               <li><a href="#">Главная</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a href="#">Медиа</a></li>
-              <li><a href="#">О нас</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Мнения</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </div>
         </div>
