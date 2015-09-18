@@ -1,0 +1,943 @@
+h1 { 
+  font-family: 'Open Sans', sans-serif; 
+  color: #323232;
+  font-size: 40pt;
+}
+
+h5 {
+  font-family: 'Open Sans';
+  font-weight: 700; 
+  color: #1a1a1a;
+  font-size: 21pt;
+  line-height: 21pt;
+  margin: 0px;
+  letter-spacing: 0.1em;
+}
+
+h6 {
+  font-family: 'Open Sans', sans-serif; 
+  color: #1a1a1a;
+  font-size: 18pt;
+  line-height: 21pt;
+  margin: 0px;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif; 
+  color: #1a1a1a;
+  font-size: 15pt;
+  line-height: 20pt;
+  margin: 0px;
+  /*letter-spacing: 0.1em;*/
+}
+
+.text-spacing {
+  letter-spacing: 0.1em;
+}
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.panel {
+  background-color: white; 
+  overflow: hidden;
+  height: auto;
+  
+}
+
+.up-div {
+    height: 47px;
+  }
+
+.down-div {
+  height: 30px;
+}
+
+#img-center {
+  margin:0 17.6% 0 17.5%;
+  width:65%;
+}
+
+.name-input p{
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: #4b4b4b;
+  font-size: 15pt;
+}
+
+.name-input h1{
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: #c8c8c8;
+  font-size: 35pt;
+}
+
+.label-color {
+  background-color: white;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: #4b4b4b;
+  font-size: 15pt;
+}
+
+.button{text-decoration:none; text-align:center; 
+ padding:15px 37px; 
+ border:solid 3px #454545;
+
+ font-family: 'Open Sans';
+  font-weight: 700;
+  
+ font:12px; 
+ font-weight:bold; 
+ color:#454545; 
+ background:#ffffff; 
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+   -webkit-transition: color 0.3s ease-in;
+ -moz-transition:  color 0.3s ease-in;
+ -o-transition:  color 0.3s ease-in;
+ transition:  color 0.3s ease-in;}.button:hover{
+ padding:15px 37px; 
+ border:solid 3px #454545; 
+
+ font-family: 'Open Sans';
+  font-weight: 700;
+  
+ font:12px; 
+ font-weight:bold; 
+ color:#ffffff; 
+ background:#454545; 
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #454545; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #454545;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #454545;  
+  
+ }
+
+a.facebook {
+  background: url('../img/facebook-icon.png'); /* Путь к файлу с исходным рисунком  */
+  display: block; /*  Рисунок как блочный элемент */
+  width: 35px; /* Ширина рисунка */
+  height: 35px; /*  Высота рисунка */
+}
+a.facebook:hover {
+  background: url('../img/facebook-icon-hover.png'); /* Путь к файлу с заменяемым рисунком  */
+}
+
+a.twitter {
+  background: url('../img/twitter-icon.png'); /* Путь к файлу с исходным рисунком  */
+  display: block; /*  Рисунок как блочный элемент */
+  width: 35px; /* Ширина рисунка */
+  height: 35px; /*  Высота рисунка */
+}
+a.twitter:hover {
+  background: url('../img/twitter-icon-hover.png'); /* Путь к файлу с заменяемым рисунком  */
+}
+
+a.gplus {
+  background: url('../img/gplus-icon.png'); /* Путь к файлу с исходным рисунком  */
+  display: block; /*  Рисунок как блочный элемент */
+  width: 35px; /* Ширина рисунка */
+  height: 35px; /*  Высота рисунка */
+}
+a.gplus:hover {
+  background: url('../img/gplus-icon-hover.png'); /* Путь к файлу с заменяемым рисунком  */
+}
+
+a.pin {
+  background: url('../img/pin-icon.png'); /* Путь к файлу с исходным рисунком  */
+  display: block; /*  Рисунок как блочный элемент */
+  width: 35px; /* Ширина рисунка */
+  height: 35px; /*  Высота рисунка */
+}
+a.pin:hover {
+  background: url('../img/pin-icon-hover.png'); /* Путь к файлу с заменяемым рисунком  */
+}
+
+a.img1 {
+  background: url('../img/1.jpg') no-repeat center; /* Путь к файлу с исходным рисунком  */
+  background-size:100%;
+  display: block; /*  Рисунок как блочный элемент */
+  width: 272px; /* Ширина рисунка */
+  height: 208px; /*  Высота рисунка */
+}
+a.img1:hover {
+  background: url('../img/1-hover.jpg') no-repeat center; /* Путь к файлу с заменяемым рисунком  */
+  background-size:100%;
+}
+
+a.img2 {
+  background: url('../img/2.jpg') no-repeat center; /* Путь к файлу с исходным рисунком  */
+  background-size:100%;
+  display: block; /*  Рисунок как блочный элемент */
+  width: 272px; /* Ширина рисунка */
+  height: 208px; /*  Высота рисунка */
+}
+a.img2:hover {
+  background: url('../img/2-hover.jpg') no-repeat center; /* Путь к файлу с заменяемым рисунком  */
+  background-size:100%;
+}
+
+a.img3 {
+  background: url('../img/3.jpg') no-repeat center; /* Путь к файлу с исходным рисунком  */
+  background-size:100%;
+  display: block; /*  Рисунок как блочный элемент */
+  width: 272px; /* Ширина рисунка */
+  height: 208px; /*  Высота рисунка */
+}
+a.img3:hover {
+  background: url('../img/3-hover.jpg') no-repeat center; /* Путь к файлу с заменяемым рисунком  */
+  background-size:100%;
+}
+
+.need-hide-on{
+    display: none;
+}
+
+.my-custom-label {
+    display:inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+}
+
+.my-custom-label > input[type=radio] {
+    display: none;
+}
+
+.my-custom-label > span {
+    background: #fbfbfb;    
+    display:inline-block;
+    width:35px;
+    height: 35px;    
+    vertical-align:middle;
+}
+
+.my-custom-label > input[type=radio]:checked + span {
+    background: #fbfbfb;
+    border: solid 1px #d2d2d2;
+}
+
+.my-custom-label-1 {
+    display:inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+}
+
+.my-custom-label-1 > input[type=radio] {
+    display: none;
+}
+.my-custom-label-1 > span {
+    background: #add4eb;    
+    display:inline-block;
+    width:35px;
+    height: 35px;    
+    vertical-align:middle;
+}
+.my-custom-label-1 > input[type=radio]:checked + span {
+    background: #add4eb;
+    border: solid 1px #d2d2d2;
+}
+
+.my-custom-label-2 {
+    display:inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+}
+
+.my-custom-label-2> input[type=radio] {
+    display: none;
+}
+.my-custom-label-2 > span {
+    background: #bbafd9;    
+    display:inline-block;
+    width:35px;
+    height: 35px;    
+    vertical-align:middle;
+}
+.my-custom-label-2 > input[type=radio]:checked + span {
+    background: #bbafd9;
+    border: solid 1px #d2d2d2;
+}
+
+.my-custom-label-3 {
+    display:inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+}
+
+.my-custom-label-3 > input[type=radio] {
+    display: none;
+}
+.my-custom-label-3 > span {
+    background: #ebadc3;    
+    display:inline-block;
+    width:35px;
+    height: 35px;    
+    vertical-align:middle;
+}
+.my-custom-label-3 > input[type=radio]:checked + span {
+    background: #ebadc3;
+    border: solid 1px #d2d2d2;
+}
+
+.display-no{
+    display: none;
+  }
+
+
+@media only screen and (max-width: 768px) {
+  .up-div {
+    height: 28px;
+  }
+  .down-div {
+    height: 30px;
+  }
+
+  h1 {   
+    font-size: 36pt;
+  }
+
+  .display-no{
+    display: none;
+  }
+
+  .need-hide{
+    display:none;
+   }
+
+  .need-hide-on{
+    display: inline;
+  }
+
+  .button{text-decoration:none; text-align:center; 
+    padding:15px 15px; 
+    border:solid 3px #454545;
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+  
+    font:12px; 
+    font-weight:bold; 
+    color:#454545; 
+    background:#ffffff; 
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition:  color 0.3s ease-in;
+    -o-transition:  color 0.3s ease-in;
+    transition:  color 0.3s ease-in;}.button:hover{
+    padding:15px 15px; 
+    border:solid 3px #454545; 
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+  
+    font:12px; 
+    font-weight:bold; 
+    color:#ffffff; 
+    background:#454545; 
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #454545; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #454545;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #454545;  
+  }
+
+  a.img1 {
+    background: url('../img/1.jpg') no-repeat center; /* Путь к файлу с исходным рисунком  */
+    background-size:100%;
+    display: block; /*  Рисунок как блочный элемент */
+    width: 200px; /* Ширина рисунка */
+    height: 153px; /*  Высота рисунка */
+  }
+  a.img1:hover {
+    background: url('../img/1-hover.jpg') no-repeat center; /* Путь к файлу с заменяемым рисунком  */
+    background-size:100%;
+  }
+
+  a.img2 {
+    background: url('../img/2.jpg') no-repeat center; /* Путь к файлу с исходным рисунком  */
+    background-size:100%;
+    display: block; /*  Рисунок как блочный элемент */
+    width: 200px; /* Ширина рисунка */
+    height: 153px; /*  Высота рисунка */
+  }
+  a.img2:hover {
+    background: url('../img/2-hover.jpg') no-repeat center; /* Путь к файлу с заменяемым рисунком  */
+    background-size:100%;
+  }
+
+  a.img3 {
+    background: url('../img/3.jpg') no-repeat center; /* Путь к файлу с исходным рисунком  */
+    background-size:100%;
+    display: block; /*  Рисунок как блочный элемент */
+    width: 200px; /* Ширина рисунка */
+    height: 153px; /*  Высота рисунка */
+  }
+  a.img3:hover {
+    background: url('../img/3-hover.jpg') no-repeat center; /* Путь к файлу с заменяемым рисунком  */
+    background-size:100%;
+  }
+ 
+}
+
+@media only screen and (max-width: 500px) {
+  .up-div {
+    height: 20px;
+  }
+  .down-div {
+    height: 25px;
+  }
+
+  .display-no{
+    display: inline;
+  }
+
+  .need-hide-small{
+    display:none;
+   }
+
+  h1 {   
+    font-size: 24pt;
+  }
+
+  h5 {
+    font-family: 'Open Sans';
+    font-weight: 700; 
+    color: #1a1a1a;
+    font-size: 16pt;
+    line-height: 18pt;
+    margin: 0px;
+    letter-spacing: 0.1em;
+  }
+
+  h6 {
+    font-family: 'Open Sans', sans-serif; 
+    color: #1a1a1a;
+    font-size: 16pt;
+    line-height: 22pt;
+    margin: 0px;
+    letter-spacing: 0.1em;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif; 
+    color: #1a1a1a;
+    font-size: 13pt;
+    line-height: 14pt;
+    margin: 0px;
+    /*letter-spacing: 0.1em;*/
+  }
+
+  .button{text-decoration:none; text-align:center; 
+    padding:15px 65px; 
+    border:solid 3px #454545;
+    width: 100%;
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+  
+    font:12px; 
+    font-weight:bold; 
+    color:#454545; 
+    background:#ffffff; 
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition:  color 0.3s ease-in;
+    -o-transition:  color 0.3s ease-in;
+    transition:  color 0.3s ease-in;}.button:hover{
+    padding:15px 65px; 
+    border:solid 3px #454545; 
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+  
+    font:12px; 
+    font-weight:bold; 
+    color:#ffffff; 
+    background:#454545; 
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #454545; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #454545;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #454545;  
+  }
+
+  .panel {
+    background-color: white;    
+  }  
+
+  .my-custom-label {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+  }
+
+  .my-custom-label > input[type=radio] {
+    display: none;
+  }
+
+  .my-custom-label > span {
+    background: #fbfbfb;    
+    display:inline-block;
+    width:35px;
+    height: 35px;    
+    vertical-align:middle;
+  }
+
+  .my-custom-label > input[type=radio]:checked + span {
+    background: #fbfbfb;
+    border: solid 1px #d2d2d2;
+  }
+
+  .my-custom-label-1 {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    background: white;
+    text-align: center;
+  }
+
+  .my-custom-label-1 > input[type=radio] {
+    display: none;
+  }
+  .my-custom-label-1 > span {
+    background: #add4eb;    
+    display:inline-block;
+    width:35px;
+    height: 35px;    
+    vertical-align:middle;
+  }
+  .my-custom-label-1 > input[type=radio]:checked + span {
+    background: #add4eb;
+    border: solid 1px #d2d2d2;
+  }
+
+  .my-custom-label-2 {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+  }
+
+  .my-custom-label-2> input[type=radio] {
+    display: none;
+  }
+  .my-custom-label-2 > span {
+    background: #bbafd9;    
+    display:inline-block;
+    width:35px;
+    height: 35px;    
+    vertical-align:middle;
+  }
+  .my-custom-label-2 > input[type=radio]:checked + span {
+    background: #bbafd9;
+    border: solid 1px #d2d2d2;
+  }
+
+  .my-custom-label-3 {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+  }
+
+  .my-custom-label-3 > input[type=radio] {
+    display: none;
+  }
+  .my-custom-label-3 > span {
+    background: #ebadc3;    
+    display:inline-block;
+    width:35px;
+    height: 35px;    
+    vertical-align:middle;
+  }
+  .my-custom-label-3 > input[type=radio]:checked + span {
+    background: #ebadc3;
+    border: solid 1px #d2d2d2;
+  }  
+}
+
+#box {
+  z-index:1000;
+  display:none;
+  padding-top:6vw;
+  position:absolute;
+  width:100%;
+  height:46vw;
+  background-color: #454545;
+}
+
+
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a img {
+  border-radius: 0px;
+}
+
+#content h1 {
+  font-family: "Helvetica", Arial, Georgia;
+  font-size: 45px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+
+#container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#slideshow {
+  margin: 0px auto 0px;
+  position: relative;
+  height: 218px;
+  width: 218px;
+  overflow: visible;
+}
+#slideshow li.first-animation {
+  position: absolute;
+  top: 0;
+  -moz-animation: cycle 30s ease-in-out infinite;
+  -webkit-animation: cycle 30s ease-in-out infinite;
+}
+#slideshow li.second-animation {
+  position: absolute;
+  top: 0;
+  -moz-animation: cycletwo 30s ease-in-out infinite;
+  -webkit-animation: cycletwo 30s ease-in-out infinite;
+}
+#slideshow li.third-animation {
+  position: absolute;
+  top: 0;
+  -moz-animation: cyclethree 30s ease-in-out infinite;
+  -webkit-animation: cyclethree 30s ease-in-out infinite;
+}
+#slideshow :hover li {
+  animation-play-state: paused;
+}
+
+#mask {
+  overflow: hidden;
+  height: 218px;
+}
+
+@-webkit-keyframes cycle {
+  0% {
+    opacity: 1;
+  }
+  3.33% {
+    opacity: 1;
+  }
+  6.66% {
+    opacity: 1;
+  }
+  9.99% {
+    opacity: 1;
+  }
+  13.32% {
+    opacity: 1;
+  }
+  16.65% {
+    opacity: 1;
+  }
+  19.98% {
+    opacity: 1;
+  }
+  23.32% {
+    opacity: 1;
+  }
+  26.64% {
+    opacity: 1;
+  }
+  29.97% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+  }
+  36.63% {
+    opacity: 0;
+  }
+  96.57% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cycletwo {
+  0% {
+    opacity: 0;
+  }
+  /*1 second = 4%*/
+  33.3% {
+    opacity: 0;
+  }
+  36.63% {
+    opacity: 1;
+  }
+  39.96% {
+    opacity: 1;
+  }
+  43.29% {
+    opacity: 1;
+  }
+  46.62% {
+    opacity: 1;
+  }
+  49.95% {
+    opacity: 1;
+  }
+  53.28% {
+    opacity: 1;
+  }
+  56.61% {
+    opacity: 1;
+  }
+  59.94% {
+    opacity: 1;
+  }
+  63.27% {
+    opacity: 1;
+  }
+  66.6% {
+    opacity: 1;
+  }
+  69.93% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cyclethree {
+  0% {
+    opacity: 0;
+  }
+  66.6% {
+    opacity: 0;
+  }
+  69.93% {
+    opacity: 1;
+  }
+  73.26% {
+    opacity: 1;
+  }
+  76.59% {
+    opacity: 1;
+  }
+  79.92% {
+    opacity: 1;
+  }
+  83.25% {
+    opacity: 1;
+  }
+  86.58% {
+    opacity: 1;
+  }
+  89.91% {
+    opacity: 1;
+  }
+  93.24% {
+    opacity: 1;
+  }
+  96.57% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes cycle {
+  0% {
+    opacity: 1;
+  }
+  3.33% {
+    opacity: 1;
+  }
+  6.66% {
+    opacity: 1;
+  }
+  9.99% {
+    opacity: 1;
+  }
+  13.32% {
+    opacity: 1;
+  }
+  16.65% {
+    opacity: 1;
+  }
+  19.98% {
+    opacity: 1;
+  }
+  23.32% {
+    opacity: 1;
+  }
+  26.64% {
+    opacity: 1;
+  }
+  29.97% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+  }
+  36.63% {
+    opacity: 0;
+  }
+  96.57% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes cycletwo {
+  0% {
+    opacity: 0;
+  }
+  33.3% {
+    opacity: 0;
+  }
+  36.63% {
+    opacity: 1;
+  }
+  39.96% {
+    opacity: 1;
+  }
+  43.29% {
+    opacity: 1;
+  }
+  46.62% {
+    opacity: 1;
+  }
+  49.95% {
+    opacity: 1;
+  }
+  53.28% {
+    opacity: 1;
+  }
+  56.61% {
+    opacity: 1;
+  }
+  59.94% {
+    opacity: 1;
+  }
+  63.27% {
+    opacity: 1;
+  }
+  66.6% {
+    opacity: 1;
+  }
+  69.93% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes cyclethree {
+  0% {
+    opacity: 0;
+  }
+  /*1 second = 4%*/
+  66.6% {
+    opacity: 0;
+  }
+  69.93% {
+    opacity: 1;
+  }
+  73.26% {
+    opacity: 1;
+  }
+  76.59% {
+    opacity: 1;
+  }
+  79.92% {
+    opacity: 1;
+  }
+  83.25% {
+    opacity: 1;
+  }
+  86.58% {
+    opacity: 1;
+  }
+  89.91% {
+    opacity: 1;
+  }
+  93.24% {
+    opacity: 1;
+  }
+  96.57% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*@keyframes cycle {
+  0%    { opacity: 1; }
+  3.33%    { opacity: 1; }
+  6.66%    { opacity: 1; } 
+  9.99%   { opacity: 1; } 
+  13.32%   { opacity: 1; } 
+  16.65%   { opacity: 0; } 
+  19.98%   { opacity: 0; } 
+  23.32%   { opacity: 0; } 
+  26.64%   { opacity: 0; } 
+  29.97%   { opacity: 0; } 
+  33.3%   { opacity: 0; } 
+  36.63%   { opacity: 0; } 
+  39.96%   { opacity: 0; } 
+  43.29%   { opacity: 0; } 
+  46.62%   { opacity: 0; }
+  49.95%   { opacity: 0; }
+  53.28%   { opacity: 0; }
+  56.61%   { opacity: 0; }
+  59.94%   { opacity: 0; }
+  63.27%   { opacity: 0; }
+  66.6%   { opacity: 0; }
+  69.93%   { opacity: 0; }
+  73.26%   { opacity: 0; }
+  76.59%   { opacity: 0; }
+  79.92%   { opacity: 0; }
+  83.25%   { opacity: 0; }
+  86.58%   { opacity: 0; }
+  89.91%   { opacity: 0; }
+  93.24%   { opacity: 0; }
+  96.57%   { opacity: 0; }
+  100%  { opacity: 1; }
+}*/
+
