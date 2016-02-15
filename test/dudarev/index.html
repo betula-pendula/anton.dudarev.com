@@ -93,16 +93,41 @@
 					</div>
 					<div class="col-sm-6">
 
+						<!--
 						<form action="//formspree.io/anton@dudarev.com" method="POST">      
     						<p><input type="text" name="Имя" required placeholder="Имя" /></p>
     						<p><input type="email" name="_replyto" required placeholder="Email" /></p>
     						<p><textarea name="Сообщение" required placeholder="Ваше сообщение" rows="7"></textarea></p>
     						<input type="submit" value="Отправить" />
 						</form>
+						-->
 
 						<!--
 						<iframe src="https://docs.google.com/forms/d/1mBnvn_NCzKnAVQNDzEtMHBVd1qDUUhEDhPQoZekXNYA/viewform?embedded=true" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
 						-->
+
+						
+						<form id="request" class="row suscribe" action="//formspree.io/anton@dudarev.com" method="POST" accept-charset="utf-8">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" placeholder="Name" name="Name">
+								<input type="email" class="form-control" placeholder="Email" name="_replyto">
+								<input type="web" class="form-control" placeholder="Your web site" name="Web">
+							</div>
+							<div class="col-sm-12">
+								<!--<input type="number" class="form-control" placeholder="Your web site" name="phone">-->
+								<select class="form-control" name="program">
+	                    			<option>Select service</option>
+	                    			<option>Only site</option>
+	                    			<option>Half-yearly</option>
+	                    			<option>Year</option>
+	                    			<option>Super Pro</option>
+                                </select>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-default text-center"><i class="icon-info"></i> Request Information</button>
+							</div>		
+						</form>
+						
 
 						<!--
 						<form id="request" class="row suscribe" action="request-form.php" method="post" accept-charset="utf-8">
