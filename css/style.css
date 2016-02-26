@@ -268,7 +268,14 @@ p{
 	margin-bottom: 0;
 }
 .navbar-brand {
+	margin-top: 0px;
+}
+.navbar-brand h1{
+	color: #46627e;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
 	margin-top: 5px;
+	font-size: 30px;
 }
 .navbar-default .navbar-nav>li>a {
 	color: #46627e;
@@ -277,6 +284,8 @@ p{
 	margin-left: 10px;
 	padding-right:5px;
 	padding-left: 5px;
+	margin-bottom: 5px;	
+	padding-top: 20px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;	
@@ -287,13 +296,13 @@ p{
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus{
 	color: #46627e;
-	background-color: #fff;
-	border-bottom: 2px solid #E9E9E9;
+	background-color: #fff;	
 }
 .navbar-default .navbar-nav>.active>a:hover{
 	color: #027bef;
-	background-color: #fff;
+	background-color: #fff;	
 }
+
 .panel-default>.panel-heading {
 	background: #fff;
 	border-color: #e9eef2;
@@ -328,6 +337,7 @@ p{
 .slider h2{
 	font-size: 52px;
 	font-weight: 800;
+	margin-top: -10px;
 }
 .slider h3 {
 	font-size: 26px;
