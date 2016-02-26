@@ -1,732 +1,973 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <!-- PAGE TITLE -->
-    <title>Anton Dudarev | Web and Graphic Designer</title>
-    <!-- MAKE IT RESPONSIVE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- COLORS -->
-    <style type="text/css">
-    	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-		* * COLOR SHEME 1 #0DB4E9 (blue) #82b440 (green)
-		* * COLOR SHEME 2 #6BD6D6 #D66B6B
-		* * COLOR SHEME 3 #B782ED #B8ED82
-		* * COLOR SHEME 4 #917B54 #F7A516
-		* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-		.colored, 
-		a:hover,
-		.event a, 
-		.post a,
-		.section-content-colored .section-content .event-content a.btn:hover,
-		.section-content-colored .section-content .post-content a.btn:hover,
-		.section-full-colored,
-		.section a.btn:hover{
-			color: #82b440;
-		}
-		.section-content-colored .section-content .event-content a.btn:hover,
-		.section-content-colored .section-content .post-content a.btn:hover,
-		.section a.btn:hover,
-		.section-image a.btn.btn-donation,
-		#menu a.btn-success{
-			border-color: #82b440;
-		}
-		.section-full-colored,
-		.section-content-colored .section-content,
-		.section a.btn,
-		.section-full-colored .section-content,
-		.section-content-colored .section-content .event-content a.btn,
-		.section-content-colored .section-content .post-content a.btn,
-		.section-image a.btn.btn-donation,
-		#single-page .section-header,
-		#menu a.btn-success{
-			background-color: #82b440;
-		}
-		.section-content-colored.with-arrow:after,
-		.section-full-colored.with-arrow:after{
-			border-top-color: #82b440;
-		}
-		a,
-		.section-content-colored.color2 .section-content .event-content a.btn:hover,
-		.section-content-colored.color2 .section-content .post-content a.btn:hover{
-			color: #0DB4E9;
-		}
-		.is-sticky #navigation, 
-		.mean-container .mean-nav ul,
-		.pace .pace-progress{
-			background-color: #0DB4E9;
-		}
-		.pace .pace-progress-inner {
-		  box-shadow: 0 0 10px #0DB4E9, 0 0 5px #0DB4E9;
-		}
-		.pace .pace-activity {
-		  border-top-color: #0DB4E9;
-		  border-left-color: #0DB4E9;
-		}
-		.section-content-colored.color2 .section-content .event-content a.btn,
-		.section-content-colored.color2 .section-content .post-content a.btn,
-		.section-content-colored.color2 .section-content{
-			background-color: #0DB4E9;
-		}
-		.section-content-colored.color2 .event-content a.btn:hover,
-		.section-content-colored.color2 .post-content a.btn:hover{
-			border-color: #0DB4E9;
-		}
-		.section-content-colored.color2.with-arrow:after,
-		.section-full-colored.color2.with-arrow:after{
-			border-top-color: #0DB4E9;
-		}
-   </style>
-    <!-- MAIN STYLE -->
-    <link href="style.css" rel="stylesheet" media="screen">
-    <!-- FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <!-- START BODY -->
-  <body>
-	<div id="page">
-		<!-- START MAIN CONTAINER -->
-		<div id="main-container">
-		
-			<!-- START NAVIGATION -->
-			<nav id="navigation">
-				<div class="container">
-					<!-- LOGO GOES HERE -->
-					<a href="#" id="logo"><img src="images/logo.png" alt="Logo Image"></a>
-					<!-- MENU -->
-					<nav>
-						<ul id="menu">													
-							<li><a href="#services">Services</a></li>
-							<li><a href="#gallery">Gallery</a></li>
-							<li><a href="#events">Project</a></li>
-							<!--<li><a href="#blog">Blog</a></li>-->
-							<li><a href="#contact">Contact</a></li>
-							<!--<li><a href="#donation" class="btn btn-success">Donation</a></li>-->
-						</ul>
-					</nav>
-				</div>
-			</nav>
-			<!-- END NAVIGATION -->
-			
-			<!-- START PROJECT SECTION -->
-			<section id="project" class="section" >
-				<span class="sequence-prev" ></span>
-				<span class="sequence-next" ></span>
-	            <ul class="sequence-canvas">
-	            	<li class="animate-in" style="background-image: url('images/slider/1.jpg');">
-		            	<div class="slide-content">
-			            	<h1>Welcome</h1>
-			            	<h3>
-			            		Do you need graphic design services? I am glad to work on various tasks for you: illustration, logo design, web design and UI.
-			            	</h3>
-		            	</div>
-	            	</li>
-	            	<li style="background-color: #82b440;">
-		            	<div class="slide-content">
-			            	<h1>About me</h1>
-			            	<h3>
-			            		Working as a designer since 2006, I have accumulated good knowledge and experience in this field, which allows me to do quality product for you.
-			            	</h3>
-			            	
-							<div class="pull-left">
-								<a href="#donation" class="btn btn-default indent">GUI</a>
-							</div>
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Define Charset -->
+	<meta charset="UTF-8">
 
-							<div class="pull-left">
-								<a href="#donation" class="btn btn-default indent">WEB</a>
-							</div>
+	<!-- Page Title -->
+	<title>Anton M. Dudarev | Web and Graphics Design</title>
 
-							<div class="pull-left">
-								<a href="#donation" class="btn btn-default indent">BUILD</a>
-							</div>
+	<!-- Responsive Metatag --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+       <link rel="shortcut icon" href="images/favicon.png">   
+	<!-- Stylesheet
+	===================================================================================================  -->
+	<link rel="stylesheet" href="font/fontello.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Loader helper -->
+	<style id="loader_helper" type="text/css">
+		.tp-simpleresponsive >ul >li{visibility: hidden !important;}
+	</style>
+</head>
 
-							<div class="pull-left">
-								<a href="#donation" class="btn btn-default indent">DRAW</a>
-							</div>
-		            	</div>
-	            	</li>
-	            	<li style="background-color: #0DB4E9;">
-		            	<div class="slide-content">
-			            	<h1>Why am I</h1>
-			            	<div class="center">
-			            		<img src="images/slider/funder.jpg" class="pull-left" alt="image in slider slide">
-				            	<h3>I am focused on continuous self-improvement and delivering high quality products for my clients.</h3>           			
-			            	</div>
-		            	</div>
-	            	</li>
-	            </ul>
-            	<ul class="sequence-pagination">
-					<li>Welcome</li>
-					<li>About me</li>
-					<li>Why am I</li>
-				</ul>
-			</section>
-			<!-- END PROJECT SECTION -->
-		
-			<!-- START TEAM SECTION -->
-			<section id="team" class="center section with-arrow">
-				<!-- SECTION TITLE -->
-				<div class="section-header">
-					<h1>Who I am</h1>
-					
-				</div>
-				<!-- SECTION CONTENT -->
-				<div class="section-content section-no-top-padding">
-					<div class="container">
-						<h3>
-						If you need graphic design and you need the result I will be glad to meet you. I am skilled in various design task. <hr>
 
-						As a web UI designer, create websites using HTML5 / CSS3 / jQuery. I start with developing layouts in Photoshop and implement it in HTML using modern frameworks such as Foundation, Pure, Bootstrap etc. I am familiar with responsive web design and make layouts look good in various platforms. I try to keep my code clean and user-friendly. <hr>
+<body>
 
-						As an illustrator I work with Photoshop, Illustrator, and CorelDraw depending on the tasks. Each drawing starts with a sketch that I do by hand or on a graphic tablet. I also have experience in the development of print design: corporate identity, logo, brand books, etc.
-						</h3>
-						<a href="#contact" class="btn btn-default">Get In Touch</a>						
-					</div> 
-					<div id="services"></div>
-				</div>				
-			</section>
-			<!-- END TEAM SECTION -->
-			
-			<!-- START SERVICES SECTION -->
-			<section class="section section-full-colored">
-				<!-- SECTION TITLE -->
-				<div class="section-header">
-					<h1>Here's what I know how to</h1>
-					<hr>
-				</div>
-				<!-- SECTION CONTENT -->
-				<div class="section-content">
-					<div class="container">
-						<div class="services-slider flexslider">
-		                    <ul class="slides">
-								<!-- START SERVICE -->
-		                        <li>
-		                            <div class="slide">
-										<span class="icon icon-large icon-code"></span>
-										<h3>Web</h3>
-										<p>Beautiful and user-friendly websites.</p>
-									</div>
-								</li>
-								<!-- END SERVICE -->
-		                        <li>
-		                            <div class="slide">
-										<span class="icon icon-large icon-html5"></span>
-										<h3>HTML/CSS</h3>
-										<p>Responsive sites. Clean and valid code.</p>
-									</div>
-								</li>
-		                        <li>
-		                            <div class="slide">
-										<span class="icon icon-large  icon-menu2"></span>
-										<h3>App/GUI</h3>
-										<p>Graphic user interface for mobile applications and games.</p>
-									</div>
-								</li>
-		                        <li>
-		                            <div class="slide">
-										<span class="icon icon-large icon-print"></span>
-										<h3>Print design</h3>
-										<p>Logo and corporate identity.</p>
-									</div>
-								</li>
-		                        <li>
-		                            <div class="slide">
-										<span class="icon icon-large icon-pencil2"></span>
-										<h3>Draw</h3>
-										<p>Create illustrations and sketch future projects. I draw by hand painting</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<!-- SECTION BUTTON -->
-						<div class="center">
-							<a href="#events" class="btn btn-default">My Diary</a>
-						</div>
+	<div id="loader">
+
+		<!-- Topbar -->
+		<section class="top-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 social-media">
+						<a href="https://www.facebook.com/dudarev.anton" data-toggle="tooltip" class="tooltips" data-placement="bottom" title="Facebook"><i class="icon-facebook"></i></a>
+						<a href="https://twitter.com/betula_pendula" data-toggle="tooltip" class="tooltips" data-placement="bottom" title="Twitter"><i class="icon-twitter"></i></a>
+						<a href="https://ua.linkedin.com/in/betulapendula" data-toggle="tooltip" class="tooltips" data-placement="bottom" title="Linkedin"><i class="icon-linkedin"></i></a>
+						<!--<a href="https://youtube.com/c/АнтонДударев_Береза" data-toggle="tooltip" class="tooltips" data-placement="bottom" title="Youtube"><i class="icon-play"></i></a>-->
+						<a href="https://www.pinterest.com/antonmdudarev/" data-toggle="tooltip" class="tooltips" data-placement="bottom" title="Pinterest"><i class="icon-pinterest"></i></a>
+						<a href="https://google.com/+АнтонДударев_Береза" data-toggle="tooltip" class="tooltips" data-placement="bottom" title="Google Plus"><i class="icon-gplus"></i></a>
 					</div>
-					<div id="gallery"></div>
+					<div class="col-sm-6 data-info">
+						<p><i class="icon-mail"></i> anton@dudarev.com</p>
+						<p><i class="icon-mobile"></i> +380 63 945 26 80</p>
+					</div>
 				</div>
-			</section>
-			<!-- END SERVICES SECTION -->
-			
-			<!-- START GALLERY SECTION -->
-			<section class="section">
-				<!-- SECTION TITLE -->
-				<div class="section-header with-arrow">
-					<h1>Gallery</h1>
-					<hr>
-				</div>
-				<!-- SECTION CONTENT -->
-				<div class="content-section">
-					<div id="gallery-slider">
-		                <ul class="slides">
-							<!-- SLIDE OF 2 GALLERY ITEMS -->
-		                    <li>
-		                    	<!-- FIRST ITEM GALLERY -->
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/3.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/3.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<!-- SECOND ITEM GALLERY -->
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/8.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/8.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    </li>
-							<!-- END SLIDE -->
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/14.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/14.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/10.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/10.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/9.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/9.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/2.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/2.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/15.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/15.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/7.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/7.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/13.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/13.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/12.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/12.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>						    		
-					    		</div>
-		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/6.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/6.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/5.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/5.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    </li>
-		                    <li>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/11.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/11.jpg" width="300" height="200" alt="Image gallery">
-						    		</a>
-					    		</div>
-		                    	<div class="gallery-item">
-						    		<a href="images/gallery/16.jpg" data-fancybox-group="group1" class="fancybox">
-						    			<span>Image Title</span>
-							    		<img src="images/gallery/16.jpg" width="300" height="200" alt="Image gallery">							    		
-						    		</a>						    		
-					    		</div>
-		                    </li>
-		                </ul>		                				                
-					</div>		
-				</div>
-			</section>
-			<!-- END GALLERY SECTION -->
+			</div>
+		</section>
+		<!-- end Topbar -->
+	 	
+	 	<!-- Fixed navbar -->
+	 	<header>
+		    <div class="navbar navbar-default" role="navigation">
+		      <div class="container">
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          
+		          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo brand"></a>
+		        </div>
+		        <div class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li class="active"><a href="#menu-slider">Home</a></li>
+		            <!--<li><a href="#menu-features">Features</a></li>-->
+		            <li><a href="#menu-classes">About</a></li>
+		            <!--<li><a href="#menu-teachers">Teachers</a></li>-->
+		            <li><a href="#menu-pricing">Pricing</a></li>
+		            <!--<li><a href="#menu-testimonials">Testimonials</a></li>-->
+		            <!--<li><a href="http://themeforest.net/user/CoralixThemes/portfolio" class="external">External</a></li>-->
+		          </ul>
+		        </div><!--/.nav-collapse -->
+		      </div>
+		    </div>
+	    </header>
 
-			<div id="events" class="section-header with-arrow">	
-				<h1></h1>					
-			</div>	
-			
-			<!-- START EVENTS SECTION -->
-			<section class="section section-content-colored with-arrow color2">				
-				<!-- SECTION TITLE -->			
 
-				<div class="section-header with-arrow">					
-					<h1>Projects</h1>
-					<hr>
-				</div>
-				<!-- SECTION CONTENT -->
-				<div class="section-content">
-					
-					<div class="container">
-						<div class="flexslider events-slider">							
-			                <ul class="slides">
-			                	<!-- START EVENT -->
-			                    <li>
-			                        <div class="slide">
-										<div class="event">
-											<!-- EVENT FEATURED IMAGE -->
-											<div class="event-header">
-												<a href="http://www.gromad.co/change-password-links/">
-													<img src="images/event/1.jpg" alt="Event cover">
-												</a>
-											</div>
-											<!-- START CONTENT -->
-											<div class="event-content">
-												<!-- EVENT TITLE -->
-												<h3>Change Password Links</h3>
-												<!-- EVENT DATAS -->
-												<div class="event-data">
-													<p>Web Site</p>
-													<p><span class="icon icon-calendar"></span> December, 2014</p>												
-												</div>
-												<!-- EVENT DESCRIPTION -->
-												<p>Sends you the link to change your password account of a social group or a loved one service on the Internet. This allows easier and change your password regularly, thus ensuring the safety and privacy of data.</p>
-												<div class="center">
-													<a href="http://www.gromad.co/change-password-links/" class="btn btn-default">Look</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<!-- END EVENT -->
-			                    <li>
-			                        <div class="slide">
-										<div class="event">
-											<div class="event-header">
-												<a href="http://www.gromad.co/Talking-Companion-iOS/">
-													<img src="images/event/2.jpg" alt="Event cover">
-												</a>
-											</div>
-											<div class="event-content">
-												<h3>Talking Companion iOS</h3>
-												<div class="event-data">
-													<p>Landing Page</p>
-													<p><span class="icon icon-calendar"></span> October, 2014</p>												
-												</div>
-												<p>Have you noticed during a long ride that it would be nice to hear what are those places along the route? Talking Companion is a minimalistic app that does just that. It announces places nearby as you drive or walk.</p>
-												<div class="center">
-													<a href="http://www.gromad.co/Talking-Companion-iOS/" class="btn btn-default">Look</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-			                    <li>
-			                        <div class="slide">
-										<div class="event">
-											<div class="event-header">
-												<a href="http://www.gromad.co">
-													<img src="images/event/3.jpg" alt="Event cover">
-												</a>
-											</div>
-											<div class="event-content">
-												<h3>Gromad.co group of developers</h3>
-												<div class="event-data">
-													<p>Web Site</p>
-													<p><span class="icon icon-calendar"></span> October, 2014</p>												
-												</div>
-												<p>Gromad.co is a group of developers and designers who aspire to make information useful. Feel free to join us and work on any open source project. Get experience. Have something to show. Get paid for the internship.</p>
-												<div class="center">
-													<a href="http://www.gromad.co" class="btn btn-default">Look</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
+		
+		<!-- Slider -->
+		<section class="slider" id="menu-slider">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<!--<h3>Web and Graphics Design</h3>-->
+						<h2>Your Site Improved Design</h2>
+						<h4>New design is loaded well in<br> any browser both on desktops<br> and mobile platforms. 						
+						<hr />
+						<h4>Please contact me if you wish update your site.</h4>
+					</div>
+					<div class="col-sm-6">
 
-								<!--
-			                    <li>
-			                        <div class="slide">
-										<div class="event">
-											<div class="event-header">
-												<a href="single-event.html">
-													<img src="images/event/4.jpg" alt="Event cover">
-												</a>
-											</div>
-											<div class="event-content">
-												<h3>Event Title</h3>
-												<div class="event-data">
-													<p><span class="icon icon-calendar"></span> March 2, 2014</p>
-													<P><span class="icon icon-location"></span> London SW1A 1AA</p>
-												</div>
-												<p>A text to describe your event which could be a service, a fundraising, a reception or something else.</p>
-												<div class="center">
-													<a href="single-event.html" class="btn btn-default">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								-->
-								<!-- LOAD MORE OPTION
-			                    <li>
-			                        <div class="slide">
-										<div class="load-more">
-											<div class="content">
-												<a href="#" title="load more">
-													<span class="icon icon-large icon-plus"></span>
-													<h3>Load More Events</h3>
-												</a>
-											</div>
-										</div>
-									</div>
-								</li>
-								-->
-							</ul>							
-						</div>
-						<div id="contact">	
-					<h1></h1>					
-				</div>
+						<!--
+						<form action="//formspree.io/anton@dudarev.com" method="POST">      
+    						<p><input type="text" name="Имя" required placeholder="Имя" /></p>
+    						<p><input type="email" name="_replyto" required placeholder="Email" /></p>
+    						<p><textarea name="Сообщение" required placeholder="Ваше сообщение" rows="7"></textarea></p>
+    						<input type="submit" value="Отправить" />
+						</form>
+						-->
+
+						<!--
+						<iframe src="https://docs.google.com/forms/d/1mBnvn_NCzKnAVQNDzEtMHBVd1qDUUhEDhPQoZekXNYA/viewform?embedded=true" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+						-->
+
 						
-					</div>
-				</div>					
-			</section>
-			<!-- END EVENTS SECTION -->
-			
-			<!-- START BLOG SECTION -->
-			<!--
-			<section id="blog" class="section with-arrow section-content-colored">
-				
-				<div class="section-header with-arrow">
-					<h1>Latest Posts</h1>
-					<hr>
-				</div>
-				
-				<div class="section-content">
-					<div class="container">
-						<div class="flexslider posts-slider">
-		                    <ul class="slides">
-		                    	
-		                        <li>
-		                            <div class="slide">
-										<div class="post post-normal">
-											
-											<div class="post-header">
-												<a href="single-blog.html">
-													<img src="images/blog/1.jpg" alt="Blog cover">
-												</a>
-											</div>
-											<div class="post-content">
-												
-												<h3>Post Title</h3>
-												
-												<div class="post-data">
-													<p><span class="icon icon-clock"></span> December 25, 2013</p>
-												</div>
-												
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec placerat sem. 
-												Vestibulum vel tristique purus. In hac habitasse platea dictumst. Suspendisse eget pellentesque dui...</p>
-												<div class="center">
-													<a href="single-blog.html" class="btn btn-default">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-		                    	
-		                        <li>
-		                            <div class="slide">
-										<div class="post post-normal">
-											<div class="post-header">
-												<a href="single-blog.html">
-													<img src="images/blog/2.jpg" alt="Blog cover">
-												</a>
-											</div>
-											<div class="post-content">
-												<h3>Post Title</h3>
-												<div class="post-data">
-													<p><span class="icon icon-clock"></span> January 2, 2014</p>
-												</div>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec placerat sem. 
-												Vestibulum vel tristique purus. In hac habitasse platea dictumst. Suspendisse eget pellentesque dui...</p>
-												<div class="center">
-													<a href="single-blog.html" class="btn btn-default">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-		                        <li>
-		                            <div class="slide">
-										<div class="post post-normal">
-											<div class="post-header">
-												<a href="#">
-													<img src="images/blog/3.jpg" alt="Blog cover">
-												</a>
-											</div>
-											<div class="post-content">
-												<h3>Post Title</h3>
-												<div class="post-data">
-													<p><span class="icon icon-clock"></span> January 12, 2014</p>
-												</div>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec placerat sem. 
-												Vestibulum vel tristique purus. In hac habitasse platea dictumst. Suspendisse eget pellentesque dui...</p>
-												<div class="center">
-													<a href="single-blog.html" class="btn btn-default">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-		                        <li>
-		                            <div class="slide">
-										<div class="post post-normal">
-											<div class="post-header">
-												<a href="single-blog.html">
-													<img src="images/blog/4.jpg" alt="Blog cover">
-												</a>
-											</div>
-											<div class="post-content">
-												<h3>Post Title</h3>
-												<div class="post-data">
-													<p><span class="icon icon-clock"></span> February 22, 2014</p>
-												</div>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec placerat sem. 
-												Vestibulum vel tristique purus. In hac habitasse platea dictumst. Suspendisse eget pellentesque dui...</p>
-												<div class="center">
-													<a href="single-blog.html" class="btn btn-default">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								
-							</ul>
-						</div>
+						<form id="request" class="row suscribe" action="//formspree.io/anton@dudarev.com" method="POST" accept-charset="utf-8">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" placeholder="Name" name="Name">
+								<input type="email" class="form-control" placeholder="Email" name="_replyto">
+								<input type="web" class="form-control" placeholder="Your web site" name="Web">
+							</div>
+							<div class="col-sm-12">
+								<!--<input type="number" class="form-control" placeholder="Your web site" name="phone">-->
+								<select class="form-control" name="program">
+	                    			<option>Select service</option>
+	                    			<option>Only site</option>
+	                    			<option>Half-yearly</option>
+	                    			<option>Year</option>	                    			
+                                </select>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-default text-center"><i class="icon-info"></i> Request</button>
+							</div>		
+						</form>
+						
+
+						<!--
+						<form id="request" class="row suscribe" action="request-form.php" method="post" accept-charset="utf-8">
+							<div class="col-sm-12">
+								<input type="text" class="form-control" placeholder="Name" name="name">
+								<input type="email" class="form-control" placeholder="Email" name="email">
+							</div>
+							<div class="col-sm-12">
+								<input type="number" class="form-control" placeholder="Your web site" name="phone">
+								<select class="form-control" name="program">
+	                    			<option>Select service</option>
+	                    			<option>Only site</option>
+	                    			<option>Half-yearly</option>
+	                    			<option>Year</option>
+	                    			<option>Super Pro</option>
+                                </select>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-default text-center"><i class="icon-info"></i> Request Information</button>
+							</div>		
+						</form>
+						-->
 					</div>
 				</div>
-			</section>
-		-->
-			<!-- END BLOG SECTION -->
-			
-			<!-- START DONATION SECTION -->
+			</div>
+		</section>
+		<!-- end Slider -->
+
+		
+		<!-- Features -->
 		<!--
-			<section id="donation" class="section section-image" style="background-image: url('images/donation_cover.jpg');">
-				<div class="section-content center">
-					<h2>Ready to support us ?</h2>
-				
-					<a href="#" class="btn btn-donation btn-success">Make a Donation</a>
+		<section class="features generic" id="menu-features">
+			<div class="container">
+				<div class="row">
+					<article class="item col-sm-3">
+						<a href="#"><i class="icon-monitor"></i></a>
+						<h2>online classes</h2>
+						<p>Alias, porro, consequatur quas nostrum sed iure quos quia excepturi rerum libero odit maxime explicabo ducimus?</p>
+					</article>
+					<article class="item col-sm-3">
+						<a href="#"><i class="icon-users"></i></a>
+						<h2>chat with teachers</h2>
+						<p> rerum amet deserunt obcaecati ea accusamus veniam facere nisi et eaque praesentium nemo rem!</p>
+					</article>
+					<article class="item col-sm-3">
+						<a href="#"><i class="icon-book-open"></i></a>
+						<h2>save all your notes</h2>
+						<p>luptatibus officia recusandae veritatis! Earum, architecto aliquam impedit laudantium provident rem accusantium odio at?</p>
+					</article>
+					<article class="item col-sm-3">
+						<a href="#"><i class="icon-graduation-cap"></i></a>
+						<h2>get the certificate</h2>
+						<p>laudantium quisquam inventore? Facilis, ipsum, velit amet sed nulla harum aut veniam iste.</p>
+					</article>			
 				</div>
-			</section>
+			</div>
+		</section>
 		-->
-			<!-- END DONATION SECTION -->
-			
-			<!-- START CONTACT SECTION -->
-			<section class="section with-arrow">
-				<!-- SECTION TITLE -->
-				<div class="section-header with-arrow">
-					<h1>Let's Get In Touch</h1>
-					<hr>
+		<!-- end Features -->
+
+
+		<!-- Classes -->
+		<!--
+		<section class="classes generic" id="menu-classes" data-animation="tada">
+			<div class="container">
+				<div class="row title">
+					<div class="col-sm-12">
+						<h2>Online Classes</h2>
+						<p>Morbi dignissim non dolor non placerat. Ut sit amet lectus at neque quis vel imperdiet ullamcorper auctor.</p>
+					</div>
 				</div>
-				<!-- SECTION CONTENT -->
-				<div class="section-content">
-					<div class="container">
-						<div class="row">	
-							<!-- CONTACT TEXT -->
-							<div class="col-md-6">
-								<!--<p>Sed vehicula vel nulla a interdum. Etiam bibendum urna sed sapien eleifend dictum. 
-								Ut adipiscing sit amet diam quis ornare. Morbi ultricies venenatis tempus. Vestibulum eget condimentum tellus.</p>-->
-								<!-- SOCIAL BUTTTONS -->
-								<ul class="social-list">
-									<li><a href="https://www.facebook.com/dudarev.anton" class="btn btn-facebook"><span class="icon icon-facebook"></span> Follow me on Facebook</a></li>
-									<li><a href="https://www.facebook.com/dudarev.anton" class="btn btn-twitter"><span class="icon icon-twitter"></span> Follow me on Twitter</a></li>
-									<!--<li><a href="#" class="btn btn-google"><span class="icon icon-google-plus"></span> Follow us on Google +</a></li>-->
-								</ul>
+				<div class="row">
+					<div class="item col-sm-3" >
+						<a href="#class01" data-toggle="modal">
+							<figure>
+								<img src="img/classes/class-01.jpg" alt="">
+								<figcaption> <span>View</span></figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="item col-sm-3">
+						<a href="#class02" data-toggle="modal">
+							<figure>
+								<img src="img/classes/class-02.jpg" alt="">
+								<figcaption> <span>View</span></figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="item col-sm-3">
+						<a href="#class01" data-toggle="modal">
+							<figure>
+								<img src="img/classes/class-03.jpg" alt="">
+								<figcaption> <span>View</span></figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="item col-sm-3">
+						<a href="#class01" data-toggle="modal">
+							<figure>
+								<img src="img/classes/class-04.jpg" alt="">
+								<figcaption> <span>View</span></figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="item col-sm-3">
+						<a href="#class01" data-toggle="modal">
+							<figure>
+								<img src="img/classes/class-05.jpg" alt="">
+								<figcaption> <span>View</span></figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="item col-sm-3">
+						<a href="#class01" data-toggle="modal">
+							<figure>
+								<img src="img/classes/class-06.jpg" alt="">
+								<figcaption> <span>View</span></figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="item col-sm-3">
+						<a href="#class01" data-toggle="modal">
+							<figure>
+								<img src="img/classes/class-07.jpg" alt="">
+								<figcaption> <span>View</span></figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="item col-sm-3">
+						<a href="#class01" data-toggle="modal">
+							<figure>
+								<img src="img/classes/class-08.jpg" alt="">
+								<figcaption> <span>View</span></figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		-->
+		<!-- end Classes -->
+
+
+		<!-- Upcoming Classes -->
+		
+		<section class="classes generic" id="menu-classes" data-animation="tada">
+			<div class="container">
+				<div class="row title">
+					<div class="col-sm-12">
+						<h2>About</h2>
+						<p>As a web UI designer, create websites using HTML5 / CSS3 / jQuery. I start with developing layouts in Photoshop and implement it in HTML using modern frameworks such as Foundation, Pure, Bootstrap etc. I am familiar with responsive web design and make layouts look good in various platforms. I try to keep my code clean and user-friendly.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5 col-md-5 col-lg-5"></div>
+					<div class="col-sm-2 col-md-2 col-lg-2">
+						<div class="video">
+							<img src="img/me.png" alt="">
+						<!--<iframe width="580" height="290" src="http://www.youtube.com/embed/sQhY_l_J9rs" allowfullscreen></iframe>-->
+						</div>
+					</div>
+					<div class="col-sm-5 col-md-5 col-lg-5"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-3 col-md-3 col-lg-3">&emsp;</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="panel-group" id="accordion">
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="fa fa-mobile"></i> &emsp;your site is mobile , adaptive and cross-browser</a>
+						      </h4>
+						    </div>
+						    <!--
+						    <div id="collapseOne" class="panel-collapse collapse in">
+						      <div class="panel-body">
+						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put.
+						      </div>
+						    </div>
+							-->
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><i class="fa fa-user"></i> &emsp;website development personal consultant</a>
+						      </h4>
+						    </div>
+						    <!--
+						    <div id="collapseTwo" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put aeer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						      </div>
+						    </div>
+							-->
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><i class="fa fa-picture-o"></i> &emsp;style clean and simple</a>
+						      </h4>
+						    </div>
+						    <!--
+						    <div id="collapseThree" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatatn it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						      </div>
+						    </div>
+							-->
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><i class="fa fa-tachometer"></i> &emsp;size is kept small for fast loading</a>
+						      </h4>
+						    </div>
+						    <!--
+						    <div id="collapseThree" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatatn it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						      </div>
+						    </div>
+							-->
+						  </div>
+						</div>					
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">&emsp;</div>
+				</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- end Upcoming Classes -->
+
+
+		<!-- Teachers -->
+		<!--
+		<section class="teachers generic" id="menu-teachers">
+			<div class="container">
+				
+				<div class="row title">
+					<div class="col-sm-12">
+						<h2>Meet the Teachers</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, distinctioptatem eligendi dolore numquam dolor quis ex velit esse.</p>
+					</div>
+				</div>
+
+
+				<div class="row">
+
+					<div class="item col-sm-3 item" >
+						<a href="#teacher01" data-toggle="modal">
+							<div class="class_title">
+								<h2> Jason Smith </h2>
 							</div>
-							<div class="col-md-6">
-								<!-- CONTACT FORM -->
-				                <form class="form-horizontal" method="post" action="index.php" id="form">
-				                  <div class="form-group">
-				                    <label for="contact_name" class="col-lg-2 control-label">Name</label>
-				                    <div class="col-lg-10">
-				                      <input type="text" class="form-control" name="contact_name">
-				                    </div>
-				                  </div>
-				                  <div class="form-group">
-				                    <label for="contact_email" class="col-lg-2 control-label">Email</label>
-				                    <div class="col-lg-10">
-				                      <input type="email" class="form-control" name="contact_email">
-				                    </div>
-				                  </div>
-				                  <div class="form-group">
-				                    <label for="contact_textarea" class="col-lg-2 control-label">Message</label>
-				                    <div class="col-lg-10">
-				                      <textarea class="form-control" rows="3" name="contact_textarea"></textarea>
-				                    </div>
-				                  </div>
-				                  <div class="form-group">
-				                    <div class="col-lg-offset-2 col-lg-10">
-				                      <input type="hidden" name="submitted" id="submitted" value="true" />
-				                      <button type="submit" class="btn btn-default btn-send" name="submitted"><i data-icon="&#xe00d;"></i>Send</button>
-				                    </div>
-				                  </div>
-				                </form>
+							<figure>
+								<img src="img/teachers/teacher-01.jpg" alt="">
+								<figcaption><i class="icon-plus-circled"></i></figcaption>
+							</figure>
+							<div class="description">
+								<h3><strong>Mathematics</strong></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 							</div>
+						</a>
+					</div>
+
+					<div class="item col-sm-3 item" >
+						<a href="#teacher02" data-toggle="modal">
+							<div class="class_title">
+								<h2> JAKE VALINER </h2>
+							</div>
+							<figure>
+								<img src="img/teachers/teacher-02.jpg" alt="">
+								<figcaption><i class="icon-plus-circled"></i></figcaption>
+							</figure>
+							<div class="description">
+								<h3><strong>Marketing</strong></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="item col-sm-3 item" >
+						<a href="#teacher03" data-toggle="modal">
+							<div class="class_title">
+								<h2> Tom Reedert </h2>
+							</div>
+							<figure>
+								<img src="img/teachers/teacher-03.jpg" alt="">
+								<figcaption><i class="icon-plus-circled"></i></figcaption>
+							</figure>
+							<div class="description">
+								<h3><strong>web designer</strong></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="item col-sm-3 item" >
+						<a href="#teacher04" data-toggle="modal">
+							<div class="class_title">
+								<h2> JAKE VALINER </h2>
+							</div>
+							<figure>
+								<img src="img/teachers/teacher-04.jpg" alt="">
+								<figcaption><i class="icon-plus-circled"></i></figcaption>
+							</figure>
+							<div class="description">
+								<h3><strong>SEO</strong></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+						</a>
+					</div>
+				</div>	
+			</div>
+		</section>
+		-->
+		<!-- end Teachers -->
+
+
+		<!-- Pricing Table -->
+		<section class="table generic" id="menu-pricing">
+			<div class="container">
+				<div class="row title">
+					<div class="col-sm-12">
+						<h2>Select your service</h2>
+						<p>If you wish new design your a web site, then select the program.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<ul class="table-list">
+							<li class="table-header">Only site</li>
+							<li class="table-price">$19,<sup>00</sup></li>
+							<li>HTML/CSS</li>
+							<li>Lorem ipsum</li>
+							<li>&emsp; </li>
+							<li>&emsp; </li>
+							<li>&emsp; </li>
+							<li>&emsp; </li>
+							<li class="table-button"><a class="btn btn-default" href="#"><i class="icon-basket"></i>Buy Now</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<ul class="table-list">
+							<li class="table-header">Half-yearly</li>
+							<li class="table-price">$59,<sup>00</sup></li>
+							<li>HTML/CSS</li>
+							<li>Hosting</li>
+							<li>1 hrs/month free</li>
+							<li>Lorem ipsum </li>
+							<li>&emsp; </li>
+							<li>&emsp; </li>
+							<li class="table-button"><a class="btn btn-default" href="#"><i class="icon-basket"></i>Buy Now</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<ul class="table-list">
+							<li class="table-header">Year</li>
+							<li class="table-price">$99,<sup>00</sup></li>
+							<li>HTML/CSS</li>
+							<li>Hosting</li>
+							<li>1 hrs/month free</li>
+							<li>Lorem ipsum </li>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+							<li class="table-button"><a class="btn btn-default" href="#"><i class="icon-basket"></i>Buy Now</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- end Pricing Table -->
+
+
+		<!-- Video -->
+		<!--
+		<section class="video_fullscreen">	
+			<div id="P1" class="player" style="display:block; margin: auto; background: rgba(0,0,0,0.5)" data-property="{videoURL:'http://youtu.be/KyxA_9Ul8So',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, showYTLogo:false, showControls:false}"></div>	
+		</section>
+		-->
+		<!-- end Video -->
+
+
+		<!-- Testimonials -->
+		<!--
+		<section class="testimonials generic" id="menu-testimonials">
+			<div class="container">
+				<div class="row title">
+					<div class="col-sm-12">
+						<h2>Testimonials</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, distinctioptatem eligendi dolore numquam dolor quis ex velit esse.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="date">
+							<h5>14 April <br />2014</h5>
+						</div>
+					</div>
+					<div class="col-sm-10 container_item">
+						<div class="item-testimonial">
+							<h3>Master Degree of Design</h3>
+							<h4>Max Smithson</h4>
+							<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Nam liber tempor cum soluta nobis eleifend option </p>
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- END CONTACT SECTION -->
-			
-			<!-- START FOOTER SECTION -->
-			<section id="footer" class="section section-full-colored">
-				<div class="section-content center">
-					<p><a href="#">anton.dudarev.com</a></p>
+				<div class="row">
+					<div class="col-sm-2 ">
+						<div class="date">
+							<h5>14 April <br />2014</h5>
+						</div>
+					</div>
+					<div class="col-sm-10 container_item">
+						<div class="item-testimonial">
+							<h3>Master Degree of Design</h3>
+							<h4>Max Smithson</h4>
+							<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Nam liber tempor cum soluta nobis eleifend option </p>
+						</div>
+					</div>
 				</div>
-			</section>
-			<!-- END FOOTER SECTION -->
-		
-		</div>
-		<!-- END MAIN CONTAINER -->
-		
-		<!-- PAGE LOADING-->
-		<div id="loader"></div>
-  	</div>
-    <!-- SCRIPTS -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-	<script src="js/alert.js"></script>
-	<script src="js/jquery.sequence-min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.smoothscroll.min.js"></script>
-    <script src="js/jquery.meanmenu.min.js"></script>
-    <script src="js/pace.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
-  <!-- END BODY -->
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="date">
+							<h5>14 April <br />2014</h5>
+						</div>
+					</div>
+					<div class="col-sm-10 container_item">
+						<div class="item-testimonial">
+							<h3>Master Degree of Design</h3>
+							<h4>Max Smithson</h4>
+							<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Nam liber tempor cum soluta nobis eleifend option </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		-->
+		<!-- end Testimonials -->
+
+		<!-- Call to action -->
+		<section class="cta generic">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<h2>You  have  questions? </h2>
+					</div>
+					<div class="col-sm-4">
+						<a href="mailto:anton@dudarev.com" class="btn btn-default"><i class="icon-mail"></i> Write me Email</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end Call to action -->
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<h6 class="footer_left">Payment System</h6>
+						<ul class="footer_center">
+							<li>
+								<a href="#">
+									<figure>
+										<img src="img/cards/card-01.png" alt="card">
+									</figure>
+								</a>
+							</li>
+							<!--
+							<li>
+								<a href="#">
+									<figure>
+										<img src="img/cards/card-02.png" alt="card">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<figure>
+										<img src="img/cards/card-03.png" alt="card">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<figure>
+										<img src="img/cards/card-04.png" alt="card">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<figure>
+										<img src="img/cards/card-05.png" alt="card">
+									</figure>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<figure>
+										<img src="img/cards/card-06.png" alt="card">
+									</figure>
+								</a>
+							</li>
+							-->
+						</ul>
+					</div>
+					<div class="col-sm-10">
+						<h6 class="footer_right">Anton M. Dudarev</h6>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#" class="scrollup"><i class="icon-up-open"></i></a>      
+
+	</div>
+	<!-- end Loader -->
+
+	<!-- Modal 01-->
+	<div class="modal fade" id="class01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Mathematic Classes</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<figure>
+	      		<img src="img/classes-modal/01.jpg" alt="img">
+	      	</figure>
+	      	<h4>Description of the Course</h4>
+	      	<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	      	<a href="http://cssarrowplease.com/" class="btn btn-default"> Suscribe now</a>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal 02-->
+	<div class="modal fade" id="class02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Mathematic Classes</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<figure>
+	      		<img src="img/classes-modal/02.jpg" alt="img">
+	      	</figure>
+	      	<h4>Description of the Course</h4>
+	      	<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	      	<a href="http://cssarrowplease.com/" class="btn btn-default"> Suscribe now</a>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal 03-->
+	<div class="modal fade" id="class03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">Mathematic Classes</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<figure>
+	      		<img src="img/classes-modal/03.jpg" alt="img">
+	      	</figure>
+	      	<h4>Description of the Course</h4>
+	      	<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	      	<a href="http://cssarrowplease.com/" class="btn btn-default"> Suscribe now</a>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal 04-->
+	<div class="modal fade" id="class04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Mathematic Classes</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<figure>
+	      		<img src="img/classes-modal/01.jpg" alt="img">
+	      	</figure>
+	      	<h4>Description of the Course</h4>
+	      	<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	      	<a href="http://cssarrowplease.com/" class="btn btn-default"> Suscribe now</a>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal 05-->
+	<div class="modal fade" id="class05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Mathematic Classes</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<figure>
+	      		<img src="img/classes-modal/02.jpg" alt="img">
+	      	</figure>
+	      	<h4>Description of the Course</h4>
+	      	<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	      	<a href="http://cssarrowplease.com/" class="btn btn-default"> Suscribe now</a>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal 06-->
+	<div class="modal fade" id="class06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Mathematic Classes</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<figure>
+	      		<img src="img/classes-modal/03.jpg" alt="img">
+	      	</figure>
+	      	<h4>Description of the Course</h4>
+	      	<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	      	<a href="http://cssarrowplease.com/" class="btn btn-default"> Suscribe now</a>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal 07-->
+	<div class="modal fade" id="class07" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Mathematic Classes</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<figure>
+	      		<img src="img/classes-modal/01.jpg" alt="img">
+	      	</figure>
+	      	<h4>Description of the Course</h4>
+	      	<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	      	<a href="http://cssarrowplease.com/" class="btn btn-default"> Suscribe now</a>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal 08-->
+	<div class="modal fade" id="class08" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Mathematics Classes</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<figure>
+	      		<img src="img/classes-modal/02.jpg" alt="img">
+	      	</figure>
+	      	<h4>Description of the Course</h4>
+	      	<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	      	<a href="http://cssarrowplease.com/" class="btn btn-default"> Suscribe now</a>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal Teacher 01-->
+	<div class="modal fade" id="teacher01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Mathematics Teacher</h4>
+	      </div>
+	      <div class="modal-body">
+	      		<div class="row">
+	      			<div class="col-sm-4">
+	      				<figure>
+				      		<img src="img/teachers/teacher-01.jpg" alt="img">
+				      	</figure>
+	      			</div>
+	      			<div class="col-sm-8">
+	      				<h4>Meet Adam Smithson</h4>
+		      			<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+		      			<p>Stay in contact with this teacher: <a href="#"><i class="icon-twitter"></i></a><a href="#"><i class="icon-facebook"></i></a></p>
+	      			</div>
+	      		</div>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal Teacher 02-->
+	<div class="modal fade" id="teacher02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Marketing Teacher</h4>
+	      </div>
+	      <div class="modal-body">
+	      		<div class="row">
+	      			<div class="col-sm-4">
+	      				<figure>
+				      		<img src="img/teachers/teacher-02.jpg" alt="img">
+				      	</figure>
+	      			</div>
+	      			<div class="col-sm-8">
+	      				<h4>Meet Adam Smithson</h4>
+		      			<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+		      			<p>Stay in contact with this teacher: <a href="#"><i class="icon-twitter"></i></a><a href="#"><i class="icon-facebook"></i></a></p>
+	      			</div>
+	      		</div>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal Teacher 03-->
+	<div class="modal fade" id="teacher03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Web Design Teacher</h4>
+	      </div>
+	      <div class="modal-body">
+	      		<div class="row">
+	      			<div class="col-sm-4">
+	      				<figure>
+				      		<img src="img/teachers/teacher-03.jpg" alt="img">
+				      	</figure>
+	      			</div>
+	      			<div class="col-sm-8">
+	      				<h4>Meet Tom Redeert</h4>
+		      			<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+		      			<p>Stay in contact with this teacher: <a href="#"><i class="icon-twitter"></i></a><a href="#"><i class="icon-facebook"></i></a></p>
+	      			</div>
+	      		</div>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal Teacher 04-->
+	<div class="modal fade" id="teacher04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">SEO Teacher</h4>
+	      </div>
+	      <div class="modal-body">
+	      		<div class="row">
+	      			<div class="col-sm-4">
+	      				<figure>
+				      		<img src="img/teachers/teacher-04.jpg" alt="img">
+				      	</figure>
+	      			</div>
+	      			<div class="col-sm-8">
+	      				<h4>Meet Jake Valiner</h4>
+		      			<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+		      			<p>Stay in contact with this teacher: <a href="#"><i class="icon-twitter"></i></a><a href="#"><i class="icon-facebook"></i></a></p>
+	      			</div>
+	      		</div>
+	      </div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+	<div id='siteLoader'> 
+		<img src="img/loader.gif" class="loader" alt="loader"/> 
+    </div> 
+
+  <!-- ======================= JQuery libs =========================== -->
+    <!-- jQuery -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Scroll To-->         
+    <script src="js/nav/jquery.scrollTo.js"></script> 
+    <script src="js/nav/jquery.nav.js"></script> 
+
+	<!-- Responsive Video -->
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+
+	<!-- Fixed menu -->
+    <script src="js/jquery-scrolltofixed.js"></script> 
+
+	<!-- Video -->
+    <script src="js/jquery.mb.YTPlayer.js"></script> 
+
+	<!-- Custom -->
+    <script src="js/script.js"></script>
+
+  <!-- ======================= End JQuery libs ======================= -->
+
+</body>
 </html>
