@@ -459,3 +459,77 @@ label.star-about:before {
 	-moz-transform: translate(0,0px);
 	-o-transform: translate(0,0px);
 }
+
+.tooltip1
+{
+  position: relative;  
+  cursor: help;
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  outline: none;
+}
+
+.tooltip1 span
+{
+  visibility: hidden;
+  position: absolute;
+  bottom: -150%;
+
+  left: 50%;
+  z-index: 999;
+  width: 230px;
+  margin-left: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  
+  background-color: #ddd;
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+
+.tooltip1:hover
+{
+  border: 0; /* IE6 fix */
+}
+
+.tooltip1:hover span
+{
+  visibility: visible;
+}
+
+.tooltip1 span:before,
+.tooltip1 span:after
+{
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  bottom: 50%;
+  left: 1px;
+  margin-left: -11px;
+  border-top: 10px solid #ddd;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-bottom: 0;
+}
+
+.tooltip1 span:before
+{
+  border-top-color: #ccc;
+  bottom: -15px;
+  border-top: 12px solid #ccc;
+  border-left: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  bottom: 34%;
+  z-index: 800;
+  left: -1px;
+}
