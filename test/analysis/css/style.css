@@ -75,16 +75,16 @@ body {
 }
 
 .main-form {	
-	padding-top: 8em;
+	padding-top: 12em;
 	padding-left: 1em;
-	padding-right: 1em;
-	margin-bottom: 6em;
+	padding-right: 1em;	
 }
 
 .main-form h1 {
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 	text-shadow: 1px 1px 1px black;
+	margin-top: 0em;
 }
 
 .main-form input {
@@ -108,6 +108,10 @@ body {
 
 .main-form button:hover {
 	background-color: #bbbbbb;
+}
+
+.footer {
+	background: 
 }
 
 .footer img {
@@ -145,6 +149,7 @@ body {
 }
 
 .product-img {
+	width: 100%;
 	border-radius: 8px;
 	border: 1px solid black;
 	border-color: #c7c7c7;
@@ -153,9 +158,9 @@ body {
 
 .product-info h3{	
 	font-family: 'Open Sans', sans-serif; 
-	font-weight: 300; 	
+	font-weight: 400; 	
 	padding-left: 1em;	
-	padding-right: 1em;
+	padding-right: 0em;
 	color: #2a2a2a;
 }
 
@@ -233,7 +238,7 @@ label.star:before {
 	margin-top: 1em;
 }
 
-.about-product p {
+.about-product p {	
 	padding-left: 1.6em;
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 400; 	
@@ -307,7 +312,7 @@ label.star-about:before {
 
 .product-reviews h3{	
 	font-family: 'Open Sans', sans-serif; 
-	font-weight: 300; 	
+	font-weight: 400; 	
 	padding-left: 0.5em;
 	margin-bottom: 0.5em;
 	color: #2a2a2a;		
@@ -315,19 +320,21 @@ label.star-about:before {
 
 .reviews {
 	margin-bottom: 3em;
+	padding-bottom: 1em;
 }
 
 .reviews-bg {	
 	color:#707070;	
 	background-color: #f6f6f6;
 	border-radius: 8px;
-	padding: 1em 1em 1em 1em;
-	height: 330px;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: auto;
 }
 
 .signature-perents {
-	position:relative;
-	padding-bottom:50px;
+	position:relative;	
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 400; 	
 	font-size: 14pt;
