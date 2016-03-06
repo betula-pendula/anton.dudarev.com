@@ -60,13 +60,17 @@
               <div class="bage">
               <h3 style="padding-left:1em;"><span class="yellow-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></h3>                
               </div>
-              <a href="#" class="tooltip1">
-  <img src="img/bage.png">
-  <span>Your custom description<br>sfhgfd<br>hyjuy</span>
-</a>
-              
+              <div class="has-tip">
+                  <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="1" title="Our own product rating system. See how it works here.">
+                    <img src="img/bage.png" >
+                  </span>
+              </div>
 
 
+
+
+
+             
               <!--
               <div class="cont">
                 <div class="stars">
@@ -403,6 +407,19 @@
     $(document).ready(function($) {
       $("#owl-example").owlCarousel();
     });    
-    </script>    
+    </script>  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script>  
+
+     $('div').tooltip({
+    content: function () {
+        return $(this).prop('title');
+    }
+});
+      </script>
+    
+
   </body>
 </html>
