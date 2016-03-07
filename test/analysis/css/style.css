@@ -539,6 +539,13 @@ label.star-about:before {
 		padding-left: 0px;
 	}
 
+	.menu-padding-top {
+		font-family: 'Montserrat', sans-serif;	
+		padding-top: 5em;
+		margin-bottom: 2em;
+		font-size: 8pt;
+	}
+
 }
 
 
@@ -558,6 +565,13 @@ label.star-about:before {
 
 	.top-bar-center ul li a:hover{
 		color: white;
+	}
+
+	.menu-padding-top {
+		font-family: 'Montserrat', sans-serif;	
+		padding-top: 5em;
+		margin-bottom: 2em;
+		font-size: 8pt;
 	}
 
 }
