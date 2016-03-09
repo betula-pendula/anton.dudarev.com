@@ -25,9 +25,7 @@ body {
   	-webkit-background-size: cover; 
   	-o-background-size: cover; 
   	background-size: cover;   	  	
-  	height: 100%;
-	padding-bottom: 8em;
-	background-repeat: repeat-x;
+  	width: 100%;
 }
 
 .color-bg {
@@ -82,6 +80,7 @@ body {
 
 .main-form h1 {
 	font-family: 'Montserrat', sans-serif;
+	font-size: 28pt;
 	color: white;
 	text-shadow: 1px 1px 1px black;
 	margin-top: 0em;
@@ -94,7 +93,7 @@ body {
 }
 
 .main-form label {
-	color:#171930;
+	color:#282a39;
 }
 
 .main-form button {
@@ -110,11 +109,51 @@ body {
 	background-color: #bbbbbb;
 }
 
-.footer {
-	background: 
+.main-form-footer {	
+	background: url('../img/bg.jpg') no-repeat;
+  	-moz-background-size: cover; 
+  	-webkit-background-size: cover; 
+  	-o-background-size: cover; 
+  	background-size: cover;   	  	
+  	width: 100%;
+	padding-top: 0em;
+	padding-left: 1em;
+	padding-right: 1em;	
+}
+
+.main-form-footer h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22pt;
+	color: white;	
+	margin-top: 1em;
+	padding-left: 0.3em;
+}
+
+.main-form-footer input {
+	margin-top: 0em;
+	height: 58px;
+	border-radius: 8px;	
+}
+
+.main-form-footer label {
+	color:#282a39;
+}
+
+.main-form-footer button {
+	margin-top: 3.9em;
+	height: 58px;
+	border-radius: 8px;
+	background-color: #171930;
+	width: 100%;
+	color: #dddddd;
+}
+
+.main-form-footer button:hover {
+	background-color: #bbbbbb;
 }
 
 .footer img {
+	z-index: -200;
 	width: 100%;
 	text-align: center;
 }
@@ -159,7 +198,9 @@ body {
 .product-info h3{	
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 400; 	
-	padding-left: 1em;	
+	font-size: 20pt;
+	margin-top: -0.3em;
+	padding-left: 0em;	
 	padding-right: 0em;
 	color: #2a2a2a;
 }
@@ -169,6 +210,7 @@ body {
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
 
 .bage {
+	padding-top: 1.3em;
 	display: inline-block;	
 }
 
@@ -222,9 +264,9 @@ label.star:before {
 .interest h1{	
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 300; 	
-	font-size: 48pt;
+	font-size: 42pt;
 	color: #ff3000;
-	margin-top: -0.15em;
+	margin-top: -0.3em;
 }
 
 .interest p {
@@ -235,14 +277,14 @@ label.star:before {
 }
 
 .about-product {
-	margin-top: 1em;
+	margin-top: 0.8em;
 }
 
 .about-product p {	
 	padding-left: 1.6em;
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 400; 	
-	font-size: 16pt;
+	font-size: 14pt;
 	color: #2a2a2a;
 }
 
@@ -310,9 +352,15 @@ label.star-about:before {
 	color: #ff3000;
 }
 
+.position-thumbs img{
+	margin-top: 2em;
+	width: 80%;
+}
+
 .product-reviews h3{	
 	font-family: 'Open Sans', sans-serif; 
-	font-weight: 400; 	
+	font-weight: 400; 
+	font-size: 20pt;	
 	padding-left: 0.5em;
 	margin-bottom: 0.5em;
 	color: #2a2a2a;		
@@ -474,8 +522,8 @@ label.star-about:before {
 .tooltip.right {		
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 400; 	
-	font-size: 14pt;
-	min-width: 400px;
+	font-size: 10pt;
+	min-width: 230px;
 	color: #707070;
 	background-color: #f7f7f7;
 	border: 1px solid #e4e4e4;
@@ -546,6 +594,30 @@ label.star-about:before {
 		font-size: 8pt;
 	}
 
+	.main-form h1 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16pt;
+		color: white;
+		text-shadow: 1px 1px 1px black;
+		margin-top: 0em;
+	}
+
+	.main-form input {
+		margin-top: 1em;
+		height: 58px;
+		border-radius: 8px;	
+	}
+
+	.main-form label {
+		color:#282a39;
+		text-align: center;
+	}
+
+	.main-form button {
+		margin-top: 1em;
+		height: 58px;		
+	}
+
 }
 
 
@@ -574,15 +646,207 @@ label.star-about:before {
 		font-size: 8pt;
 	}
 
+	.main-form h1 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20pt;
+		color: white;
+		text-shadow: 1px 1px 1px black;
+		margin-top: 0em;
+	}
+
+	.main-form input {
+		margin-top: 1em;
+		height: 58px;
+		border-radius: 8px;	
+	}
+
+	.main-form label {
+		color:#282a39;
+		text-align: center;
+	}
+
+	.main-form button {
+		margin-top: 1em;
+		height: 58px;		
+	}
+
 }
 
 
 .accordion-title {
-	background-color: #17192c;
-	color:#dddddd;
+	color: #17192c;		
 }
 
-.accordion-item a:hover{
-	background-color: #ff3000;
-	color:white;
+.accordion-item a:hover{	
+	color: #17192c;
+}
+
+.aaa {
+	padding-left: 0.7em;
+	margin-top: -0.7em;
+}
+
+.aaa-footer {
+	padding-left: 0.7em;
+	margin-top: -0.7em;	
+}
+
+.text-button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*ACCORD*/
+.transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, h1, ul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.accord {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.accord h1, h2 {
+  color: #17192c;
+}
+
+.accord h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.accord h2 {
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 400;
+  font-size: 12pt;
+  line-height: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  background-color: #fefffa;
+  margin: 0;
+  cursor: pointer;
+}
+
+.accord p {
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 400;
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 10pt;  
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.accord ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accord ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+.accord ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accord ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accord ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accord ul li:last-of-type {
+  padding-bottom: 0;
+}
+.accord ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accord ul li i:before, ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #17192c;
+  width: 3px;
+  height: 9px;
+}
+.accord ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accord ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accord ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accord ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.accord ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accord ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
 }
