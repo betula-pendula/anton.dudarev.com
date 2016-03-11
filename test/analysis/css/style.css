@@ -555,8 +555,8 @@ label.star-about:before {
 	}
 
 	#container {			
-		background: url('../img/bg.jpg') 100% 100% no-repeat; /* Добавляем фон */
-    	background-size: cover; /* Масштабируем фон */	
+		background: url('../img/bg.jpg') 100% 100% no-repeat; 
+    	background-size: cover; 
   		-moz-background-size: 100%; 
   		-webkit-background-size: 100%; 
   		-o-background-size: 100%; 
@@ -570,23 +570,26 @@ label.star-about:before {
 	}
 
 
-	.top-bar ul{	
-		background-color: #17192c;		
+	.top-bar img{	
+		margin-top: -10px;	
+		width: 70%;
+		height: 70%;
 	}
 
-	.top-bar img{
-		margin-top: 10px;
-		width: 50%;
-		height: 50%;
+	.top-bar ul{	
+		background-color: #17192c;	
+		padding-bottom: 5px;	
 	}
 
 	.top-bar-center ul {
-		background-color: #17192c;
+		background-color: #17192c;	
+		height: 10px;	
 	}
 
 	.top-bar-center ul li a{
 		color: #dddddd;
 		font-size: 8pt;
+		margin-top: -22px;
 	}
 
 	.top-bar-center ul li a:hover{
@@ -675,23 +678,26 @@ label.star-about:before {
 		display: inline-block;	
 	}
 
-	.top-bar img{
-		margin-top: 10px;
-		width: 50%;
-		height: 50%;
+	.top-bar img{	
+		margin-top: -10px;	
+		width: 70%;
+		height: 70%;
 	}
 
 	.top-bar ul{	
-		background-color: #17192c;		
+		background-color: #17192c;	
+		padding-bottom: 5px;	
 	}
 
 	.top-bar-center ul {
-		background-color: #17192c;
+		background-color: #17192c;	
+		height: 10px;	
 	}
 
 	.top-bar-center ul li a{
 		color: #dddddd;
 		font-size: 8pt;
+		margin-top: -17px;
 	}
 
 	.top-bar-center ul li a:hover{
@@ -787,7 +793,7 @@ label.star-about:before {
 .accord h1 {
   text-transform: uppercase;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 36px;
   letter-spacing: 3px;
   font-weight: 100;
 }
@@ -795,10 +801,8 @@ label.star-about:before {
 .accord h2 {
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 400;
-  font-size: 12pt;
-  line-height: 34px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 20pt;
+  line-height: 34px;  
   display: block;
   background-color: #fefffa;
   margin: 0;
@@ -951,6 +955,7 @@ label.star-about:before {
 	font-family: 'Open-Sans', sans-serif;
 	font-size: 14pt;
 	line-height: 14px;
+	margin-top: 10px;
 
 }
 
