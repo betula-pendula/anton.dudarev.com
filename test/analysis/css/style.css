@@ -9,14 +9,14 @@ body {
   	height: 100%;  	
 }
 
-#container {	
-	background: url('../img/bg.jpg') no-repeat;
+#container {			
+	background: url('../img/bg1.jpg') 100% 100% no-repeat; /* Добавляем фон */
+    background-size: cover; /* Масштабируем фон */	
   	-moz-background-size: 100%; 
   	-webkit-background-size: 100%; 
   	-o-background-size: 100%; 
-  	background-size: 100%;   	
-  	background-repeat: repeat-y;
-	padding-bottom: 100px;
+  	background-size: 100%;    	
+	padding-bottom: 250px;
 }
 
 #container1 {	
@@ -110,15 +110,16 @@ body {
 }
 
 .main-form-footer {	
-	background: url('../img/bg.jpg') no-repeat;
+	background: url('../img/1.jpg') 100% 100% no-repeat;
   	-moz-background-size: cover; 
   	-webkit-background-size: cover; 
   	-o-background-size: cover; 
   	background-size: cover;   	  	
   	width: 100%;
-	padding-top: 0em;
+	padding-top: 1em;
 	padding-left: 1em;
 	padding-right: 1em;	
+	padding-bottom: 10em;
 }
 
 .main-form-footer h1 {
@@ -395,7 +396,8 @@ label.star-about:before {
 }
 
 .date-reviews {
-	font-size: 11pt;	
+	font-size: 11pt;
+	font-weight: 300;	
 }
 
 .yellow-color {
@@ -510,13 +512,11 @@ label.star-about:before {
 
 
 .has-tip {
-	border-bottom: 0px solid red;
-	top: -0.3em;
-	left: 0.3em;
+	border-bottom: 0px solid red;	
 }
 
 .tooltip-top {
-	top:50px;
+	
 }
 
 .tooltip.right {		
@@ -549,9 +549,35 @@ label.star-about:before {
 
 
 @media only screen and (max-width: 40em) {
+	.product-img{
+		width: 70%;
+		height: 70%;
+	}
+
+	#container {			
+		background: url('../img/bg.jpg') 100% 100% no-repeat; /* Добавляем фон */
+    	background-size: cover; /* Масштабируем фон */	
+  		-moz-background-size: 100%; 
+  		-webkit-background-size: 100%; 
+  		-o-background-size: 100%; 
+  		background-size: 100%;    	
+		background-repeat: repeat-y;
+	}
+
+	.bage {
+		padding-top: 0em;
+		display: inline-block;	
+	}
+
 
 	.top-bar ul{	
 		background-color: #17192c;		
+	}
+
+	.top-bar img{
+		margin-top: 10px;
+		width: 50%;
+		height: 50%;
 	}
 
 	.top-bar-center ul {
@@ -569,6 +595,7 @@ label.star-about:before {
 
 	.product-img {
 		border: 0px;
+		margin-bottom: 0px;
 	}
 
 	.product-info h3{	
@@ -577,6 +604,10 @@ label.star-about:before {
 		padding-left: 0em;	
 		padding-right: 0em;
 		color: #2a2a2a;
+	}
+
+	.about-product {
+		margin-top: 0em;
 	}
 
 	.about-product p {			
@@ -621,7 +652,35 @@ label.star-about:before {
 }
 
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 	
+	.product-img{
+		width: 40%;
+		height: 40%;
+		border: 0px;
+		margin-bottom: 0px;
+	}
+
+	#container {			
+		background: url('../img/bg.jpg') 100% 100% no-repeat; /* Добавляем фон */
+    	background-size: cover; /* Масштабируем фон */	
+  		-moz-background-size: 100%; 
+  		-webkit-background-size: 100%; 
+  		-o-background-size: 100%; 
+  		background-size: 100%;    			
+		background-repeat: repeat-y;
+	}
+
+	.bage {
+		padding-top: 0em;
+		display: inline-block;	
+	}
+
+	.top-bar img{
+		margin-top: 10px;
+		width: 50%;
+		height: 50%;
+	}
+
 	.top-bar ul{	
 		background-color: #17192c;		
 	}
@@ -698,7 +757,7 @@ label.star-about:before {
 
 
 /*ACCORD*/
-.transition, p, ul li i:before, ul li i:after {
+.transition, div, p, ul li i:before, ul li i:after {
   transition: all 0.25s ease-in-out;
 }
 
@@ -761,6 +820,36 @@ label.star-about:before {
   z-index: 2;
 }
 
+.accord div {
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 400;
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 10pt;  
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.accord div h4{
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 400;
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 10pt;  
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
 .accord ul {
   list-style: none;
   perspective: 900;
@@ -772,8 +861,7 @@ label.star-about:before {
   padding: 0;
   margin: 0;
   padding-bottom: 4px;
-  padding-top: 18px;
-  border-top: 1px dotted #dce7eb;
+  padding-top: 18px;  
 }
 .accord ul li:nth-of-type(1) {
   animation-delay: 0.5s;
@@ -820,6 +908,12 @@ label.star-about:before {
   opacity: 0;
   transform: translate(0, 50%);
 }
+.accord ul li input[type=checkbox]:checked ~ div {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
 .accord ul li input[type=checkbox]:checked ~ i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
@@ -849,4 +943,18 @@ label.star-about:before {
     transform-origin: top center;
     transform: rotateX(0deg);
   }
+}
+
+
+
+.un-reviews h1{
+	font-family: 'Open-Sans', sans-serif;
+	font-size: 14pt;
+	line-height: 14px;
+
+}
+
+.un-reviews p{
+	font-family: 'Open-Sans', sans-serif;
+	font-size: 8pt;
 }
