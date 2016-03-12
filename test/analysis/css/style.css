@@ -16,7 +16,7 @@ body {
   	-webkit-background-size: 100%; 
   	-o-background-size: 100%; 
   	background-size: 100%;    	
-	padding-bottom: 250px;
+	padding-bottom: 200px;
 }
 
 #container1 {	
@@ -609,6 +609,20 @@ label.star-about:before {
 		color: #2a2a2a;
 	}
 
+	.interest h1{	
+		font-family: 'Open Sans', sans-serif; 
+		font-weight: 300; 	
+		font-size: 42pt;
+		color: #ff3000;		
+	}
+
+	.interest p {
+		font-family: 'Open Sans', sans-serif; 
+		font-weight: 400; 	
+		font-size: 12pt;
+		color: #ff3000;	
+	}
+
 	.about-product {
 		margin-top: 0em;
 	}
@@ -704,6 +718,20 @@ label.star-about:before {
 		color: white;
 	}
 
+	.interest h1{	
+		font-family: 'Open Sans', sans-serif; 
+		font-weight: 300; 	
+		font-size: 42pt;
+		color: #ff3000;		
+	}
+
+	.interest p {
+		font-family: 'Open Sans', sans-serif; 
+		font-weight: 400; 	
+		font-size: 12pt;
+		color: #ff3000;	
+	}
+
 	.menu-padding-top {
 		font-family: 'Montserrat', sans-serif;	
 		padding-top: 5em;
@@ -782,8 +810,8 @@ label.star-about:before {
 }
 
 .accord {
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .accord h1, h2 {
@@ -802,7 +830,7 @@ label.star-about:before {
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 400;
   font-size: 20pt;
-  line-height: 34px;  
+  line-height: 34pt;  
   display: block;
   background-color: #fefffa;
   margin: 0;
@@ -859,13 +887,15 @@ label.star-about:before {
   perspective: 900;
   padding: 0;
   margin: 0;
+
 }
 .accord ul li {
   position: relative;
   padding: 0;
   margin: 0;
-  padding-bottom: 4px;
+  padding-bottom: 18px;
   padding-top: 18px;  
+  
 }
 .accord ul li:nth-of-type(1) {
   animation-delay: 0.5s;
@@ -948,8 +978,6 @@ label.star-about:before {
     transform: rotateX(0deg);
   }
 }
-
-
 
 .un-reviews h1{
 	font-family: 'Open-Sans', sans-serif;
