@@ -25,7 +25,9 @@
     <div class="top-bar color-bar show-for-large">      
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
-          <li><img src="img/logo.png"></li>          
+          <a href="javascript://" onclick="$('.example_block').removeClass('hide1'); $('.example_block2').removeClass('hide2');">
+            <li><img src="img/logo.png"></li>          
+          </a>
         </ul>
       </div>      
       <div class="top-bar-right">
@@ -94,11 +96,20 @@
             <div class="large-8 columns">
               <h3>Review Reveal Score</h3> 
               <div class="bage">
-              <h3 style="padding-left:1em;"><span class="yellow-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></h3>                
+                <h3 style="padding-left:1em;"><span class="yellow-color"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></h3>              
               </div>
-              <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="1" title="Our own product rating system. See how it works here.">
-                    <img src="img/bage.png" >
-              </span>
+              <!--
+              <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" data-template-classes="my-cool-tip-class"  tabindex="0" title="Someone not using Foundation.">
+              <img src="img/bage.png" >
+              </span>   
+              -->    
+              <div class="wrapper1">
+                <img src="img/bage.png" >
+                <div class="tooltip1">
+                  <p>Our own product rating system.</br>
+                  See how it works <a href="#">here</a>.</p>             
+                </div>
+              </div> 
                 <!--
                 <div class="cont">
                   <div class="stars">
@@ -215,13 +226,16 @@
               </div>              
               <div class="large-6 small-6 columns text-right">                
                 <p>&emsp;<br>
-                <span data-tooltip aria-haspopup="true" class="has-tip right date-reviews yellow-color" data-disable-hover="false" tabindex="1" title="User data shows account was likely created for single review">WHY?<span></p>               
-              </div> 
-              <!--
-              <div class="large-6 small-6 columns text-right">
-                <p>&emsp;<br><a href="#"><span class="date-reviews yellow-color">WHY?<span></a></p>
+                
+                <div class="date-reviews yellow-color wrapper_why">
+                  WHY?
+                  <div class="tooltip_why">
+                    <p>Our own product rating system.</br>
+                    See how it works <a href="#">here</a>.</p>             
+                  </div>
+                </div>
+                                             
               </div>
-            -->
             </div>              
           </div>
         </div>
@@ -237,7 +251,15 @@
               </div>              
               <div class="large-6 small-6 columns text-right">                
                 <p>&emsp;<br>
-                <span data-tooltip aria-haspopup="true" class="has-tip right date-reviews yellow-color" data-disable-hover="false" tabindex="2" title="User data shows account was likely created for single review">WHY?<span></p>               
+                
+                <div class="date-reviews yellow-color wrapper_why">
+                  WHY?
+                  <div class="tooltip_why">
+                    <p>Our own product rating system.</br>
+                    See how it works <a href="#">here</a>.</p>             
+                  </div>
+                </div>
+                
               </div>            
             </div>              
           </div>

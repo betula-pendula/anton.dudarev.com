@@ -201,8 +201,8 @@ body {
 	font-weight: 400; 	
 	font-size: 20pt;
 	margin-top: -0.3em;
-	padding-left: 0em;	
-	padding-right: 0em;
+	padding-left: 1em;	
+	padding-right: 1em;
 	color: #2a2a2a;
 }
 
@@ -383,7 +383,7 @@ label.star-about:before {
 }
 
 .signature-perents {
-	position:relative;	
+	
 	font-family: 'Open Sans', sans-serif; 
 	font-weight: 400; 	
 	font-size: 14pt;
@@ -510,44 +510,6 @@ label.star-about:before {
 	-o-transform: translate(0,0px);
 }
 
-
-.has-tip {
-	border-bottom: 0px solid red;	
-}
-
-.tooltip-top {
-	
-}
-
-.tooltip.right {		
-	font-family: 'Open Sans', sans-serif; 
-	font-weight: 400; 	
-	font-size: 10pt;
-	min-width: 230px;
-	color: #707070;
-	background-color: #f7f7f7;
-	border: 1px solid #e4e4e4;
-	border-radius: 8px;
-}
-
-.tooltip.right::before, .tooltip.right::after {
-	top:54%;
-    content: ''; 
-    position: absolute;
-    border: 5px solid transparent;	
-    border-top: 5px solid #e4e4e4; 
-    border-right: 5px solid #e4e4e4;
-}
-.tooltip.right::after {
-   	left: -6px;
-   	top:50%;   	
-    border: 5px solid transparent;	
-    border-top: 5px solid #f7f7f7; 
-    border-right: 5px solid #f7f7f7;
-}
-
-
-
 @media only screen and (max-width: 40em) {
 	.product-img{
 		width: 70%;
@@ -604,8 +566,8 @@ label.star-about:before {
 	.product-info h3{	
 		font-family: 'Open Sans', sans-serif; 
 		font-weight: 400; 	
-		padding-left: 0em;	
-		padding-right: 0em;
+		padding-left: 1em;	
+		padding-right: 1em;
 		color: #2a2a2a;
 	}
 
@@ -763,6 +725,14 @@ label.star-about:before {
 		height: 58px;		
 	}
 
+	.product-info h3{	
+		font-family: 'Open Sans', sans-serif; 
+		font-weight: 400; 	
+		padding-left: 1em;	
+		padding-right: 1em;
+		color: #2a2a2a;
+	}
+
 }
 
 
@@ -810,8 +780,8 @@ label.star-about:before {
 }
 
 .accord {
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 .accord h1, h2 {
@@ -990,4 +960,237 @@ label.star-about:before {
 .un-reviews p{
 	font-family: 'Open-Sans', sans-serif;
 	font-size: 8pt;
+}
+
+
+
+
+
+.has-tip {
+	border-bottom: 0px solid red;	
+}
+
+
+ 
+.my-cool-tip-class {	
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 400; 	
+	font-size: 10pt;
+	min-width: 230px;
+	color: #707070;
+	background-color: #f7f7f7;
+	border: 1px solid #e4e4e4;
+	border-radius: 8px;
+}
+
+.right::before {
+	top:54%;
+    content: ''; 
+    position: absolute;
+    border: 5px solid transparent;	
+    border-top: 5px solid #e4e4e4; 
+    border-right: 5px solid #e4e4e4;
+}
+
+.my-cool-tip-class::after {
+   	left: -6px;
+   	top:50%;   	
+    border: 5px solid transparent;	
+    border-top: 5px solid #f7f7f7; 
+    border-right: 5px solid #f7f7f7;
+}
+
+
+
+.wrapper1 {
+	display: inline;
+	left: -20px;
+	top: -5px;  
+  cursor: help;  
+  position: relative;
+  text-align: left;
+  width: auto;  
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.wrapper1 .tooltip1 {
+  background: #f7f7f7;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  color: #707070;
+  display: block;
+  left: 25px;
+  top:-50%;  
+  opacity: 0;  
+  pointer-events: none;
+  position: absolute;
+  width: 250px;
+  height: 70px;
+  padding-top: 1em;
+  padding-left: 1em;
+  font-size: 10pt;
+  -webkit-transform: translateY(10px);
+     -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+       -o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper1 .tooltip1:before {
+  border: 8px solid transparent;	
+  border-top: 8px solid #e4e4e4; 
+  border-right: 8px solid #e4e4e4;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  top:19px;
+  left: -2px;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}  
+
+/* CSS Triangles - see Trevor's post */
+.wrapper1 .tooltip1:after {
+  border: 7px solid transparent;	
+  border-top: 7px solid #f7f7f7; 
+  border-right: 7px solid #f7f7f7;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  top:20px;
+  left: 1px;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+  
+.wrapper1:hover .tooltip1 {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper1 .tooltip1 {
+  display: none;
+}
+
+.lte8 .wrapper1:hover .tooltip1 {
+  display: block;
+}
+
+
+
+.wrapper_why {
+	display: inline;
+	left: 0px;
+	top: -15px;  
+  cursor: help;  
+  position: relative;
+  text-align: left;
+  width: auto;  
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.wrapper_why .tooltip_why {
+	z-index: 5000;
+  background: #f7f7f7;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  color: #707070;
+  display: block;
+  left: 50px;
+  top:-50%;  
+  opacity: 0;  
+  pointer-events: none;
+  position: absolute;
+  width: 250px;
+  height: 70px;
+  padding-top: 1em;
+  padding-left: 1em;
+  font-size: 10pt;
+  -webkit-transform: translateY(10px);
+     -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+       -o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper_why .tooltip_why:before {
+  border: 8px solid transparent;	
+  border-top: 8px solid #e4e4e4; 
+  border-right: 8px solid #e4e4e4;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  top:19px;
+  left: -2px;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}  
+
+/* CSS Triangles - see Trevor's post */
+.wrapper_why .tooltip_why:after {
+  border: 7px solid transparent;	
+  border-top: 7px solid #f7f7f7; 
+  border-right: 7px solid #f7f7f7;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  top:20px;
+  left: 1px;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+  
+.wrapper_why:hover .tooltip_why {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper_why .tooltip_why {
+  display: none;
+}
+
+.lte8 .wrapper_why:hover .tooltip_why {
+  display: block;
 }
