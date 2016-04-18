@@ -12,7 +12,49 @@
 }
 
 .search-form {
-	margin-top: 2em;
+	margin-top: 3em;
 	margin-bottom: 1em;
 }
 
+.q-top {
+	margin-top: 2em;
+}
+
+.blog-post a{
+	color:#39444B;
+}
+
+.blog-post a:hover {
+	color:#43A4E4;
+}
+
+.text-author {
+	display: inline-block;
+	vertical-align: middle;
+	font-size:10pt;
+	margin-bottom: 1em;
+}
+
+.text-author a{
+	color:#E4CDCD;
+}
+
+.text-author a:hover{
+	color:#BBA4A0;
+}
+
+.v1 h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.v2 h3 {
+	font-family: 'Merriweather', serif;
+}
+
+.v3 h3 {
+	font-family: 'Cuprum', sans-serif;
+}
+
+.v4 h3 {
+	font-family: 'Open Sans', sans-serif;
+}
