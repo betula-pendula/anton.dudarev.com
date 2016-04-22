@@ -1,3 +1,14 @@
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+.footer, .push {
+	height: 5.5em;
+}
+
 .accordion-title {	
 	font-family: 'Muli', sans-serif;
 	font-size: 14pt;
@@ -106,3 +117,6 @@ a h5:hover {
 	color:#3b3b3b;
 	text-decoration: underline;
 }
+
+
+
