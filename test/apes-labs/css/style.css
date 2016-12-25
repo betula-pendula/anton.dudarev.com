@@ -1,0 +1,203 @@
+.navbar {
+  height: 80px;
+}
+
+.iconpadding {
+  padding-top: 15px;
+}
+
+.text-ad {
+  padding-top: 17px;
+}
+
+.text-ad2 {
+  padding-top: 17px;
+  padding-left: 2em;
+}
+
+.seemore {
+  padding-top: 2em;
+}
+
+.border-left {
+  height: 400px;
+  border-left: 1px solid #e7e7e7;
+}
+
+.border-left-2 {
+  height: 300px;
+  border-left: 1px solid #e7e7e7;
+}
+
+.img-product {
+  height: 100%;
+}
+
+.button-amazon {
+  margin-top: 1.5em;
+}
+
+.product-margin-left {
+  margin-left: -15px;
+}
+
+.product-margin-right {
+  margin-left: 15px;
+}
+
+.foto-product {
+  background-color: black;
+  color: #fff;
+}
+
+.line {
+  height: 10px;
+  background-color: #fed833;
+}
+
+.btn-primary{
+  background-color: #fed833;
+  color: #666;
+  border: 0px solid #e7e7e7;
+}
+
+.btn-primaru:hover,
+.btn-primary:focus,
+.btn-primary:visited{
+  background-color: green;
+  color: white;
+}
+
+
+*, *::after, *::before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+#mainmenu {
+position: absolute;
+height: 0px;
+margin: 0px 0;
+padding: 20px;
+float: left;
+width: 100%;
+z-index: 10;
+}
+#mainmenu ul {
+clear: left;
+position: relative;
+right: 50%;
+height: 40px;
+float: right;
+text-align: center;
+font: 15px Arial, Helvetica, sans-serif;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.menutext {
+  margin-top: 20px;
+}
+
+
+/** Основные пункты **/
+
+#mainmenu > ul > li {
+position: relative;
+opacity: 0.5;
+top:-20px;
+left: 50%;
+float: left;
+height: 80px;
+padding: 0;
+margin: 0
+}
+#mainmenu > ul > li > a {
+border-left: 0px solid #666;
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 0 20px;
+line-height: 40px;
+}
+#mainmenu > ul > li:first-child > a {
+border: none;
+}
+#mainmenu > ul > li:hover > a, #mainmenu > ul > li.hover > a, #mainmenu > ul > li.active > a {
+color: #fff
+}
+#mainmenu > ul > li:hover, #mainmenu > ul > li.hover, #mainmenu > ul > li.active {
+background: #666
+}
+
+/* Выпадающие подпункты */
+
+#mainmenu ul li ul {
+position: fixed;
+left: 0;
+top: 80px;
+display: none;
+list-style: none;
+visibility: hidden;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+#mainmenu > ul > li ul li {
+background-color: #666;
+position: relative;
+left: 0;
+display: list-item;
+float: none;
+height: auto;
+margin: 0;
+text-align: left;
+}
+#mainmenu ul li ul li a {
+border-bottom: 1px solid #999;
+display: block;
+color: #fff;
+padding: 10px 15px;
+text-decoration: none;
+}
+#mainmenu ul li ul li.parent a {
+position: relative;
+}
+#mainmenu ul li ul > li.parent > a::before {
+border-top: 1px solid #fff;
+border-right: 1px solid #fff;
+content: "";
+display: block;
+position: absolute;
+right: 15px;
+top: 50%;
+transform: translateY(-50%) rotate(45deg);
+height: 6px;
+width: 6px;
+}
+#mainmenu ul li ul li:hover, #mainmenu ul li ul li.hover {
+background-color: #444
+}
+#mainmenu ul li:hover ul, #mainmenu ul li.hover ul {
+display: block
+}
+
+/* Выпадающие пункты второго уровня */
+
+#mainmenu ul li:hover > ul {
+opacity: 1;
+visibility: visible;
+margin: 0;
+}
+#mainmenu ul li ul li ul {
+top: 0;
+left: 200px;
+margin: 0 0 0 20px;
+width: 180px
+}
+
+
