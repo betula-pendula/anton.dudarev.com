@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АПБ | Landing Page</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app.css">     
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
   </head>
   <body>
 
@@ -28,27 +31,89 @@
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu">
-          <li class="menu-text">АПБ | Landing Page</li>
-          <li><a href="#">+380501234567</a></li>
-          <li><a href="#">mail@mail.com</a></li>
+          <li class="menu-text"><img src="img/logo.png"></li>
+          <li><a href="#">Возможности</a></li>
+          <li><a href="#">Приемущества</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Портфолио</a></li>
         </ul>
       </div>
       <div class="top-bar-right">
         <ul class="menu">
-          <li><a href="#">Возможности</a></li>
-          <li><a href="#">Приемущества</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Портфолио</a></li>            
+                      
         </ul>
       </div>
     </div>
- 
+
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+      <ul class="orbit-container">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="img/s1.jpg" alt="Space">
+          <!--
+          <figcaption class="orbit-caption">
+            <div class="carusel-background">
+              <h3 class="text-center">1. Landing page</h3>
+              <p class="text-center">Самый выгодный маркетинговый инструмент бизнеса.</p>              
+            </div> 
+          </figcaption>
+        -->
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="img/s2.jpg" alt="Space">
+          <!--
+          <figcaption class="orbit-caption">
+            <div class="carusel-background">
+              <h3 class="text-center">2. Рассылка вашей рекламы</h3>
+              <p class="text-center">SMS, Vaiber, Wats App.</p>              
+            </div>
+          </figcaption>
+        -->
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="img/s3.jpg" alt="Space">
+          <!--
+          <figcaption class="orbit-caption">
+            <div class="carusel-background">
+              <h3 class="text-center">3. ARBI</h3>
+              <p class="text-center">Креативное рекламное агентство.</p>              
+            </div>
+          </figcaption>
+        -->
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="img/s4.jpg" alt="Space">
+          <!--
+          <figcaption class="orbit-caption">
+            <div class="carusel-background">
+              <h3 class="text-center">4. Callback</h3>
+              <p class="text-center">Сервис обратного звонка.</p>              
+            </div>
+          </figcaption>
+        -->
+        </li>
+      </ul>
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+      </nav>
+    </div>
+
+    <!-- 
     <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
       <ul class="orbit-container">
         <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
         <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
         <li class="orbit-slide is-active">
-          <img src="https://placehold.it/2000x750&text=Landing Page">
+          <div class="carusel-background">
+            <h3 class="text-center">2: You can also throw some text in here!</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+            <h3 class="text-center">This Orbit slider does not use animations.</h3>
+          </div>          
+          
         </li>
         <li class="orbit-slide">
           <img src="https://placehold.it/2000x750&text=WhatsApp Viber">
@@ -58,76 +123,61 @@
         </li>        
       </ul>
     </div>
+  -->
 
-    <br><br><br>
-
-    <div class="row">    
-    <div class="medium-6 columns">
-    <h4>Наши приемущества</h4>
-    <br>
-      <div class="media-object">
-        <div class="media-object-section">
-          <img class="thumbnail" src="https://placehold.it/100x100">
-        </div>
-        <div class="media-object-section">
-          <h5>Nunc Eu Ullamcorper Orci</h5>
-          <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-        </div>
-      </div>
-      <div class="media-object">
-        <div class="media-object-section">
-          <img class="thumbnail" src="https://placehold.it/100x100">
-        </div>
-        <div class="media-object-section">
-          <h5>Nunc Eu Ullamcorper Orci</h5>
-          <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-        </div>
-      </div>
-      <div class="media-object">
-        <div class="media-object-section">
-          <img class="thumbnail" src="https://placehold.it/100x100">
-        </div>
-        <div class="media-object-section">
-          <h5>Nunc Eu Ullamcorper Orci</h5>
-          <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-        </div>
-      </div>
-    </div>
-    <div class="medium-6 columns">
-    <h4>Почему нам доверяют</h4>
-    <br>
-      <div class="media-object">
-        <div class="media-object-section">
-          <img class="thumbnail" src="https://placehold.it/100x100">
-        </div>
-        <div class="media-object-section">
-          <h5>Nunc Eu Ullamcorper Orci</h5>
-          <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-        </div>
-      </div>
-      <div class="media-object">
-        <div class="media-object-section">
-          <img class="thumbnail" src="https://placehold.it/100x100">
-        </div>
-        <div class="media-object-section">
-          <h5>Nunc Eu Ullamcorper Orci</h5>
-          <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-        </div>
-      </div>
-      <div class="media-object">
-        <div class="media-object-section">
-          <img class="thumbnail" src="https://placehold.it/100x100">
-        </div>
-        <div class="media-object-section">
-          <h5>Nunc Eu Ullamcorper Orci</h5>
-          <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br><br><br>
+     <!-- this adds Foundation Icon Fonts!! -->
     
+    <br><br>
+    
+    
+    <div class="row column text-center">
+      <h2>Лендинг идеально подходид для</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="medium-3 columns">
+        <div class="profile-card">          
+          <div class="profile-info">
+            <h4 class="subheader">Производителя</h4>
+            <br><br><br>
+            <p>Заполните форму и узнайте чем мы можем вам помочь</p>            
+            <a href="#" class="button expanded">Заполнить</a>
+          </div>
+        </div>
+      </div>
+      <div class="medium-3 columns">
+        <div class="profile-card">          
+          <div class="profile-info">
+            <h4 class="subheader">Уникального товара</h4>
+            <br><br>
+            <p>Заполните форму и узнайте чем мы можем вам помочь</p>
+            <a href="#" class="button expanded">Заполнить</a>
+          </div>
+        </div>
+      </div>
+      <div class="medium-3 columns">
+        <div class="profile-card">          
+          <div class="profile-info">
+            <h4 class="subheader">Сферы услуг</h4>
+            <br><br><br>
+            <p>Заполните форму и узнайте чем мы можем вам помочь</p>            
+            <a href="#" class="button expanded">Заполнить</a>            
+          </div>
+        </div>
+      </div>
+      <div class="medium-3 columns">
+        <div class="profile-card">          
+          <div class="profile-info">
+            <h4 class="subheader">Розничной / Оптовой торговли</h4>
+            <p>Заполните форму и узнайте чем мы можем вам помочь</p>
+            <a href="#" class="button expanded">Заполнить</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
     <hr>
     <div class="row column">
       <div class="callout primary">
@@ -137,76 +187,164 @@
     </div>
     <hr>    
 
-  <br><br><br>
+    <br><br>
+
+    <div class="row">    
+    <div class="medium-6 columns">
+    <h4> </h4>
+    <br>
+      <div class="media-object">
+        <div class="media-object-section">
+          <img class="thumbnail" src="https://placehold.it/100x100">
+        </div>
+        <div class="media-object-section">
+          <h5>Адаптивность.</h5>
+          <p>Ваш сайт теперь и на мобильном устройстве.</p>
+        </div>
+      </div>
+      <div class="media-object">
+        <div class="media-object-section">
+          <img class="thumbnail" src="https://placehold.it/100x100">
+        </div>
+        <div class="media-object-section">
+          <h5>Продающая структура Landing Page</h5>
+          <p>Каждая деталь - продает ваш товар или услугу.</p>
+        </div>
+      </div>
+      <div class="media-object">
+        <div class="media-object-section">
+          <img class="thumbnail" src="https://placehold.it/100x100">
+        </div>
+        <div class="media-object-section">
+          <h5>Глубокий анализ.</h5>
+          <p>Одно из самых значительных факторов.</p>
+        </div>
+      </div>
+    </div>
+    <div class="medium-6 columns">
+    <h4> </h4>
+    <br>
+      <div class="media-object">
+        <div class="media-object-section">
+          <img class="thumbnail" src="https://placehold.it/100x100">
+        </div>
+        <div class="media-object-section">
+          <h5>Конверсия</h5>
+          <p>Анализ поведения посетителей дает возможность оптимизировать увеличения конверсии.</p>
+        </div>
+      </div>
+      <div class="media-object">
+        <div class="media-object-section">
+          <img class="thumbnail" src="https://placehold.it/100x100">
+        </div>
+        <div class="media-object-section">
+          <h5>Используем самые современные технологии</h5>
+          <p>Производим оптимизацию, от кода до изображений.</p>
+        </div>
+      </div>
+      <div class="media-object">
+        <div class="media-object-section">
+          <img class="thumbnail" src="https://placehold.it/100x100">
+        </div>
+        <div class="media-object-section">
+          <h5>Удобство пользования</h5>
+          <p>Один из важных факторов продажи.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br> 
 
     <div class="row column text-center">
       <h2>УСЛУГИ</h2>
       <hr>
     </div>
-    <div class="row small-up-2 large-up-4">
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Купить</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Купить</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Купить</a>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <a href="#" class="button expanded">Купить</a>
-      </div>
-    </div>
 
-    
+    <div class="row">
+      <div class="column medium-4">
+        <ul class="pricing-table no-bullet text-center">
+          <li class="title">Базовый</li>
+          <li class="price">3900 руб./1900 грн.</li>
+          <!--<li class="description">An awesome description</li>-->
+          <li>Подробный анализ рынка</li>
+          <li>Оценка конкурентоспособности товара</li>
+          <li>Индивидуальный дизайн</li>
+          <li>Продающий текст</li>
+          <li>Домен + хостинг</li>
+          <li>Адаптивность</li>
+          <li>Качественная верстка</li>
+          <li>Установка кодов отслеживания посещаемости</li>
+          <li>Установка целей аналитики</li>
+          <li><a class="button" href="#">Купить сейчас</a></li>
+        </ul>
+      </div>  
+      <div class="column medium-4">
+        <ul class="pricing-table no-bullet text-center">
+          <li class="title">Стандарт</li>
+          <li class="price">4900 руб./2500 грн.</li>
+          <!--<li class="description">An awesome description</li>-->
+          <li>Все услуги тарифа "Базовый"</li>
+          <li>Настройка контекстно-медийной рекламы в Google</li>
+          <li>Настройка контекстно-медийной рекламы в Yandex</li>
+          <li>Установка callback для связи Вас и клиента</li>
+          <li>A/B-тестирование сайта в течении месяца</li>
+          <li>Ведение и оптимизация всей рекламной кампании в течении месяца</li>
+          <li><a class="button" href="#">Купить сейчас</a></li>
+        </ul>
+      </div>
+      <div class="column medium-4">
+        <ul class="pricing-table no-bullet text-center">
+          <li class="title">Полный</li>
+          <li class="price">5900 руб./3900 грн.</li>
+          <!--<li class="description">An awesome description</li>-->
+          <li>Все услуги тарифа "Стандарт"</li>
+          <li>Настройка рекламы в 2-х соц. Сетях (VK, Facebook)</li>
+          <li>Ведение и оптимизация всей рекламной кампании в течении двух месяцев</li>
+          <li>Административная панель сайта</li>
+          <li><a class="button" href="#">Купить сейчас</a></li>
+        </ul>
+      </div>
+    </div>    
 
-    <br><br><br>
+    <br><br>
 
     <div class="row column text-center">
-      <h2>ПОРТФОЛИО</h2>
+      <h2>Примеры</h2>
       <hr>
     </div>
     <div class="row small-up-2 medium-up-3 large-up-6">
       <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
+        <a><img class="thumbnail" src="img/lp1-small.png"></a>
         <h5>Nulla At Nulla Justo, Eget</h5>                
       </div>
       <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
+        <img class="thumbnail" src="img/lp2-small.png">
         <h5>Nulla At Nulla Justo, Eget</h5>                
       </div>
       <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
+        <img class="thumbnail" src="img/lp3-small.png">
         <h5>Nulla At Nulla Justo, Eget</h5>        
       </div>
       <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
+        <img class="thumbnail" src="img/lp4-small.png">
         <h5>Nulla At Nulla Justo, Eget</h5>        
       </div>
       <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
+        <img class="thumbnail" src="img/lp5-small.png">
         <h5>Nulla At Nulla Justo, Eget</h5>        
       </div>
       <div class="column">
-        <img class="thumbnail" src="https://placehold.it/300x400">
+        <img class="thumbnail" src="img/lp6-small.png">
         <h5>Nulla At Nulla Justo, Eget</h5>        
       </div>
     </div>
 
     <br><br><br>
     
+
+
+
   
 
 
