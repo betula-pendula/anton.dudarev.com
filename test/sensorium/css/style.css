@@ -1314,7 +1314,12 @@ form label {
   padding-top: 25%;  
   font-size: 30pt;
   font-weight: 300;
-  
+}
+
+.caption-h3 {
+  padding-top: 22%; 
+  color: white;
+  font-weight: 300;
 }
 
 .size-icon {
