@@ -1,17 +1,22 @@
-/*Фон для секций*/
-
-body {
-  font-family: 'Poppins', sans-serif;
-  /*font-family: "Open Sans", Arial, sans-serif;*/
-  /*font-weight: 400;*/
+body {  
+  	font-family: "Open Sans", sans-serif;
+  	font-weight: 400;
 }
 
-h1 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 900;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;	
 }
+
+p {
+	font-family: "Open Sans", sans-serif;
+  	font-weight: 400;
+}
+
+
 
 .section:first-child {	
+	font-family: "Open Sans", sans-serif;
+	font-family: 'Poppins', sans-serif;
   		
 	background: url("../images/back.svg") repeat-y #136a8b;
 	background-position: 450px -50px; /* Положение фона */
@@ -24,10 +29,6 @@ h1 {
 	background: -ms-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
 	background: linear-gradient(180deg, rgb(19, 106, 139, 0.5) 0%, rgb(38, 120, 113, 0.5) 100%);*/
 
-
-}
-
-.back {
 
 }
 
@@ -59,13 +60,9 @@ h1 {
 
 
 /*Меню*/
-.navbar {
-  min-height: 60px;
-}
 
-.nav > li > a:focus {
-  background: #fff;
-}
+
+
 
 .menu-top {
 	margin-top: 30px;
@@ -89,7 +86,6 @@ h1 {
 }
 
 .color-header {
-	
 	top:100px;
 	height: 80px;
 	background-color: red;
@@ -98,4 +94,227 @@ h1 {
 
 .item-block {
 	color:black;
+}
+
+.dropdown:hover > .dropdown-menu { 
+    display: block; 
+    margin: 0;
+}
+
+.dropdown-toggle {
+	-webkit-transition: all 0.3s ease;;
+  	-moz-transition: all 0.3s ease;;
+  	-o-transition: all 0.3s ease;;
+  	transition: all 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+	-webkit-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	transform: translate(0px, -2px);
+}
+
+
+
+.dropdown-menu {
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
+
+
+
+/* цвет фона и рамки навигационного меню */
+.navbar-default {
+    background-color: rgba(44, 48, 55, .0);
+    border-color: rgba(44, 48, 55, .0);
+}
+/* цвет текста, содержащий название сайта или бренда */
+.navbar-default .navbar-brand {
+    color: #ecf0f1;
+}
+/* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #d1ffed;
+}
+/* Цвет пунктов навигационного меню */
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+/* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: red;
+}
+/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #d1ffed;
+    background-color: #27ae60;
+}
+/* Цвет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #d1ffed;
+    background-color: #27ae60;
+}
+/* Цвет стрелочки (треугольничка) у раскрывающихся пунктов меню */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ecf0f1;
+    border-bottom-color: #ecf0f1;
+}
+/* Цвет стрелочки (треугольничка) при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #d1ffed;
+    border-bottom-color: #d1ffed;
+}
+/* Цвет стрелочки (треугольничка), открывшегося пункта меню */
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #d1ffed;
+    border-bottom-color: #d1ffed;
+}
+/* CSS стили для мобильных устройств */
+/* Цвет рамки у кнопки, которая открывает меню */
+.navbar-default .navbar-toggle {
+    border-color: #27ae60;
+}
+/* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #27ae60;
+}
+/* Цвет полосочек в кнопочке, которая открывает меню */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+/* Цвет пунктов меню в раскрывающихся списках */
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+  }
+/* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #d1ffed;
+        background-color: #27ae60;
+    }
+}
+
+
+
+.navbar-nav > li > .dropdown-menu {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.dropdown-menu {
+    background-color: #f8f8f8;
+    border: medium none;
+    display: block;
+    min-width: 180px;
+    margin-top: 50px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s;
+    -moz-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s;
+    -o-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s;
+    transition: opacity 0.2s, margin-top 0.2s, visibility 0s linear 0.2s;
+}
+.dropdown-menu::after {
+	content: ''; 
+    position: absolute;
+    right: 45%; top: -15px;
+    border: 8px solid transparent;	border-bottom: 8px solid #4aad7d;
+}
+.navbar-nav > li.dropdown:hover > .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0.2s;    
+}
+
+
+.line {
+	z-index: 9999;
+	position: absolute;
+	background-color: #4aad7d;
+	height: 4px;
+	width: 1%;
+	top:0px;
+	left: 50%;
+	opacity: 1;    
+}
+.navbar-nav > li.dropdown:hover > .dropdown-menu > .line {
+	z-index: 9999;
+	position: absolute;
+	background-color: #4aad7d;
+	height: 4px;
+	width: 100%;
+	top:0px;
+	left: 0%;
+	opacity: 1;    
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.8s ease;
+}
+
+.btn-success {
+	border-radius: 20px;
+	border: 1px solid white;
+	background-color: rgba(44, 48, 55, .0);
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;
+}
+
+.btn-success:hover {
+	border-radius: 20px;
+	border: 1px solid white;
+	background-color: #4aad7d;
+}
+
+
+.arrow {
+	position: fixed;
+	top:85%;
+	left:48%;
+	height: 80px;
+}
+
+.arrow:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.icon-style {
+	position: fixed;
+	top:90%;
+	left:83%;
+
 }
