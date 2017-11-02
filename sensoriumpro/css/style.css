@@ -18,12 +18,12 @@ p {
 	font-family: "Open Sans", sans-serif;
 	font-family: 'Poppins', sans-serif;
   		
-	background: url("../images/back.svg") repeat-y #136a8b;
-	background-position: 450px -50px; /* Положение фона */
-    background-repeat: no-repeat; /* Отменяем повторение фона */
-    background-size: 150vh 150vh;
+	/*background: url("../images/back.svg") repeat-y #136a8b;
+	background-position: 450px -50px; Положение фона 
+    background-repeat: no-repeat; Отменяем повторение фона 
+    background-size: 150vh 150vh;*/
 
-    /*opacity: 0.6;
+    
 	background: -webkit-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
 	background: -o-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
 	background: -ms-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
@@ -315,10 +315,19 @@ p {
 .icon-style {
 	position: fixed;
 	top:90%;
-	left:83%;
+	left:86%;
 
 }
 
 .dropdown-menu {  
   background-color: rgba(255, 255, 255, 0.75);  
+}
+
+.navbar-fixed-top {
+  margin-top: 2em;
+}
+
+.line-hr {
+  width: 100px;
+  color:red;
 }
