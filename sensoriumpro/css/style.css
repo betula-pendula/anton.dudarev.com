@@ -17,20 +17,23 @@ p {
 .section:first-child {	
 	font-family: "Open Sans", sans-serif;
 	font-family: 'Poppins', sans-serif;
+
+  background-image: linear-gradient(180deg, rgba(19, 106, 139, 0.9) 0%, rgba(38, 120, 113, 0.9) 100%), url("../images/111.svg");
+  background-size: cover;
+  background-position: center;
   		
-	/*background: url("../images/back.svg") repeat-y #136a8b;
-	background-position: 450px -50px; Положение фона 
-    background-repeat: no-repeat; Отменяем повторение фона 
-    background-size: 150vh 150vh;*/
+	
 
     
-	background: -webkit-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
-	background: -o-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
-	background: -ms-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
-	background: linear-gradient(180deg, rgb(19, 106, 139, 0.5) 0%, rgb(38, 120, 113, 0.5) 100%);*/
+	/*background: -webkit-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
+  background: -o-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
+  background: -ms-linear-gradient(180deg, rgb(19, 106, 139) 0%, rgb(38, 120, 113) 100%);
+  background: linear-gradient(180deg, rgb(19, 106, 139, 0.5) 0%, rgb(38, 120, 113, 0.5) 100%);*/
 
 
 }
+
+
 
 .section:nth-child(2) {
   background: #222222;
