@@ -37,6 +37,12 @@ p {
 
 .section:nth-child(2) {
   background: #222222;
+  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
+
+  background-image: url("../images/222.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .section:nth-child(3) {
