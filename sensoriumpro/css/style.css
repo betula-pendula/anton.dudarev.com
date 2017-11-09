@@ -85,7 +85,7 @@ p {
 }
 
 .icon-magrin {
-	padding-right: 2em;
+	padding-right: 3em;
 }
 
 .color-header {
@@ -131,7 +131,7 @@ p {
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+  text-align: right;
 }
 
 
@@ -222,67 +222,131 @@ p {
 
 
 
-.navbar-nav > li > .dropdown-menu {
+.navbar-nav > li.dropdown > .dropdown-menu {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin-left: 5px;
-    margin-top: 10px;
+    margin-left: 0px;
+    margin-top: -10px;
+    height: 0px;
+
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0.5s;  
+
+    transition: All 0.3s ease;
 }
 .dropdown-menu {
+    text-align: center;
     background-color: #f8f8f8;
     border: medium none;
     display: block;
-    min-width: 180px;
-    margin-top: 50px;
+    width: 200px;
+    margin-top: 0px;
     padding: 10px;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s;
-    -moz-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s;
-    -o-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s;
-    transition: opacity 0.2s, margin-top 0.2s, visibility 0s linear 0.2s;
+    
 }
+
+/*
 .dropdown-menu::after {
 	content: ''; 
     position: absolute;
     right: 45%; top: -15px;
     border: 8px solid transparent;	border-bottom: 8px solid #4aad7d;
 }
+*/
 .navbar-nav > li.dropdown:hover > .dropdown-menu{
+    z-index: 9910;
     opacity: 1;
     visibility: visible;
+    height: 200%;
+
+    transition: All 0.5s ease;
+    
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
     -o-transition-delay: 0s;
-    transition-delay: 0.2s;    
+    transition-delay: 0.5s;  
 }
+
 
 
 .line {
+  margin-top: -13px;
 	z-index: 9999;
 	position: absolute;
 	background-color: #4aad7d;
-	height: 4px;
+	height: 3px;
 	width: 0%;
-	top:0px;
+	top:100%;
 	left: 50%;
 	opacity: 1;    
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.3s ease;
+
+  transition-delay: 0.5s;
 }
-.navbar-nav > li.dropdown:hover > .dropdown-menu > .line {
+.navbar-nav > li.dropdown:hover > .line {
 	z-index: 9999;
 	position: absolute;
 	background-color: #4aad7d;
-	height: 4px;
-	width: 100%;
-	top:0px;
-	left: 0%;
+	height: 3px;
+	width: 200px;
+	top:100%;
+	left: -60%;
 	opacity: 1;    
 	-webkit-transition: All 0.5s ease;
 	-moz-transition: All 0.5s ease;
 	-o-transition: All 0.5s ease;
 	-ms-transition: All 0.5s ease;
-	transition: All 0.8s ease;
+	transition: All 0.3s ease;
 }
+
+
+.back-drop {
+  z-index: 9900;
+  position: absolute;
+  background-color: #fafafa;
+  height: 0px;
+  width: 200px;
+  top:100%;
+  left: -60%;  
+  opacity: 1;    
+
+  
+
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.1s ease;
+
+  
+}
+.navbar-nav > li.dropdown:hover > .back-drop {
+  z-index: 9900;
+  position: absolute;
+  background-color: #fafafa;
+  height: 100%;
+  width: 200px;
+  top:100%;
+  left: -60%;
+  opacity: 1;    
+
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.1s ease;
+
+  
+}
+
 
 .btn-success {
 	border-radius: 20px;
@@ -292,7 +356,7 @@ p {
 	-moz-transition: All 0.5s ease;
 	-o-transition: All 0.5s ease;
 	-ms-transition: All 0.5s ease;
-	transition: All 0.5s ease;
+	transition: All 0.2s ease;
 }
 
 .btn-success:hover {
@@ -318,12 +382,12 @@ p {
 .icon-style {
 	position: fixed;
 	top:90%;
-	left:86%;
+	left:83%;
 
 }
 
 .dropdown-menu {  
-  background-color: rgba(255, 255, 255, 0.75);  
+  background-color: rgba(255, 255, 255, 1);  
 }
 
 .navbar-fixed-top {
@@ -335,4 +399,27 @@ p {
   color:red;
 }
 
+.dropdown:hover {
+  font-weight: 900;
+}
 
+
+.navbar-nav > li.dropdown:hover > .dropdown-menu > li{    
+    opacity: 1;
+    visibility: visible;     
+    transition: All 0.9s ease;    
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 1s;  
+}
+
+.navbar-nav > li.dropdown > .dropdown-menu > li{    
+    opacity: 0;
+    visibility: hidden;     
+    transition: All 0.9s ease;    
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 1s;  
+}
