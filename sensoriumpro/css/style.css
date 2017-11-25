@@ -92,7 +92,7 @@ background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
 background-image: url("../images/cube.png");
 
-  background-position: 100% 50px; /* Положение фона */
+  background-position: 100% 130px; /* Положение фона */
   background-size: 600px auto;
   background-repeat: no-repeat;
   
@@ -488,8 +488,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 
 .title-one {
   position: absolute;
-  bottom: -130px;
-  right: -10px;
+  bottom: -140px;
+  right: 30px;
   font-size: 300pt;
   font-family: 'Poppins', bold;
   font-weight: 1000;
@@ -498,8 +498,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 
 .title-two {
   position: absolute;
-  bottom: -130px;
-  right: 0px;
+  bottom: -140px;
+  right: 45px;
   font-size: 300pt;
   font-family: 'Poppins', bold;
   font-weight: 1000;
@@ -508,8 +508,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 
 .title-three {
   position: absolute;
-  bottom: -130px;
-  right: 0px;
+  bottom: -140px;
+  right: 30px;
   font-size: 300pt;
   font-family: 'Poppins', bold;
   font-weight: 1000;
@@ -519,8 +519,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 .title-fore {
   z-index: 100;
   position: absolute;
-  bottom: -130px;
-  right: 0px;
+  bottom: -140px;
+  right: 50px;
   font-size: 300pt;
   font-family: 'Poppins', bold;
   font-weight: 1000;
@@ -550,12 +550,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 }
 
 .cube {
-  margin-top: -25em;
+  margin-top: 5em;
   z-index: 1;
   
   position: relative;
   
-  height: 800px;
+  height: 600px;
 }
 
 .img-team {
