@@ -546,7 +546,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
   font-size: 200pt;
   font-family: 'Poppins', bold;
   font-weight: 1000;
-  color: #00af64;
+  color: #00a8b6;
 }
 
 
@@ -580,23 +580,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 
 .img-team {
   position: absolute;
-  top: 0px;
-  width: 550px;
+  top: 105px;
+  width: auto;
+  height: 100%;
+  
 }
 
 .meduza {
   position: absolute;
   height: 100vh;
-  width: 100vh;
-  top:0px;
+  width: 90vh;
+  top:35px;
   right: 0;
 }
 
 .meduza2 {
   position: absolute;
   height: 100vh;
-  width: 100vh;
-  top:0px;
+  width: 90vh;
+  top:35px;
   left: 0;
 }
 
@@ -619,9 +621,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 
 
  .vert1 {
-  height: 100px;
-  vertical-align: middle;
-  border: 1px solid #0061a6;
  -moz-transition: all 0.3s ease-out;
  -o-transition: all 0.3s ease-out;
  -webkit-transition: all 0.3s ease-out;
@@ -629,7 +628,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
  
 .vert1:hover {
   z-index: 1000;
-  box-shadow: 0 10px 4px -4px rgba(0, 0, 0, .2);
  -webkit-transform: scale(1.05);
  -moz-transform: scale(1.05);
  -o-transform: scale(1.05);
@@ -690,4 +688,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 }
 
 
+
+.team-text {
+  margin-top: 8em;
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
 
