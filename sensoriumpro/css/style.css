@@ -483,7 +483,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 
 .head-menu {
   z-index: 5;
-  height: 108px;  
+  height: 82px;  
   top:0;
 
   background: rgba(120,93,125,1);
@@ -498,7 +498,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
 
 .head-menu1 {
   z-index: 5;
-  height: 108px;  
+  height: 82px;  
   top:0;
   background-color: #00a8b6;
 }
@@ -593,7 +593,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', end
   position: absolute;
   top: 105px;
   width: auto;
-  height: 100%;
+  height: 85%;
   
 }
 
