@@ -96,7 +96,7 @@ p {
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
   background-image: url("../images/cube.svg");
-  background-position: 90% 0px; /* Положение фона */
+  background-position: 105% 0px; /* Положение фона */
   background-size: 800px auto;
   background-repeat: no-repeat;
   
@@ -462,6 +462,7 @@ background: -moz-radial-gradient(top left, ellipse cover, rgba(105,155,200,1) 0%
 }
 
 .line-hr {
+  height: 3px;
   width: 100px;
   color:red;
 }
@@ -510,7 +511,7 @@ background: -moz-radial-gradient(top left, ellipse cover, rgba(105,155,200,1) 0%
   z-index: 5;
   height: 82px;  
   top:0;
-  background-color: #00a8b6;
+  background-color: #0ea0a9;
 }
 
 
@@ -540,12 +541,13 @@ background: -moz-radial-gradient(top left, ellipse cover, rgba(105,155,200,1) 0%
 
 .title-three {
   position: absolute;
-  bottom: -92px;
+  bottom: -90px;
   right: 30px;
   font-size: 200pt;
   font-family: 'Poppins', bold;
   font-weight: 1000;
-  color: #0099a6;
+  color: #ffffff;
+  z-index: 1000;
 }
 
 .title-fore {
@@ -597,10 +599,18 @@ background: -moz-radial-gradient(top left, ellipse cover, rgba(105,155,200,1) 0%
   border: 2px solid #206041;
 }
 
+.hr-1 {
+  height: 2px;
+  background-color: white;
+  width: 60px;
+  margin: auto;
+  margin-top: 3em;
+}
+
 .hr-3 {
   margin-top: 0em;
   margin-bottom: 4em;
-  height: 5px;
+  height: 2px;
   background-color: white;
   width: 60px;
 }
@@ -614,9 +624,9 @@ background: -moz-radial-gradient(top left, ellipse cover, rgba(105,155,200,1) 0%
 
 .img-team {
   position: absolute;
-  top: 105px;
-  width: auto;
-  height: 85%;
+  bottom: 0px;
+  width: 120%;
+  height: auto;
   
 }
 
@@ -736,3 +746,21 @@ background: -moz-radial-gradient(top left, ellipse cover, rgba(105,155,200,1) 0%
   letter-spacing: 1px;
   font-weight: 400;
 }
+
+
+.plit {
+  padding-bottom: 2em;
+  padding-top: 1.5em;
+  background-color: white;
+  color: #444444;
+  border: 1px solid #005fa2;  
+}
+
+.plit:hover {
+  z-index: 1000;
+  box-shadow: 0 10px 4px -4px rgba(0, 0, 0, .2);
+  border: 0px none white;
+ -webkit-transform: scale(1.05);
+ -moz-transform: scale(1.05);
+ -o-transform: scale(1.05);
+ }
