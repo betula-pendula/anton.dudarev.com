@@ -773,3 +773,13 @@ background: -moz-radial-gradient(top left, ellipse cover, rgba(105,155,200,1) 0%
   background-color: #7a5169;
   z-index: 9999;
  }
+
+ .footer-a {
+  color: #c296a5;  
+ }
+
+ .footer-a:hover {
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+ }
