@@ -753,6 +753,7 @@ z-index: 9999;}
     color: #222222;
     background-size: cover;
     background-position: center;
+    
     height: 100vh;
 }
 .section-2 {
@@ -865,7 +866,7 @@ z-index: 9999;}
 .fixed {
     position: fixed;
     width: 100%;
-    height: 85px;
+    height: 82px;
     z-index: 5500;
     background: rgba(120, 93, 125, 1);
     background: -moz-linear-gradient(-45deg, rgba(120, 93, 125, 1) 0%, rgba(110, 65, 94, 1) 100%);
