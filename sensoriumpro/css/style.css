@@ -527,7 +527,7 @@ button::-moz-focus-inner {
 .title-six {
     z-index: 8000;
     position: absolute;
-    bottom: -21px;
+    bottom: -30px;
     right: 40px;
     font-size: 200pt;
     font-family: 'Poppins', bold;
