@@ -753,7 +753,6 @@ z-index: 9999;}
     color: #222222;
     background-size: cover;
     background-position: center;
-    
     height: 100vh;
 }
 .section-2 {
@@ -907,19 +906,3 @@ z-index: 9999;}
     right: 0;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-#footer {
-  position: absolute;
-  bottom: -70px;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 70px;
-  background-color: #7a5169;
-}
