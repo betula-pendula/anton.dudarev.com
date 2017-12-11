@@ -693,8 +693,8 @@ button::-moz-focus-inner {
     -o-transform: scale(1.05);
 }
 .footer {
-    margin-top: 2em;
-    height: 70px;    
+    
+    
     background-color: #7a5169;
     z-index: 9999;
 }
