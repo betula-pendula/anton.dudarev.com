@@ -693,8 +693,6 @@ button::-moz-focus-inner {
     -o-transform: scale(1.05);
 }
 .footer {
-    
-    
     background-color: #7a5169;
     z-index: 9999;
 }
@@ -907,3 +905,6 @@ z-index: 9999;}
     right: 0;
 }
 
+footer {
+    z-index: 9999;
+}
