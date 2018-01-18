@@ -473,10 +473,10 @@ button::-moz-focus-inner {
 }
 
 .arrow {
-  position: fixed;
-  top: 85%;
-  left: 48%;
+  
+  
   height: 80px;
+  z-index: 0;
 }
 
 .arrow:hover {
@@ -633,6 +633,7 @@ button::-moz-focus-inner {
   height: 2px;
   background-color: white;
   width: 60px;
+  padding-left: 30px;
   margin: auto;
   margin-top: 3em;
 }
@@ -802,7 +803,11 @@ button::-moz-focus-inner {
 
 .footer {
   background-color: #7a5169;
-  z-index: 9999;
+  z-index: 20;
+}
+
+footer {
+    z-index: 15;
 }
 
 .footer-a {
@@ -866,7 +871,7 @@ ul#menu-footer li {
   color: #222222;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100vh;  
 }
 
 .section-2 {
@@ -876,6 +881,8 @@ ul#menu-footer li {
   color: #222222;
   background-size: cover;
   background-position: center;
+  
+  z-index: 13;
 }
 
 .section-3 {
@@ -888,8 +895,8 @@ ul#menu-footer li {
   background: linear-gradient(135deg, rgba(9, 114, 199, 1) 0%, rgba(7, 47, 106, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0972c7', endColorstr='#072f6a', GradientType=1);
   /*background: linear-gradient(to top left, powderblue, pink);*/
-  height: 100%;
   z-index: 8;
+  
 }
 
 .section-4 {
@@ -902,6 +909,7 @@ ul#menu-footer li {
   background: linear-gradient(to bottom, rgba(0, 192, 160, 1) 0%, rgba(0, 167, 182, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00c0a0', endColorstr='#00a7b6', GradientType=0);
   z-index: 5;
+  
 }
 
 .section-5 {
@@ -915,7 +923,7 @@ ul#menu-footer li {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
   /* Положение фона */
   z-index: 4;
-  height: 100vh;
+  
 }
 
 .section-6 {
@@ -928,6 +936,7 @@ ul#menu-footer li {
   background: linear-gradient(135deg, rgba(202, 76, 114, 1) 0%, rgba(70, 60, 87, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ca4c72', endColorstr='#463c57', GradientType=1);
   z-index: 5;
+  
 }
 
 .section-7 {
@@ -939,6 +948,8 @@ ul#menu-footer li {
   background: -ms-radial-gradient(top left, ellipse cover, rgba(105, 155, 200, 1) 0%, rgba(181, 197, 216, 1) 57%);
   background: radial-gradient(ellipse at top left, rgba(105, 155, 200, 1) 0%, rgba(181, 197, 216, 1) 57%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#699bc8', endColorstr='#b5c5d8', GradientType=1);
+  
+  z-index: 12;
 }
 
 .text-company {
@@ -964,6 +975,39 @@ ul#menu-footer li {
 @media (max-width: 767px) {
   #menu {
     visibility: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-1 {
+    height: 100vh;  
+  }
+
+  .section-2 {
+    height: 100vh;
+  }
+
+  .section-3 {
+    height: 100vh;
+    
+  }
+
+  .section-4 {
+    height: 100vh;
+    
+  }
+
+  .section-5 {
+    height: 100vh;
+    
+  }
+
+  .section-6 {
+    height: 100vh;
+  }
+
+  .section-7 {
+    height: 100vh;
   }
 }
 
@@ -1003,6 +1047,8 @@ ul#menu-footer li {
     margin-top: 0px;
   }
 }
+
+
 
 .city-img {
   position: absolute;
