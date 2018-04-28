@@ -332,6 +332,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   float: left;
   width: 100%;
+  background-color: red;
 }
 .gtco-cover a {
   color: #ff4146;
@@ -346,7 +347,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 43, 83, 0.89);
+  background: rgba(29, 43, 83, 0.5);
 }
 .gtco-cover > .gtco-container {
   position: relative;
@@ -1891,3 +1892,12 @@ form label {
 
 /*# sourceMappingURL=style.css.map */
 
+.btn-default-red {
+  border: 2px solid #ff4146;
+  color: #ff4146;
+}
+
+.btn-default-red:hover {
+  background-color: #ff4146;
+  color: white;
+}
