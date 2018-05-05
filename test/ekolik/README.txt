@@ -1,14 +1,11 @@
 
 TITLE: 
-Aesthetic - 100% Fully Responsive Free HTML5 Bootstrap Template
+ECOLIK
 
 AUTHOR:
-DESIGNED & DEVELOPED by GetTemplates.co
+Anton M. Dudarev
 
-Website: http://gettemplates.co/
-Twitter: http://twitter.com/gettemplatesco
-Facebook: http://facebook.com/gettemplatesco
-
+Website: http://anton.dudarev.com/
 
 CREDITS:
 
