@@ -5,13 +5,19 @@
       <title>Vue.js</title>
       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link rel="stylesheet" href="/resources/demos/style.css">
-      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,400" rel="stylesheet">
       <link rel="stylesheet" href="css/main.css">
+      
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+      
    </head>
    <body>
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     
       <div class="wrapper">
          <div class="content">
             <div id="list">
@@ -30,10 +36,9 @@
                </div>
                <div class="container">
                   <div class="block-left">
-                     <div class="boxes">
-                        <ul id="sortable">
-                           <li v-for="(site, index) in filteredList" class="ui-state-default">
-                              <!--<input type="checkbox" v-model="site.done">-->
+                     <div class="boxes">  
+                        <transition-group name="bounce" tag="ul" id="sortable" class="temp">
+                           <li v-for="(site, index) in filteredList" v-bind:key="site.siteTitle" class="ui-state-default">
                               <div class="container-list-item">
                                  <div class="block-check">
                                     <label class="checkbox">
@@ -53,13 +58,13 @@
                                     </label>
                                  </div>
                                  <div class="block-delet">
-                                    <button v-on:click="sites.splice(index, 1)" class="button-delete">
-                                    <a href="#" class="close-button"></a>
+                                    <button v-on:click="sitesDelete.unshift({siteTitle: site.siteTitle, company: site.company, siteIcon: site.siteIcon}); sites.splice(index, 1)" class="button-delete">
+                                       <a href="#" class="close-button"></a>
                                     </button>
                                  </div>
                               </div>
                            </li>
-                        </ul>
+                        </transition-group> 
                      </div>
                   </div>
                   <div class="block-right">
@@ -68,20 +73,29 @@
                            <h2 style="color:#212121; margin-bottom:20px;">New Web Site</h2>
                            <input type="text" v-model="newSite" style="margin-bottom:20px;" placeholder="Site"/>
                            <input type="text" v-model="newSiteURL" style="margin-bottom:20px;" placeholder="Link"/>
-                           <button v-on:click="sites.push({siteTitle: newSite, company: newSiteURL})" class="button button2" style="margin-bottom:20px;">+ Add</button>	
+                           <button v-on:click="sites.unshift({siteTitle: newSite, company: newSiteURL})" class="button button2" style="margin-bottom:20px;">+ Add</button>	
                         </div>
                      </div>
+
+                     <ul>
+                        <li v-for="(item, index) in sitesDelete" v-bind:key="sitesDelete.siteTitle">
+                           <div>
+                              {{ item.siteTitle }}
+                              <button v-on:click="sites.unshift({siteTitle: item.siteTitle, company: item.company, siteIcon: item.siteIcon}); sitesDelete.splice(index, 1)">+ Add</button>
+                           </div>
+                        </li>
+                     </ul>
+
                   </div>
                </div>
             </div>
-         </div>
+         </div>    
          <div id="footer" class="footer">
             <a :href="siteName">
                <h6>{{ dev }}</h6>
             </a>
          </div>
       </div>
-      <script src="js/main.js"></script>	
-   </body>
+      <script src="js/main.js"></script>	     
    </body>
 </html>
