@@ -37,7 +37,7 @@ new Vue({
 
     methods: {
                     getJson: function(){
-                        $.getJSON('document.json',function(data){
+                        $.getJSON('./document.json',function(data){
                           this.sites = data;
                         }.bind(this));
                     }
