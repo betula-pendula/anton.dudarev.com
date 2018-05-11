@@ -26,7 +26,6 @@ new Vue({
         sites: [],
         sitesDelete: []
     },
-
     computed:{
         filteredList: function(){
             var comp = this.siteTitle;            
@@ -36,17 +35,13 @@ new Vue({
             })
         }
     },
-
     created: function () {
         var _this = this;
         $.getJSON('document.json', function (json) {
             _this.sites = json.sites;
-        }.bind(this));
+        });
     }
-
 });
-
-
 
 $( function() {
 	$( "#sortable" ).sortable({
