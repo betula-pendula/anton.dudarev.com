@@ -39,7 +39,7 @@ new Vue({
 
     created: function () {
         var _this = this;
-        $.getJSON('http://localhost/document.json', function (json) {
+        $.getJSON('document.json', function (json) {
             _this.sites = json.sites;
         }.bind(this));
     }
