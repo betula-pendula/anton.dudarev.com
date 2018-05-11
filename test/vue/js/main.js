@@ -1,3 +1,5 @@
+
+
 new Vue ({
 	el: '#header',
 	data: {
@@ -35,15 +37,16 @@ new Vue({
         }
     },
 
-    methods: {
-                    getJson: function(){
-                        $.getJSON('./document.json',function(data){
-                          this.sites = data;
-                        }.bind(this));
-                    }
-                }
+    created: function () {
+        var _this = this;
+        $.getJSON('http://localhost/document.json', function (json) {
+            _this.sites = json.sites;
+        }.bind(this));
+    }
 
 });
+
+
 
 $( function() {
 	$( "#sortable" ).sortable({
