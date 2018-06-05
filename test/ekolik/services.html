@@ -96,7 +96,7 @@
 						</li>
 					-->
 						<li><a href="portfolio.html">Продукты</a></li>
-						<li><a href="https://klient.spirvent.pl/panel/#/login">Панель клиента</a></li>
+						<li><a href="https://klient-demo.spirvent.pl/panel/#/guestlink/installation/IWdfMTUyNTg1NTk3N18xNA==">Панель клиента</a></li>
 						<li><a href="contact.html">Контакт</a></li>
 					</ul>
 				</div>
@@ -292,22 +292,24 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-12">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Ваш Email">
+					<form class="form-inline" action="mail.php" method="post">
+						<fieldset>
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+									<label for="email" class="sr-only">Email</label>
+									<input class="form-control" placeholder="Ваш Email" type="text" name="email">
+								</div>
 							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="text" class="form-control" id="name" placeholder="Ваше имя">
+							<div class="col-md-4 col-sm-4">
+								<div class="form-group">
+									<label for="name" class="sr-only">Name</label>
+									<input class="form-control" placeholder="Ваше имя" type="text" name="name">
+								</div>
 							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">Отправить</button>
-						</div>
+							<div class="col-md-4 col-sm-4">
+								<button type="submit" class="btn btn-default btn-block">Отправить</button>
+							</div>
+						</fieldset>
 					</form>
 				</div>
 			</div>
